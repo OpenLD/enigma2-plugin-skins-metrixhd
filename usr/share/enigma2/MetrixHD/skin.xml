@@ -1,0 +1,138 @@
+<skin>
+	<!-- MetrixHD v2.5 by iMaxxx | optimized for openATV 4.0 -->
+        <!-- Adapted for OpenLD by Javilonas -->
+	<!-- recommended to use with XPicons -->
+	<!-- You can modify and redistribute it as long as you keep this license and the original author for the skin and all of your modifications -->
+	<output id="0">
+		<resolution xres="1280" yres="720" bpp="32" />
+	</output>
+	<colors>
+		<color name="foreground" value="#00ffffff" />
+		<color name="background" value="#40000000" />
+		<color name="rds_text_bg" value="#00003258" />
+		<color name="rssviewtop" value="#45005050" />
+		<color name="transparent" value="#ff111111" />
+		<color name="transpBlack" value="#80000000" />
+		<color name="transpWhite" value="#77ffffff" />
+		<color name="transpyellow" value="#33bab329" />
+		<color name="black" value="#00000000" />
+		<color name="dark" value="#00294a6b" />
+		<color name="darkgrey" value="#00999999" />
+		<color name="grey" value="#00bbbbbb" />
+		<color name="orange" value="#00f47d19" />
+		<color name="white" value="#00ffffff" />
+		<color name="blue" value="#000064c7" />													<!-- MetrixColors - Color Button Blue -->
+		<color name="green" value="#00389416" />												<!-- MetrixColors - Color Button Green -->
+		<color name="red" value="#00f23d21" />													<!-- MetrixColors - Color Button Red -->
+		<color name="yellow" value="#00e5b243" />												<!-- MetrixColors - Color Button Yellow -->
+		<color name="layer-a-foreground" value="#00FFFFFF" />						<!-- MetrixColors - Foreground layer a -->
+		<color name="layer-a-background" value="#1E0F0F0F" />						<!-- MetrixColors - Background layer a -->
+		<color name="layer-a-selection-foreground" value="#00FFFFFF" />	<!-- MetrixColors - Foreground layer a for selected items -->
+		<color name="layer-a-selection-background" value="#1E27408B" />	<!-- MetrixColors - Background layer a for selected items -->
+		<color name="layer-a-accent1" value="#00CCCCCC" />							<!-- MetrixColors - First accent layer a -->
+		<color name="layer-a-accent2" value="#007F7F7F" />							<!-- MetrixColors - Second accent layer a -->
+		<color name="layer-a-progress" value="#1E27408B" />							<!-- MetrixColors - Progress layer a -->
+		<color name="layer-b-foreground" value="#00FFFFFF" />						<!-- MetrixColors - Foreground layer b -->
+		<color name="layer-b-background" value="#1E27408B" />						<!-- MetrixColors - Background layer b -->
+		<color name="layer-b-selection-foreground" value="#00FFFFFF" />	<!-- MetrixColors - Foreground layer b for selected items -->
+		<color name="layer-b-selection-background" value="#1E0F0F0F" />	<!-- MetrixColors - Background layer b for selected items -->
+		<color name="layer-b-accent1" value="#00CCCCCC" />							<!-- MetrixColors - First accent layer b -->
+		<color name="layer-b-accent2" value="#007F7F7F" />							<!-- MetrixColors - Second accent layer b -->
+		<color name="layer-b-progress" value="#1EFFFFFF" />							<!-- MetrixColors - Progress layer b -->
+		<color name="background-text" value="#96FFFFFF" />							<!-- MetrixColors - Primary color for texts in background -->
+		<color name="title-background" value="#888A8A8A" />							<!-- MetrixColors - Background color for window title -->
+		<color name="title-foreground" value="#11FFFFFF" />							<!-- MetrixColors - Foreground color for window title -->
+		<color name="un18080911" value="#18080911" />
+		<color name="un1c202b" value="#001c202b" />
+		<color name="un1f771f" value="#001f771f" />
+		<color name="un240e1014" value="#240e1014" />
+		<color name="un44000000" value="#44000000" />
+		<color name="un444444" value="#00444444" />
+		<color name="un555555" value="#00555555" />
+		<color name="un5678a4" value="#005678a4" />
+		<color name="un56c856" value="#0056c856" />
+		<color name="un666666" value="#00666666" />
+		<color name="un800000" value="#00800000" />
+		<color name="un808888" value="#00808888" />
+		<color name="un9f1313" value="#009f1313" />
+		<color name="unbab329" value="#00bab329" />
+		<color name="und3d3d3" value="#00d3d3d3" />
+		<color name="undcaaaa" value="#00dcaaaa" />
+		<color name="undcdcdc" value="#00dcdcdc" />
+		<color name="unececec" value="#00ececec" />
+		<color name="unf0b400" value="#00f0b400" />
+		<color name="unfcc000" value="#00fcc000" />
+		<color name="unff" value="#000000ff" />
+		<color name="unff00" value="#0000ff00" />
+		<color name="unff0000" value="#00ff0000" />
+		<color name="unff000000" value="#ff000000" />
+		<color name="unff4a3c" value="#00ff4a3c" />
+		<color name="unffff00" value="#00ffff00" />
+		<color name="unffffff" value="#00ffffff" />
+	</colors>
+	<fonts>
+		<font filename="/usr/share/fonts/lcd.ttf" name="LCD" scale="100" />
+		<font filename="/usr/share/fonts/ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1" />
+		<font filename="/usr/share/fonts/tuxtxt.ttf" name="Console" scale="100" />
+		<font filename="/usr/share/fonts/nmsbd.ttf" name="Arial" scale="100" />
+		<font filename="/usr/share/enigma2/MetrixHD/fonts/OpenSans-Regular.ttf" name="Regular" scale="95" />
+		<font filename="/usr/share/enigma2/MetrixHD/fonts/OpenSans-Regular.ttf" name="RegularLight" scale="95" />
+		<font filename="/usr/share/enigma2/MetrixHD/fonts/setrixHD.ttf" name="SetrixHD" scale="100" />
+		<font filename="/usr/share/enigma2/MetrixHD/fonts/meteocons.ttf" name="Meteo" scale="100" />
+	</fonts>
+	<subtitles>
+		<sub name="Subtitle_TTX" font="Regular;30" shadowColor="#40101010" shadowOffset="3,3" />
+		<sub name="Subtitle_Regular" font="Regular;30" foregroundColor="undcdcdc" shadowColor="#40101010" shadowOffset="3,3" />
+		<sub name="Subtitle_Bold" font="Replacement;30" foregroundColor="undcdcdc" shadowColor="#40101010" shadowOffset="3,3" />
+		<sub name="Subtitle_Italic" font="Regular;30" foregroundColor="undcaaaa" shadowColor="#40101010" shadowOffset="3,3" />
+	</subtitles>
+	<windowstyle type="skinned" id="0">
+		<title offset="0,0" font="SetrixHD;40" />
+		<color name="Background" color="layer-a-background" />
+		<color name="LabelForeground" color="layer-a-foreground" />
+		<color name="ListboxBackground" color="layer-a-background" />
+		<color name="ListboxForeground" color="layer-a-foreground" />
+		<color name="ListboxSelectedBackground" color="layer-a-selection-background" />
+		<color name="ListboxSelectedForeground" color="layer-a-foreground" />
+		<color name="ListboxMarkedBackground" color="green" />
+		<color name="ListboxMarkedForeground" color="layer-a-foreground" />
+		<color name="ListboxMarkedAndSelectedBackground" color="blue" />
+		<color name="ListboxMarkedAndSelectedForeground" color="layer-a-foreground" />
+		<color name="WindowTitleForeground" color="title-foreground" />
+		<color name="WindowTitleBackground" color="title-background"/>
+		<borderset name="bsWindow">
+			<pixmap pos="bpTopLeft" filename="MetrixHD/bs_tl.png" />
+			<pixmap pos="bpTop" filename="MetrixHD/bs_t.png" />
+			<pixmap pos="bpTopRight" filename="MetrixHD/bs_tr.png" />
+			<pixmap pos="bpLeft" filename="MetrixHD/bs_l.png" />
+			<pixmap pos="bpRight" filename="MetrixHD/bs_r.png" />
+			<pixmap pos="bpBottomLeft" filename="MetrixHD/bs_bl.png" />
+			<pixmap pos="bpBottom" filename="MetrixHD/bs_b.png" />
+			<pixmap pos="bpBottomRight" filename="MetrixHD/bs_br.png" />
+		</borderset>
+	</windowstyle>
+	<windowstyle type="skinned" id="1">
+		<color name="Background" color="layer-a-background" />
+		<color name="LabelForeground" color="layer-a-foreground" />
+		<color name="ListboxBackground" color="layer-a-background" />
+		<color name="ListboxForeground" color="layer-a-foreground" />
+		<color name="ListboxSelectedBackground" color="layer-a-selection-background" />
+		<color name="ListboxSelectedForeground" color="layer-a-foreground" />
+		<color name="ListboxMarkedBackground" color="blue" />
+		<color name="ListboxMarkedForeground" color="layer-a-foreground" />
+		<color name="ListboxMarkedAndSelectedBackground" color="blue" />
+		<color name="ListboxMarkedAndSelectedForeground" color="layer-a-foreground" />
+		<color name="WindowTitleForeground" color="layer-a-foreground" />
+	</windowstyle>
+	<include filename="/usr/share/enigma2/MetrixHD/skin_00_templates.xml" />
+	<include filename="/usr/share/enigma2/MetrixHD/skin_00a_InfoBar.xml" />
+	<include filename="/usr/share/enigma2/MetrixHD/skin_00b_SecondInfoBar.xml" />
+	<include filename="/usr/share/enigma2/MetrixHD/skin_00c_SecondInfoBarECM.xml" />
+	<include filename="/usr/share/enigma2/MetrixHD/skin_00d_InfoBarLite.xml" />
+	<include filename="/usr/share/enigma2/MetrixHD/skin_00e_ChannelSelection.xml" />
+	<include filename="/usr/share/enigma2/MetrixHD/skin_01_openld.xml" />
+	<include filename="/usr/share/enigma2/MetrixHD/skin_02_display.xml" />
+	<include filename="/usr/share/enigma2/MetrixHD/skin_03_plugins.xml" />
+	<include filename="/usr/share/enigma2/MetrixHD/skin_04_check.xml" />
+	<include filename="/usr/share/enigma2/MetrixHD/skin_05_screens_unchecked.xml" />
+</skin>

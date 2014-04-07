@@ -1,0 +1,400 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-07 21:30+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: __init__.py:72
+msgid "Amber"
+msgstr ""
+
+#: __init__.py:73
+msgid "Brown"
+msgstr ""
+
+#: __init__.py:74
+msgid "Cobalt"
+msgstr ""
+
+#: __init__.py:75
+msgid "Crimson"
+msgstr ""
+
+#: __init__.py:76
+msgid "Cyan"
+msgstr ""
+
+#: __init__.py:77
+msgid "Darkblue"
+msgstr ""
+
+#: __init__.py:78
+msgid "Magenta"
+msgstr ""
+
+#: __init__.py:79
+msgid "Lime"
+msgstr ""
+
+#: __init__.py:80
+msgid "Indigo"
+msgstr ""
+
+#: __init__.py:81
+msgid "Green"
+msgstr ""
+
+#: __init__.py:82
+msgid "Emerald"
+msgstr ""
+
+#: __init__.py:83
+msgid "Mauve"
+msgstr ""
+
+#: __init__.py:84
+msgid "Mediumblue"
+msgstr ""
+
+#: __init__.py:85
+msgid "Navy"
+msgstr ""
+
+#: __init__.py:86
+msgid "Olive"
+msgstr ""
+
+#: __init__.py:87
+msgid "Orange"
+msgstr ""
+
+#: __init__.py:88
+msgid "Pink"
+msgstr ""
+
+#: __init__.py:89
+msgid "Red"
+msgstr ""
+
+#: __init__.py:90
+msgid "Sienna"
+msgstr ""
+
+#: __init__.py:91
+msgid "Steel"
+msgstr ""
+
+#: __init__.py:92
+msgid "Teal"
+msgstr ""
+
+#: __init__.py:93
+msgid "Violet"
+msgstr ""
+
+#: __init__.py:94
+msgid "Yellow"
+msgstr ""
+
+#: __init__.py:95
+msgid "Black"
+msgstr ""
+
+#: __init__.py:96
+msgid "Greyscale 1"
+msgstr ""
+
+#: __init__.py:97
+msgid "Greyscale 2"
+msgstr ""
+
+#: __init__.py:98
+msgid "Greyscale 3"
+msgstr ""
+
+#: __init__.py:99
+msgid "Greyscale 4"
+msgstr ""
+
+#: __init__.py:100
+msgid "Greyscale 5"
+msgstr ""
+
+#: __init__.py:101
+msgid "Greyscale 6"
+msgstr ""
+
+#: __init__.py:102
+msgid "Greyscale 7"
+msgstr ""
+
+#: __init__.py:103
+msgid "Greyscale 8"
+msgstr ""
+
+#: __init__.py:104
+msgid "Greyscale 9"
+msgstr ""
+
+#: __init__.py:105
+msgid "Greyscale 10"
+msgstr ""
+
+#: __init__.py:106
+msgid "Greyscale 11"
+msgstr ""
+
+#: __init__.py:107
+msgid "Greyscale 12"
+msgstr ""
+
+#: __init__.py:108
+msgid "Greyscale 13"
+msgstr ""
+
+#: __init__.py:109
+msgid "White"
+msgstr ""
+
+#: __init__.py:113
+msgid "0%"
+msgstr ""
+
+#: __init__.py:114
+msgid "5%"
+msgstr ""
+
+#: __init__.py:115
+msgid "10%"
+msgstr ""
+
+#: __init__.py:116
+msgid "15%"
+msgstr ""
+
+#: __init__.py:117
+msgid "20%"
+msgstr ""
+
+#: __init__.py:118
+msgid "25%"
+msgstr ""
+
+#: __init__.py:119
+msgid "30%"
+msgstr ""
+
+#: __init__.py:120
+msgid "35%"
+msgstr ""
+
+#: __init__.py:121
+msgid "40%"
+msgstr ""
+
+#: __init__.py:122
+msgid "45%"
+msgstr ""
+
+#: __init__.py:123
+msgid "50%"
+msgstr ""
+
+#: __init__.py:166
+msgid "Celsius"
+msgstr ""
+
+#: __init__.py:167
+msgid "Fahrenheit"
+msgstr ""
+
+#: ColorsSettingsView.py:62 MainSettingsView.py:110
+msgid "Color settings"
+msgstr ""
+
+#: ColorsSettingsView.py:65 MainSettingsView.py:86 OtherSettingsView.py:60
+#: WeatherSettingsView.py:64
+msgid "Cancel"
+msgstr ""
+
+#: ColorsSettingsView.py:68 OtherSettingsView.py:63 WeatherSettingsView.py:67
+msgid "Save"
+msgstr ""
+
+#: ColorsSettingsView.py:71
+msgid "Defaults"
+msgstr ""
+
+#: ColorsSettingsView.py:76
+msgid ""
+"Text in background  "
+"-----------------------------------------------------------------------------------"
+msgstr ""
+
+#: ColorsSettingsView.py:77 ColorsSettingsView.py:83 ColorsSettingsView.py:99
+msgid "    Font color"
+msgstr ""
+
+#: ColorsSettingsView.py:78
+msgid "    Font color transparency"
+msgstr ""
+
+#: ColorsSettingsView.py:79
+msgid ""
+"Layer A (main layer)  "
+"-----------------------------------------------------------------------------------"
+msgstr ""
+
+#: ColorsSettingsView.py:80 ColorsSettingsView.py:96
+msgid "    Background"
+msgstr ""
+
+#: ColorsSettingsView.py:81 ColorsSettingsView.py:90 ColorsSettingsView.py:97
+#: ColorsSettingsView.py:106
+msgid "        Color"
+msgstr ""
+
+#: ColorsSettingsView.py:82 ColorsSettingsView.py:91 ColorsSettingsView.py:98
+#: ColorsSettingsView.py:107
+msgid "        Transparency"
+msgstr ""
+
+#: ColorsSettingsView.py:84 ColorsSettingsView.py:100
+msgid "    Selection bar"
+msgstr ""
+
+#: ColorsSettingsView.py:85 ColorsSettingsView.py:101
+msgid "        Background"
+msgstr ""
+
+#: ColorsSettingsView.py:86 ColorsSettingsView.py:102
+msgid "            Color"
+msgstr ""
+
+#: ColorsSettingsView.py:87 ColorsSettingsView.py:103
+msgid "            Transparency"
+msgstr ""
+
+#: ColorsSettingsView.py:88 ColorsSettingsView.py:104
+msgid "        Font color"
+msgstr ""
+
+#: ColorsSettingsView.py:89 ColorsSettingsView.py:105
+msgid "    Progress bar"
+msgstr ""
+
+#: ColorsSettingsView.py:92 ColorsSettingsView.py:108
+msgid "    Accent colors"
+msgstr ""
+
+#: ColorsSettingsView.py:93 ColorsSettingsView.py:109
+msgid "        Color 1"
+msgstr ""
+
+#: ColorsSettingsView.py:94 ColorsSettingsView.py:110
+msgid "        Color 2"
+msgstr ""
+
+#: ColorsSettingsView.py:95
+msgid ""
+"Layer B (secondary layer)  "
+"-----------------------------------------------------------------------------------"
+msgstr ""
+
+#: ColorsSettingsView.py:202 OtherSettingsView.py:128
+#: WeatherSettingsView.py:134
+msgid "Information"
+msgstr ""
+
+#: MainSettingsView.py:83
+msgid "MyMetrixLite"
+msgstr ""
+
+#: MainSettingsView.py:89
+msgid "Apply changes"
+msgstr ""
+
+#: MainSettingsView.py:111 WeatherSettingsView.py:58
+msgid "Weather settings"
+msgstr ""
+
+#: MainSettingsView.py:112 OtherSettingsView.py:57
+msgid "Other settings"
+msgstr ""
+
+#: MainSettingsView.py:171
+msgid "Do you really want to reboot now?"
+msgstr ""
+
+#: MainSettingsView.py:174
+msgid "Restart GUI"
+msgstr ""
+
+#: MainSettingsView.py:284
+msgid ""
+"GUI needs a restart to apply a new skin.\n"
+"Do you want to Restart the GUI now?"
+msgstr ""
+
+#: MainSettingsView.py:286
+msgid "Error creating Skin!"
+msgstr ""
+
+#: OtherSettingsView.py:95
+msgid ""
+"InfoBar/SecondInfobar   "
+"-----------------------------------------------------------------------------------"
+msgstr ""
+
+#: OtherSettingsView.py:96
+msgid "Show ServiceIcons"
+msgstr ""
+
+#: OtherSettingsView.py:97
+msgid "Show ChannelName"
+msgstr ""
+
+#: OtherSettingsView.py:98
+msgid "Show Resolution"
+msgstr ""
+
+#: OtherSettingsView.py:99
+msgid "Show Clock"
+msgstr ""
+
+#: plugin.py:31
+msgid "openLD color configuration tool for MetrixHD"
+msgstr ""
+
+#: WeatherSettingsView.py:61
+msgid "Get your local MetrixWeather ID from www.mymetrix.de"
+msgstr ""
+
+#: WeatherSettingsView.py:100
+msgid "Enabled"
+msgstr ""
+
+#: WeatherSettingsView.py:103
+msgid "MetrixWeather ID"
+msgstr ""
+
+#: WeatherSettingsView.py:104
+msgid "Unit"
+msgstr ""
+
+#: WeatherSettingsView.py:105
+msgid "Refresh Interval (min)"
+msgstr ""

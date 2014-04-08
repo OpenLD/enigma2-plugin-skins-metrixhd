@@ -239,10 +239,10 @@
 				}
 			</convert>
 		</widget>
-		<widget name="a_off" position="1000,115" zPosition="1" size="36,97" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/icons/aoff.png" alphatest="on" />
-		<widget name="a_red" position="1000,115" zPosition="1" size="36,97" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/icons/ared.png" alphatest="on" />
-		<widget name="a_yellow" position="1000,115" zPosition="1" size="36,97" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/icons/ayellow.png" alphatest="on" />
-		<widget name="a_green" position="1000,115" zPosition="1" size="36,97" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/icons/agreen.png" alphatest="on" />
+		<widget name="a_off" position="1000,115" zPosition="1" size="36,97" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/LDteam/images/icons/aoff.png" alphatest="on" />
+		<widget name="a_red" position="1000,115" zPosition="1" size="36,97" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/LDteam/images/icons/ared.png" alphatest="on" />
+		<widget name="a_yellow" position="1000,115" zPosition="1" size="36,97" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/LDteam/images/icons/ayellow.png" alphatest="on" />
+		<widget name="a_green" position="1000,115" zPosition="1" size="36,97" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/LDteam/images/icons/agreen.png" alphatest="on" />
 		<widget name="feedstatusRED" position="1043,119" size="200,30" zPosition="1" font="Regular;25" halign="left" backgroundColor="layer-b-background" transparent="1" />
 		<widget name="feedstatusYELLOW" position="1043,151" size="200,30" zPosition="1" font="Regular;25" halign="left" backgroundColor="layer-b-background" transparent="1" />
 		<widget name="feedstatusGREEN" position="1043,183" size="200,30" zPosition="1" font="Regular;25" halign="left" backgroundColor="layer-b-background" transparent="1" />
@@ -443,8 +443,8 @@
 	</screen>
 	<screen name="menu_mainmenu" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MENU_template" />
-		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_mainmenu_infopanel.png" position="310,85" size="256,256" alphatest="blend">
-			<convert type="MenuEntryCompare">Infopanel</convert>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_mainmenu_bluepanel.png" position="310,85" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">LDBluePanel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_mainmenu_openstore.png" position="310,85" size="256,256" alphatest="blend">
@@ -1103,7 +1103,7 @@
 		<widget source="key_green" render="Label" position="456,633" size="200,26" zPosition="1" font="SetrixHD;22" halign="left" backgroundColor="layer-a-background" transparent="1" />
 		<widget source="key_ok" render="Label" position="837,633" size="180,26" zPosition="1" font="SetrixHD;22" halign="left" backgroundColor="layer-a-background" transparent="1" />
 	</screen>
-	<screen name="Infopanel" position="0,0" size="1280,720" title="Info Panel" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="LDBluePanel" position="0,0" size="1280,720" title="Blue Panel" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel position="250,25" zPosition="-10" size="731,650" backgroundColor="layer-a-background" />
 		<widget source="global.CurrentTime" render="Label" position="813,28" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="layer-a-background" transparent="1">
 			<convert type="ClockToText">Default</convert>

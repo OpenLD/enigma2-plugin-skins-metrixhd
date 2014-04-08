@@ -1103,22 +1103,6 @@
 		<widget source="key_green" render="Label" position="456,633" size="200,26" zPosition="1" font="SetrixHD;22" halign="left" backgroundColor="layer-a-background" transparent="1" />
 		<widget source="key_ok" render="Label" position="837,633" size="180,26" zPosition="1" font="SetrixHD;22" halign="left" backgroundColor="layer-a-background" transparent="1" />
 	</screen>
-	<screen name="LDBluePanel" position="0,0" size="1280,720" title="Blue Panel" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel position="250,25" zPosition="-10" size="731,650" backgroundColor="layer-a-background" />
-		<widget source="global.CurrentTime" render="Label" position="813,28" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="layer-a-background" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="641,37" size="161,27" font="Regular; 15" halign="right" backgroundColor="layer-a-background" transparent="1" foregroundColor="layer-a-accent1">
-			<convert type="ClockToText">Format:%A</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="641,64" size="161,29" font="Regular; 16" halign="right" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1">
-			<convert type="ClockToText">Format:%e. %b</convert>
-		</widget>
-		<eLabel text="Info Panel" position="280,47" size="338,43" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
-		<eLabel position="280,100" size="670,2" backgroundColor="layer-a-accent1" />
-		<widget name="Mlist" position="280,118" size="435,415" zPosition="1" scrollbarMode="showOnDemand" transparent="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" />
-		<widget name="label1" position="265,608" size="700,50" font="Regular;40" halign="right" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" />
-	</screen>
 	<screen name="CCcamInfoMain" position="0,0" size="1280,720" title="CCcam Info" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel position="250,25" zPosition="-10" size="731,650" backgroundColor="layer-a-background" />
 		<widget source="global.CurrentTime" render="Label" position="813,28" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="layer-a-background" transparent="1">

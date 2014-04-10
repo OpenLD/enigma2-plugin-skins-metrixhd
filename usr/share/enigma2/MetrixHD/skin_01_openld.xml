@@ -1041,35 +1041,6 @@
 		</widget>
 		<widget name="lab1" zPosition="2" position="170,160" size="600,40" font="SetrixHD;22" halign="center" backgroundColor="layer-a-background" transparent="1" />
 	</screen>
-	<screen name="SoftcamPanel" position="0,0" size="1280,720" title="Softcam Panel" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel position="200,25" zPosition="-10" size="831,650" backgroundColor="layer-a-background" />
-		<widget source="global.CurrentTime" render="Label" position="863,28" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="layer-a-background" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="691,37" size="161,27" font="Regular; 15" halign="right" backgroundColor="layer-a-background" transparent="1" foregroundColor="layer-a-accent1">
-			<convert type="ClockToText">Format:%A</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="691,64" size="161,29" font="Regular; 16" halign="right" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1">
-			<convert type="ClockToText">Format:%e. %b</convert>
-		</widget>
-		<eLabel text="Softcam Panel" position="230,47" size="338,43" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
-		<eLabel position="230,100" size="770,2" backgroundColor="layer-a-accent1" />
-		<widget name="config" position="230,109" size="500,100" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" zPosition="1" transparent="1" />
-		<widget font="Regular;22" name="enigma2" position="239,120" size="185,25" />
-		<eLabel backgroundColor="grey" position="230,220" size="770,2" zPosition="0" />
-		<widget font="Regular; 20" name="actifcam" position="230,241" size="380,32" />
-		<widget font="Regular; 20" name="actifcam2" position="620,241" size="380,32" />
-		<eLabel backgroundColor="grey" position="230,294" size="770,2" zPosition="0" />
-		<widget font="Regular;20" name="ecminfo" position="230,310" size="764,307" />
-		<ePixmap pixmap="MetrixHD/buttons/key_red.png" position="212,633" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD/buttons/key_green.png" position="416,633" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD/buttons/key_yellow.png" position="620,633" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD/buttons/key_blue.png" position="824,633" size="30,40" alphatest="blend" />
-		<widget name="key_red" position="252,633" size="160,26" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="layer-a-background" transparent="1" />
-		<widget name="key_green" position="456,633" size="160,26" zPosition="1" font="SetrixHD;22" halign="left" backgroundColor="layer-a-background" transparent="1" />
-		<widget name="key_yellow" position="660,633" size="160,26" zPosition="1" font="SetrixHD;22" halign="left" backgroundColor="layer-a-background" transparent="1" />
-		<widget name="key_blue" position="864,633" size="160,26" zPosition="1" font="SetrixHD;22" halign="left" backgroundColor="layer-a-background" transparent="1" />
-	</screen>
 	<screen name="ShowSoftcamPackages" position="0,0" size="1280,720" title="Install Softcams" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel position="200,25" zPosition="-10" size="831,650" backgroundColor="layer-a-background" />
 		<widget source="global.CurrentTime" render="Label" position="863,28" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="layer-a-background" transparent="1">

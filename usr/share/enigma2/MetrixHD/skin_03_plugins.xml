@@ -616,7 +616,7 @@
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_mainmenu_pluginhider.png" transparent="1" alphatest="blend" />
 	</screen>
 	<!-- PluginHider -->
-	<!-- openATVSupportChannel -->
+	<!-- openLDSupportChannel -->
 	<screen name="supportchannel_YTChannel" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="title" position="70,47" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="1" />
 		<widget name="name" position="825,85" size="380,70" foregroundColor="#00e5b243" backgroundColor="layer-b-background" transparent="1" font="SetrixHD;24" valign="center" halign="center" zPosition="0" />
@@ -644,7 +644,7 @@
 		<panel name="__e-buttons_template1" />
 		<widget name="coverArt" backgroundColor="layer-b-background" position="880,185" size="270,200" zPosition="2" transparent="1" alphatest="blend" />
 	</screen>
-	<!-- openATVSupportChannel -->
+	<!-- openLDSupportChannel -->
 	<!-- Fancontrol -->
 	<screen name="FanSetupScreen" title="Fan Control" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<!--widget source="Title" render="Label" position="70,47" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" /-->

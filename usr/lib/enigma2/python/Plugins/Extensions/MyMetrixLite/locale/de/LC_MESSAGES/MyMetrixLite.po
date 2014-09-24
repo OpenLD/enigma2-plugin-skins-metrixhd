@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MyMetrixLite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-20 17:49+0100\n"
-"PO-Revision-Date: 2014-03-30 16:03+0100\n"
+"POT-Creation-Date: 2014-09-21 15:47+0200\n"
+"PO-Revision-Date: 2014-09-21 21:00+0100\n"
 "Last-Translator: mike99 <mike99@gmx.net>\n"
 "Language-Team: mike99\n"
 "Language: de\n"
@@ -18,131 +18,228 @@ msgstr ""
 "X-Generator: Poedit 1.5.7\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: ColorsSettingsView.py:62 MainSettingsView.py:111
+#: ColorsSettingsView.py:62 MainSettingsView.py:116
 msgid "Color settings"
 msgstr "Farb - Einstellungen"
 
-#: ColorsSettingsView.py:65 MainSettingsView.py:87 OtherSettingsView.py:60
+#: ColorsSettingsView.py:65 MainSettingsView.py:88 OtherSettingsView.py:63
 #: WeatherSettingsView.py:64
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: ColorsSettingsView.py:68 OtherSettingsView.py:63 WeatherSettingsView.py:67
+#: ColorsSettingsView.py:68 OtherSettingsView.py:66 WeatherSettingsView.py:67
 msgid "Save"
 msgstr "Speichern"
 
-#: ColorsSettingsView.py:71
+#: ColorsSettingsView.py:71 OtherSettingsView.py:69
 msgid "Defaults"
 msgstr "Standard"
 
 #: ColorsSettingsView.py:76
+#, fuzzy
+msgid ""
+"Channelselection  "
+"-----------------------------------------------------------------------------------"
+msgstr ""
+"Kanalliste  "
+"-----------------------------------------------------------------------------------------"
+
+#: ColorsSettingsView.py:77
+msgid "    Service"
+msgstr "    Sendername"
+
+#: ColorsSettingsView.py:78 ColorsSettingsView.py:81 ColorsSettingsView.py:106
+#: ColorsSettingsView.py:122 ColorsSettingsView.py:134
+#: ColorsSettingsView.py:136 ColorsSettingsView.py:138
+msgid "        Font color"
+msgstr "        Schrift-Farbe"
+
+#: ColorsSettingsView.py:79 ColorsSettingsView.py:82
+msgid "        Font color selected"
+msgstr "        Schrift-Farbe ausgewählt"
+
+#: ColorsSettingsView.py:80
+msgid "    Service Description"
+msgstr "    Sendungsbeschreibung"
+
+# ColorsSettingsView.py
+#: ColorsSettingsView.py:83
+msgid ""
+"Text Windowtitle  "
+"------------------------------------------------------------------------------------"
+msgstr ""
+"Text Fenster-Titel  "
+"------------------------------------------------------------------------------------"
+
+#: ColorsSettingsView.py:84 ColorsSettingsView.py:91
+msgid "    Foreground"
+msgstr "    Vordergrund"
+
+#: ColorsSettingsView.py:85 ColorsSettingsView.py:88 ColorsSettingsView.py:92
+#: ColorsSettingsView.py:95 ColorsSettingsView.py:99 ColorsSettingsView.py:108
+#: ColorsSettingsView.py:115 ColorsSettingsView.py:124
+#: ColorsSettingsView.py:132 ColorsSettingsView.py:141
+#: ColorsSettingsView.py:144 ColorsSettingsView.py:147
+#: ColorsSettingsView.py:150 ColorsSettingsView.py:153
+#: ColorsSettingsView.py:156
+msgid "        Color"
+msgstr "        Farbe"
+
+#: ColorsSettingsView.py:86 ColorsSettingsView.py:89 ColorsSettingsView.py:93
+#: ColorsSettingsView.py:96 ColorsSettingsView.py:100
+#: ColorsSettingsView.py:109 ColorsSettingsView.py:116
+#: ColorsSettingsView.py:125 ColorsSettingsView.py:133
+#: ColorsSettingsView.py:142 ColorsSettingsView.py:145
+#: ColorsSettingsView.py:148 ColorsSettingsView.py:151
+#: ColorsSettingsView.py:154 ColorsSettingsView.py:157
+msgid "        Transparency"
+msgstr "        Transparenz"
+
+#: ColorsSettingsView.py:87 ColorsSettingsView.py:94 ColorsSettingsView.py:98
+#: ColorsSettingsView.py:114
+msgid "    Background"
+msgstr "    Hintergrund"
+
+#: ColorsSettingsView.py:90
+#, fuzzy
 msgid ""
 "Text in background  "
-"-----------------------------------------------------------------------------------"
+"----------------------------------------------------------------------------------"
 msgstr ""
 "Text im Hintergrund  "
 "---------------------------------------------------------------------------------"
 
-#: ColorsSettingsView.py:77 ColorsSettingsView.py:83 ColorsSettingsView.py:99
+#: ColorsSettingsView.py:97
+#, fuzzy
+msgid ""
+"Layer A (main layer)  "
+"--------------------------------------------------------------------------------"
+msgstr ""
+"Kanalliste  "
+"---------------------------------------------------------------------------"
+
+#: ColorsSettingsView.py:101 ColorsSettingsView.py:117
 msgid "    Font color"
 msgstr "    Schrift-Farbe"
 
-#: ColorsSettingsView.py:78
-msgid "    Font color transparency"
-msgstr "    Schrift-Farbe Transparenz"
-
-#: ColorsSettingsView.py:79
-msgid ""
-"Layer A (main layer)  "
-"-----------------------------------------------------------------------------------"
-msgstr ""
-
-#: ColorsSettingsView.py:80 ColorsSettingsView.py:96
-msgid "    Background"
-msgstr "    Hintergrund"
-
-#: ColorsSettingsView.py:81 ColorsSettingsView.py:90 ColorsSettingsView.py:97
-#: ColorsSettingsView.py:106
-msgid "        Color"
-msgstr "        Farbe"
-
-#: ColorsSettingsView.py:82 ColorsSettingsView.py:91 ColorsSettingsView.py:98
-#: ColorsSettingsView.py:107
-msgid "        Transparency"
-msgstr "        Transparenz"
-
-#: ColorsSettingsView.py:84 ColorsSettingsView.py:100
+#: ColorsSettingsView.py:102 ColorsSettingsView.py:118
 msgid "    Selection bar"
-msgstr ""
+msgstr "    Auswahlleiste"
 
-#: ColorsSettingsView.py:85 ColorsSettingsView.py:101
+#: ColorsSettingsView.py:103 ColorsSettingsView.py:119
+#: ColorsSettingsView.py:131
 msgid "        Background"
 msgstr "        Hintergrund"
 
-#: ColorsSettingsView.py:86 ColorsSettingsView.py:102
+#: ColorsSettingsView.py:104 ColorsSettingsView.py:120
 msgid "            Color"
 msgstr "            Farbe"
 
-#: ColorsSettingsView.py:87 ColorsSettingsView.py:103
+#: ColorsSettingsView.py:105 ColorsSettingsView.py:121
 msgid "            Transparency"
 msgstr "            Transparenz"
 
-#: ColorsSettingsView.py:88 ColorsSettingsView.py:104
-msgid "        Font color"
-msgstr "    Schrift-Farbe"
-
-#: ColorsSettingsView.py:89 ColorsSettingsView.py:105
+#: ColorsSettingsView.py:107 ColorsSettingsView.py:123
 msgid "    Progress bar"
-msgstr ""
+msgstr "    Fortschrittsbalken"
 
-#: ColorsSettingsView.py:92 ColorsSettingsView.py:108
+#: ColorsSettingsView.py:110 ColorsSettingsView.py:126
 msgid "    Accent colors"
-msgstr ""
+msgstr "    Akzentfarben"
 
-#: ColorsSettingsView.py:93 ColorsSettingsView.py:109
+#: ColorsSettingsView.py:111 ColorsSettingsView.py:127
 msgid "        Color 1"
 msgstr "        Farbe 1"
 
-#: ColorsSettingsView.py:94 ColorsSettingsView.py:110
+#: ColorsSettingsView.py:112 ColorsSettingsView.py:128
 msgid "        Color 2"
 msgstr "        Farbe 2"
 
-#: ColorsSettingsView.py:95
+#: ColorsSettingsView.py:113
+#, fuzzy
 msgid ""
 "Layer B (secondary layer)  "
-"-----------------------------------------------------------------------------------"
+"---------------------------------------------------------------------------"
 msgstr ""
+"Kanalliste  "
+"---------------------------------------------------------------------------"
 
-#: ColorsSettingsView.py:202 OtherSettingsView.py:130
-#: WeatherSettingsView.py:134
+#: ColorsSettingsView.py:129
+#, fuzzy
+msgid ""
+"Graphical EPG  "
+"---------------------------------------------------------------------------------------"
+msgstr ""
+"Kanalliste  "
+"-----------------------------------------------------------------------------------------"
+
+#: ColorsSettingsView.py:130
+#, fuzzy
+msgid "  Event Description"
+msgstr "  Sendungsbeschreibung"
+
+#: ColorsSettingsView.py:135
+msgid "  Event List"
+msgstr "  Sendungsliste"
+
+#: ColorsSettingsView.py:137
+msgid "  Time Line"
+msgstr "  Zeitleiste"
+
+#: ColorsSettingsView.py:140
+msgid "     upper left Corner Layer"
+msgstr "     Feld oben links"
+
+#: ColorsSettingsView.py:143
+msgid "    lower left Corner Layer"
+msgstr "    Feld unten links"
+
+#: ColorsSettingsView.py:146
+msgid "    upper right Corner Layer"
+msgstr "    Feld oben rechts"
+
+#: ColorsSettingsView.py:149
+msgid "    lower right Corner Layer"
+msgstr "    Feld unten rechts"
+
+#: ColorsSettingsView.py:152
+msgid "    optional horizontal Layer"
+msgstr "    Zusätzliches horizontale Feld"
+
+#: ColorsSettingsView.py:155
+msgid "    optional vertical Layer"
+msgstr "    Zusätzliches vertikale Feld"
+
+#: ColorsSettingsView.py:279 OtherSettingsView.py:239
+#: WeatherSettingsView.py:135
 msgid "Information"
 msgstr ""
 
-#: MainSettingsView.py:84
+#: MainSettingsView.py:85
 msgid "MyMetrixLite"
 msgstr "MyMetrixLite"
 
-#: MainSettingsView.py:90
+#: MainSettingsView.py:91
 msgid "Apply changes"
 msgstr "Änderungen anwenden"
 
-#: MainSettingsView.py:112 WeatherSettingsView.py:58
+#: MainSettingsView.py:117 WeatherSettingsView.py:58
 msgid "Weather settings"
 msgstr "Wetter - Einstellungen"
 
-#: MainSettingsView.py:113 OtherSettingsView.py:57
+#: MainSettingsView.py:118 OtherSettingsView.py:60
 msgid "Other settings"
 msgstr "Sonstige - Einstellungen"
 
-#: MainSettingsView.py:172
+#: MainSettingsView.py:177
 msgid "Do you really want to reboot now?"
 msgstr "Wollen Sie jetzt neu starten?"
 
-#: MainSettingsView.py:175
+#: MainSettingsView.py:180
 msgid "Restart GUI"
 msgstr "GUI neu starten"
 
-#: MainSettingsView.py:319
+#: MainSettingsView.py:564
 msgid ""
 "GUI needs a restart to apply a new skin.\n"
 "Do you want to Restart the GUI now?"
@@ -150,47 +247,240 @@ msgstr ""
 "Ein Neustart ist erforderlich, um die Einstellungen zu übernehmen.\n"
 "Wollen Sie die GUI jetzt neu starten?"
 
-#: MainSettingsView.py:322
+#: MainSettingsView.py:569
 msgid "Error creating Skin!"
 msgstr "Fehler beim Erstellen vom Skin!"
 
-#: OtherSettingsView.py:95
+#: OtherSettingsView.py:137
+#, fuzzy
+msgid ""
+"Skin Design   "
+"----------------------------------------------------------------------------------------------"
+msgstr ""
+"Skin ansicht   "
+"---------------------------------------------------------------------------------------------"
+
+# OtherSettingsView.py
+#: OtherSettingsView.py:138
+msgid "Show CPU-Load"
+msgstr "CPU-Last anzeigen"
+
+# OtherSettingsView.py
+#: OtherSettingsView.py:140
+msgid "Show CPU-Temp"
+msgstr "CPU-Temperatur anzeigen"
+
+# OtherSettingsView.py
+#: OtherSettingsView.py:142
+msgid "Show SYS-Temp"
+msgstr "System-Temperatur anzeigen"
+
+#: OtherSettingsView.py:143
+#, fuzzy
+msgid ""
+"InfoBar/SecondInfobar/MoviePlayer   "
+"------------------------------------------------------------------"
+msgstr ""
+"Kanalliste   "
+"--------------------------------------------------------------------"
+
+#
+#: OtherSettingsView.py:144
+msgid "ChannelName/Number FontSize"
+msgstr "Schriftgröße Kanal-Name/Nummer "
+
+#: OtherSettingsView.py:145
+#, fuzzy
 msgid ""
 "InfoBar/SecondInfobar   "
-"-----------------------------------------------------------------------------------"
+"------------------------------------------------------------------------------"
 msgstr ""
+"Kanalliste   "
+"--------------------------------------------------------------------"
 
-#: OtherSettingsView.py:96
-msgid "Show ServiceIcons"
-msgstr "Zeige Service-Icons"
-
-#: OtherSettingsView.py:97
-msgid "Show ChannelName"
-msgstr "Zeige Kanal-Name"
-
-#: OtherSettingsView.py:98
-msgid "Show Resolution"
-msgstr "Zeige Auflösung"
-
-#: OtherSettingsView.py:99
+#: OtherSettingsView.py:146 OtherSettingsView.py:163
 msgid "Show Clock"
-msgstr "Zeige Uhrzeit"
+msgstr "Uhrzeit anzeigen"
 
-#: OtherSettingsView.py:100
+#: OtherSettingsView.py:147
+msgid "Show ChannelName"
+msgstr "Kanal-Name anzeigen"
+
+#
+#: OtherSettingsView.py:148
+msgid "Show ChannelNumber"
+msgstr "Kanal-Nummer anzeigen"
+
+#: OtherSettingsView.py:149
+msgid "Show ServiceIcons"
+msgstr "Service-Icons anzeigen"
+
+# OtherSettingsView.py
+#: OtherSettingsView.py:150
+msgid "Show Record-State"
+msgstr "Aufnahmestatus anzeigen"
+
+# OtherSettingsView.py
+#: OtherSettingsView.py:151
+msgid "Show Screen-Resolution"
+msgstr "Bildauflösung anzeigen"
+
+# OtherSettingsView.py
+#: OtherSettingsView.py:152
+msgid "Show Orbital-Position"
+msgstr "Sateliten-Position anzeigen"
+
+# OtherSettingsView.py
+#: OtherSettingsView.py:153
+msgid "Show SNR-Info"
+msgstr "Informationen anzeigen"
+
+# OtherSettingsView.py
+#: OtherSettingsView.py:154
+msgid "Show Tuner-Info"
+msgstr "Tuner-Informationen anzeigen"
+
+# OtherSettingsView.py
+#: OtherSettingsView.py:156
+msgid "Set number of tuner automatically"
+msgstr "Anzahl der Tuner automatisch einstellen"
+
+# OtherSettingsView.py
+#: OtherSettingsView.py:158
+msgid "Set number of tuner manually"
+msgstr "Anzahl der Tuner manuell einstellen"
+
+# OtherSettingsView.py
+#: OtherSettingsView.py:159 OtherSettingsView.py:165
+msgid "Show STB-Info"
+msgstr "Receiver-Informationen anzeigen"
+
+# ColorsSettingsView.py
+#: OtherSettingsView.py:160
+#, fuzzy
+msgid ""
+"InfoBar   "
+"-------------------------------------------------------------------------------------------------"
+msgstr ""
+"Text Fenster-Titel  "
+"------------------------------------------------------------------------------------"
+
+# OtherSettingsView.py
+#: OtherSettingsView.py:161
+msgid "Show Extended-Info"
+msgstr "Erweiterte-Informationen anzeigen"
+
+# ColorsSettingsView.py
+#: OtherSettingsView.py:162
+#, fuzzy
+msgid ""
+"EMC/MoviePlayer   "
+"------------------------------------------------------------------------------------"
+msgstr ""
+"Text Fenster-Titel  "
+"------------------------------------------------------------------------------------"
+
+# OtherSettingsView.py
+#: OtherSettingsView.py:164
+msgid "Show MovieName"
+msgstr "Film-Name anzeigen"
+
+# ColorsSettingsView.py
+#: OtherSettingsView.py:166
+#, fuzzy
+msgid ""
+"EMC   "
+"------------------------------------------------------------------------------------------------------"
+msgstr ""
+"Text Fenster-Titel  "
+"------------------------------------------------------------------------------------"
+
+# OtherSettingsView.py
+#: OtherSettingsView.py:167
+msgid "Show Cover in Media Center"
+msgstr "Cover im Media-Center anzeigen"
+
+# OtherSettingsView.py
+#: OtherSettingsView.py:168
+msgid "Show Cover in Movie Selection"
+msgstr "Cover in der Filmliste anzeigen"
+
+#: OtherSettingsView.py:170
+#, fuzzy
+msgid "Show Movie Description"
+msgstr "    Sendungsbeschreibung"
+
+#: OtherSettingsView.py:171
+#, fuzzy
 msgid ""
 "ChannelSelection   "
 "-----------------------------------------------------------------------------------"
 msgstr ""
-"Kanalliste   "
-"------------------------------------------------------------------------------"
+"Kanalliste  "
+"-----------------------------------------------------------------------------------------"
 
-#: OtherSettingsView.py:101
+#: OtherSettingsView.py:172
 msgid "Channel selection style"
 msgstr "Kanalliste Stil"
 
+#: OtherSettingsView.py:174
+msgid "Chose Skin Design"
+msgstr "Skin-Ansicht wählen"
+
+#: OtherSettingsView.py:175
+msgid "Show Space between Layer A and B"
+msgstr "Lücke zwischen Layer A und Layer B anzeigen"
+
+#: OtherSettingsView.py:177
+msgid "Show upper left Corner Layer"
+msgstr "Feld oben links anzeigen"
+
+#: OtherSettingsView.py:179 OtherSettingsView.py:184 OtherSettingsView.py:189
+#: OtherSettingsView.py:194 OtherSettingsView.py:199 OtherSettingsView.py:206
+msgid "   width"
+msgstr "   Breite"
+
+#: OtherSettingsView.py:180 OtherSettingsView.py:185 OtherSettingsView.py:190
+#: OtherSettingsView.py:195 OtherSettingsView.py:200 OtherSettingsView.py:207
+msgid "   height"
+msgstr "   Höhe"
+
+#: OtherSettingsView.py:181 OtherSettingsView.py:186 OtherSettingsView.py:191
+#: OtherSettingsView.py:196 OtherSettingsView.py:203 OtherSettingsView.py:210
+msgid "   pos z"
+msgstr "   Position z (Tiefe)"
+
+#: OtherSettingsView.py:182
+msgid "Show lower left Corner Layer"
+msgstr "Feld unten links anzeigen"
+
+#: OtherSettingsView.py:187
+msgid "Show upper right Corner Layer"
+msgstr "Feld oben rechtes anzeigen"
+
+#: OtherSettingsView.py:192
+msgid "Show lower right Corner Layer"
+msgstr "Feld unten rechts anzeigen"
+
+#: OtherSettingsView.py:197
+msgid "Show optional horizontal Layer"
+msgstr "Zusätzlich horizontales Feld anzeigen"
+
+#: OtherSettingsView.py:201 OtherSettingsView.py:208
+msgid "   pos x"
+msgstr "   Position x"
+
+#: OtherSettingsView.py:202 OtherSettingsView.py:209
+msgid "   pos y"
+msgstr "   Position y"
+
+#: OtherSettingsView.py:204
+msgid "Show optional vertical Layer"
+msgstr "Zusätzlich vertikales Feld anzeigen"
+
 #: plugin.py:31
-msgid "openLD configuration tool for MetrixHD"
-msgstr "openLD Konfigurationstool für MetrixHD"
+msgid "openATV configuration tool for MetrixHD"
+msgstr "openATV Konfigurationstool für MetrixHD"
 
 #: WeatherSettingsView.py:61
 msgid "Get your local MetrixWeather ID from www.mymetrix.de"
@@ -200,250 +490,347 @@ msgstr "Hier finden Sie die Wetter-ID für Ihren Standort: www.mymetrix.de"
 msgid "Enabled"
 msgstr "Wetter anzeigen"
 
+# OtherSettingsView.py
 #: WeatherSettingsView.py:103
+#, fuzzy
+msgid "Show in MoviePlayer"
+msgstr "Film-Name anzeigen"
+
+#: WeatherSettingsView.py:104
 msgid "MetrixWeather ID"
 msgstr "Metrix Wetter-ID"
 
-#: WeatherSettingsView.py:104
+#: WeatherSettingsView.py:105
 msgid "Unit"
 msgstr "Einheit"
 
-#: WeatherSettingsView.py:105
+#: WeatherSettingsView.py:106
 msgid "Refresh Interval (min)"
 msgstr "Aktualisierungs-Interval (min)"
 
-#: __init__.py:75
+#: __init__.py:83
 msgid "Amber"
 msgstr ""
 
-#: __init__.py:76
+#: __init__.py:84
 msgid "Brown"
-msgstr ""
+msgstr "Braun"
 
-#: __init__.py:77
+#: __init__.py:85
 msgid "Cobalt"
 msgstr ""
 
-#: __init__.py:78
+#: __init__.py:86
 msgid "Crimson"
 msgstr ""
 
-#: __init__.py:79
+#: __init__.py:87
 msgid "Cyan"
 msgstr ""
 
-#: __init__.py:80
+#: __init__.py:88
 msgid "Darkblue"
 msgstr ""
 
-#: __init__.py:81
+#: __init__.py:89
 msgid "Darkgrey"
 msgstr ""
 
-#: __init__.py:82
+#: __init__.py:90
 msgid "Magenta"
 msgstr ""
 
-#: __init__.py:83
+#: __init__.py:91
 msgid "Lime"
 msgstr ""
 
-#: __init__.py:84
+#: __init__.py:92
 msgid "Indigo"
 msgstr ""
 
-#: __init__.py:85
+#: __init__.py:93
 msgid "Green"
-msgstr ""
+msgstr "Grün"
 
-#: __init__.py:86
+#: __init__.py:94
 msgid "Emerald"
 msgstr ""
 
-#: __init__.py:87
+#: __init__.py:95
 msgid "Mauve"
 msgstr ""
 
-#: __init__.py:88
+#: __init__.py:96
 msgid "Mediumblue"
 msgstr ""
 
-#: __init__.py:89
+#: __init__.py:97
 msgid "Navy"
 msgstr ""
 
-#: __init__.py:90
+#: __init__.py:98
 msgid "Olive"
 msgstr ""
 
-#: __init__.py:91
+#: __init__.py:99
 msgid "Orange"
 msgstr ""
 
-#: __init__.py:92
+#: __init__.py:100
 msgid "Pink"
 msgstr ""
 
-#: __init__.py:93
+#: __init__.py:101
 msgid "Red"
-msgstr ""
+msgstr "Rot"
 
-#: __init__.py:94
+#: __init__.py:102
 msgid "Royal Blue"
 msgstr ""
 
-#: __init__.py:95
+#: __init__.py:103
 msgid "Sienna"
 msgstr ""
 
-#: __init__.py:96
+#: __init__.py:104
 msgid "Steel"
 msgstr ""
 
-#: __init__.py:97
+#: __init__.py:105
 msgid "Teal"
 msgstr ""
 
-#: __init__.py:98
+#: __init__.py:106
 msgid "Violet"
 msgstr ""
 
-#: __init__.py:99
+#: __init__.py:107
 msgid "Yellow"
-msgstr ""
+msgstr "Gelb"
 
-#: __init__.py:100
+#: __init__.py:108
 msgid "Black"
-msgstr ""
+msgstr "Schwarz"
 
-#: __init__.py:101
+#: __init__.py:109
 msgid "Greyscale 1"
 msgstr "Grauton 1"
 
-#: __init__.py:102
+#: __init__.py:110
 msgid "Greyscale 2"
 msgstr "Grauton 2"
 
-#: __init__.py:103
+#: __init__.py:111
 msgid "Greyscale 3"
 msgstr "Grauton 3"
 
-#: __init__.py:104
+#: __init__.py:112
 msgid "Greyscale 4"
 msgstr "Grauton 4"
 
-#: __init__.py:105
+#: __init__.py:113
 msgid "Greyscale 5"
 msgstr "Grauton 5"
 
-#: __init__.py:106
+#: __init__.py:114
 msgid "Greyscale 6"
 msgstr "Grauton 6"
 
-#: __init__.py:107
+#: __init__.py:115
 msgid "Greyscale 7"
 msgstr "Grauton 7"
 
-#: __init__.py:108
+#: __init__.py:116
 msgid "Greyscale 8"
 msgstr "Grauton 8"
 
-#: __init__.py:109
+#: __init__.py:117
 msgid "Greyscale 9"
 msgstr "Grauton 9"
 
-#: __init__.py:110
+#: __init__.py:118
 msgid "Greyscale 10"
 msgstr "Grauton 10"
 
-#: __init__.py:111
+#: __init__.py:119
 msgid "Greyscale 11"
 msgstr "Grauton 11"
 
-#: __init__.py:112
+#: __init__.py:120
 msgid "Greyscale 12"
 msgstr "Grauton 12"
 
-#: __init__.py:113
+#: __init__.py:121
 msgid "Greyscale 13"
 msgstr "Grauton 13"
 
-#: __init__.py:114
+#: __init__.py:122
 msgid "White"
-msgstr ""
+msgstr "Weiß"
 
-#: __init__.py:118
+#: __init__.py:126
 msgid "0%"
 msgstr ""
 
-#: __init__.py:119
+#: __init__.py:127
 msgid "5%"
 msgstr ""
 
-#: __init__.py:120
+#: __init__.py:128
 msgid "10%"
 msgstr ""
 
-#: __init__.py:121
+#: __init__.py:129
 msgid "15%"
 msgstr ""
 
-#: __init__.py:122
+#: __init__.py:130
 msgid "20%"
 msgstr ""
 
-#: __init__.py:123
+#: __init__.py:131
 msgid "25%"
 msgstr ""
 
-#: __init__.py:124
+#: __init__.py:132
 msgid "30%"
 msgstr ""
 
-#: __init__.py:125
+#: __init__.py:133
 msgid "35%"
 msgstr ""
 
-#: __init__.py:126
+#: __init__.py:134
 msgid "40%"
 msgstr ""
 
-#: __init__.py:127
+#: __init__.py:135
 msgid "45%"
 msgstr ""
 
-#: __init__.py:128
+#: __init__.py:136
 msgid "50%"
 msgstr ""
 
-#: __init__.py:171
+#: __init__.py:137
+msgid "55%"
+msgstr ""
+
+#: __init__.py:138
+msgid "60%"
+msgstr ""
+
+#: __init__.py:139
+msgid "65%"
+msgstr ""
+
+#: __init__.py:140
+msgid "70%"
+msgstr ""
+
+#: __init__.py:141
+msgid "75%"
+msgstr ""
+
+#: __init__.py:142
+msgid "80%"
+msgstr ""
+
+#: __init__.py:143
+msgid "85%"
+msgstr ""
+
+#: __init__.py:144
+msgid "90%"
+msgstr ""
+
+#: __init__.py:145
+msgid "95%"
+msgstr ""
+
+#: __init__.py:146
+msgid "100%"
+msgstr ""
+
+#: __init__.py:220
 msgid "Celsius"
 msgstr ""
 
-#: __init__.py:172
+#: __init__.py:221
 msgid "Fahrenheit"
 msgstr ""
 
-#: __init__.py:197
+#: __init__.py:246
 msgid "Focus left, no picon, 5 next Events"
 msgstr "Links, kein Picon, 5 nächste Events"
 
-#: __init__.py:198
+#: __init__.py:247
 msgid "Focus left, big picon, 1 next Events"
 msgstr "Links, zeige Picon, 1 nächstes Event"
 
-#: __init__.py:199
+#: __init__.py:248
 msgid "Focus right, big picon, 1 next Events"
 msgstr "Rechts, zeige Picon, 1 nächstes Event"
 
-#: __init__.py:200
+#: __init__.py:249
 msgid "Focus right, no picon, 5 next Events"
 msgstr "Rechts, kein Picon, 5 nächste Events"
 
-#
-msgid "Show ChannelNumber"
-msgstr "Zeige Kanal-Nummer"
+#: __init__.py:253
+msgid "80"
+msgstr ""
 
-#
-msgid "ChannelName/Number FontSize"
-msgstr "Kanal Name/Nummer Schriftgröße"
+#: __init__.py:254
+msgid "70"
+msgstr ""
+
+#: __init__.py:255
+msgid "60"
+msgstr ""
+
+#: __init__.py:256
+msgid "50"
+msgstr ""
+
+#: __init__.py:257
+msgid "40"
+msgstr ""
+
+#: __init__.py:261 __init__.py:295 __init__.py:296
+msgid "No"
+msgstr "Nein"
+
+#: __init__.py:262
+msgid "in Screens"
+msgstr ""
+
+#: __init__.py:263
+msgid "in Menus"
+msgstr ""
+
+#: __init__.py:264
+msgid "in Menus and Screens"
+msgstr "in Menus und Screens"
+
+#: __init__.py:295 __init__.py:296
+msgid "Small"
+msgstr "Klein"
+
+#: __init__.py:295 __init__.py:296
+msgid "Large"
+msgstr "Groß"
+
+#: __init__.py:299
+msgid "Standard"
+msgstr ""
+
+#: __init__.py:299
+msgid "Layer A and B same height, Clock in Layer A"
+msgstr "Layer A und B gleiche Höhe, Uhr in Layer A"
+
+#: __init__.py:299
+msgid "Layer A and B same height, Clock in Layer B"
+msgstr "Layer A and B gleiche Höhe, Uhr in Layer B"
+
+#~ msgid "Show Resolution"
+#~ msgstr "Auflösung anzeigen"

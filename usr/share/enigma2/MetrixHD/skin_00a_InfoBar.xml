@@ -2,16 +2,17 @@
 	<screen name="InfoBar" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1280,723" title="InfoBar">
 		<panel name="INFOBARKEYSNONVISIBLE" />
 		<panel name="INFOBARSTYLEMODERN" />
-		<panel name="INFOBARCLOCKWIDGET" />
+		<panel name="CLOCKWIDGET" />
 		<panel name="INFOBARWEATHERWIDGET" />
-		<panel name="INFOBARCHANNELNAME" />
+		<panel name="CHANNELNAME" />
 		<panel name="INFOBARSERVICEINFO" />
 		<panel name="INFOBARRECORDSTATE" />
 		<panel name="INFOBARRESOLUTION" />
 		<panel name="INFOBARORBITALPOSITION" />
 		<panel name="INFOBARSNR" />
 		<panel name="INFOBARTUNERINFO-2" />
-		<!-- <panel name="INFOBAREXTENDEDINFO" /> */ -->
+		<!--panel name="STBINFO" /-->
+		<!--panel name="INFOBAREXTENDEDINFO" /-->
 		<!-- <panel name="GRIDLINES" /> */ -->
 	</screen>
 </skin>

@@ -39,7 +39,7 @@ class ColorsSettingsView(ConfigListScreen, Screen):
  <screen name="MyMetrixLiteColorsView" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel name="new eLabel" position="40,40" zPosition="-2" size="1200,640" backgroundColor="#00000000" transparent="0" />
     <widget source="titleText" position="60,55" size="590,50" render="Label" font="Regular; 40" foregroundColor="00ffffff" backgroundColor="#00000000" valign="center" transparent="1" />
-    <widget name="config" position="61,124" size="590,490" backgroundColor="#00000000" foregroundColor="#00ffffff" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="config" position="61,124" size="590,480" backgroundColor="#00000000" foregroundColor="#00ffffff" scrollbarMode="showOnDemand" transparent="1" />
     <widget source="cancelBtn" position="70,640" size="160,30" render="Label" font="Regular; 20" foregroundColor="00ffffff" backgroundColor="#00000000" halign="left" transparent="1" />
     <widget source="saveBtn" position="257,640" size="160,30" render="Label" font="Regular; 20" foregroundColor="00ffffff" backgroundColor="#00000000" halign="left" transparent="1" />
     <widget source="defaultsBtn" position="445,640" size="160,30" render="Label" font="Regular; 20" foregroundColor="00ffffff" backgroundColor="#00000000" halign="left" transparent="1" />
@@ -73,10 +73,28 @@ class ColorsSettingsView(ConfigListScreen, Screen):
         initColorsConfig()
 
         list = []
-        list.append(getConfigListEntry(_("Text in background  -----------------------------------------------------------------------------------"), ))
-        list.append(getConfigListEntry(_("    Font color"), config.plugins.MyMetrixLiteColors.backgroundtext))
-        list.append(getConfigListEntry(_("    Font color transparency"), config.plugins.MyMetrixLiteColors.backgroundtexttransparency))
-        list.append(getConfigListEntry(_("Layer A (main layer)  -----------------------------------------------------------------------------------"), ))
+        list.append(getConfigListEntry(_("Channelselection  -----------------------------------------------------------------------------------"), ))
+        list.append(getConfigListEntry(_("    Service"), ))
+        list.append(getConfigListEntry(_("        Font color"), config.plugins.MyMetrixLiteColors.channelselectionservice))
+        list.append(getConfigListEntry(_("        Font color selected"), config.plugins.MyMetrixLiteColors.channelselectionserviceselected))
+        list.append(getConfigListEntry(_("    Service Description"), ))
+        list.append(getConfigListEntry(_("        Font color"), config.plugins.MyMetrixLiteColors.channelselectionservicedescription))
+        list.append(getConfigListEntry(_("        Font color selected"), config.plugins.MyMetrixLiteColors.channelselectionservicedescriptionselected))
+        list.append(getConfigListEntry(_("Text Windowtitle  ------------------------------------------------------------------------------------"), ))
+        list.append(getConfigListEntry(_("    Foreground"), ))
+        list.append(getConfigListEntry(_("        Color"), config.plugins.MyMetrixLiteColors.windowtitletext))
+        list.append(getConfigListEntry(_("        Transparency"), config.plugins.MyMetrixLiteColors.windowtitletexttransparency))
+        list.append(getConfigListEntry(_("    Background"), ))
+        list.append(getConfigListEntry(_("        Color"), config.plugins.MyMetrixLiteColors.windowtitletextback))
+        list.append(getConfigListEntry(_("        Transparency"), config.plugins.MyMetrixLiteColors.windowtitletextbacktransparency))
+        list.append(getConfigListEntry(_("Text in background  ----------------------------------------------------------------------------------"), ))
+        list.append(getConfigListEntry(_("    Foreground"), ))
+        list.append(getConfigListEntry(_("        Color"), config.plugins.MyMetrixLiteColors.backgroundtext))
+        list.append(getConfigListEntry(_("        Transparency"), config.plugins.MyMetrixLiteColors.backgroundtexttransparency))
+        list.append(getConfigListEntry(_("    Background"), ))
+        list.append(getConfigListEntry(_("        Color"), config.plugins.MyMetrixLiteColors.backgroundtextback))
+        list.append(getConfigListEntry(_("        Transparency"), config.plugins.MyMetrixLiteColors.backgroundtextbacktransparency))
+        list.append(getConfigListEntry(_("Layer A (main layer)  --------------------------------------------------------------------------------"), ))
         list.append(getConfigListEntry(_("    Background"), ))
         list.append(getConfigListEntry(_("        Color"), config.plugins.MyMetrixLiteColors.layerabackground))
         list.append(getConfigListEntry(_("        Transparency"), config.plugins.MyMetrixLiteColors.layerabackgroundtransparency))
@@ -92,7 +110,7 @@ class ColorsSettingsView(ConfigListScreen, Screen):
         list.append(getConfigListEntry(_("    Accent colors"), ))
         list.append(getConfigListEntry(_("        Color 1"), config.plugins.MyMetrixLiteColors.layeraaccent1))
         list.append(getConfigListEntry(_("        Color 2"), config.plugins.MyMetrixLiteColors.layeraaccent2))
-        list.append(getConfigListEntry(_("Layer B (secondary layer)  -----------------------------------------------------------------------------------"), ))
+        list.append(getConfigListEntry(_("Layer B (secondary layer)  ---------------------------------------------------------------------------"), ))
         list.append(getConfigListEntry(_("    Background"), ))
         list.append(getConfigListEntry(_("        Color"), config.plugins.MyMetrixLiteColors.layerbbackground))
         list.append(getConfigListEntry(_("        Transparency"), config.plugins.MyMetrixLiteColors.layerbbackgroundtransparency))
@@ -108,6 +126,35 @@ class ColorsSettingsView(ConfigListScreen, Screen):
         list.append(getConfigListEntry(_("    Accent colors"), ))
         list.append(getConfigListEntry(_("        Color 1"), config.plugins.MyMetrixLiteColors.layerbaccent1))
         list.append(getConfigListEntry(_("        Color 2"), config.plugins.MyMetrixLiteColors.layerbaccent2))
+        list.append(getConfigListEntry(_("Graphical EPG  ---------------------------------------------------------------------------------------"), ))
+        list.append(getConfigListEntry(_("  Event Description"), ))
+        list.append(getConfigListEntry(_("        Background"), ))
+        list.append(getConfigListEntry(_("        Color"), config.plugins.MyMetrixLiteColors.epgeventdescriptionbackground))
+        list.append(getConfigListEntry(_("        Transparency"), config.plugins.MyMetrixLiteColors.epgeventdescriptionbackgroundtransparency))
+        list.append(getConfigListEntry(_("        Font color"), config.plugins.MyMetrixLiteColors.epgeventdescriptionforeground))
+        list.append(getConfigListEntry(_("  Event List"), ))
+        list.append(getConfigListEntry(_("        Font color"), config.plugins.MyMetrixLiteColors.epgeventforeground))
+        list.append(getConfigListEntry(_("  Time Line"), ))
+        list.append(getConfigListEntry(_("        Font color"), config.plugins.MyMetrixLiteColors.epgtimelineforeground))
+        list.append(getConfigListEntry(_("Skin Design   ---------------------------------------------------------------------------------------"), ))
+        list.append(getConfigListEntry(_("     upper left Corner Layer"), ))
+        list.append(getConfigListEntry(_("        Color"), config.plugins.MyMetrixLiteColors.upperleftcornerbackground))
+        list.append(getConfigListEntry(_("        Transparency"), config.plugins.MyMetrixLiteColors.upperleftcornertransparency))
+        list.append(getConfigListEntry(_("    lower left Corner Layer"), ))
+        list.append(getConfigListEntry(_("        Color"), config.plugins.MyMetrixLiteColors.lowerleftcornerbackground))
+        list.append(getConfigListEntry(_("        Transparency"), config.plugins.MyMetrixLiteColors.lowerleftcornertransparency))
+        list.append(getConfigListEntry(_("    upper right Corner Layer"), ))
+        list.append(getConfigListEntry(_("        Color"), config.plugins.MyMetrixLiteColors.upperrightcornerbackground))
+        list.append(getConfigListEntry(_("        Transparency"), config.plugins.MyMetrixLiteColors.upperrightcornertransparency))
+        list.append(getConfigListEntry(_("    lower right Corner Layer"), ))
+        list.append(getConfigListEntry(_("        Color"), config.plugins.MyMetrixLiteColors.lowerrightcornerbackground))
+        list.append(getConfigListEntry(_("        Transparency"), config.plugins.MyMetrixLiteColors.lowerrightcornertransparency))
+        list.append(getConfigListEntry(_("    optional horizontal Layer"), ))
+        list.append(getConfigListEntry(_("        Color"), config.plugins.MyMetrixLiteColors.optionallayerhorizontalbackground))
+        list.append(getConfigListEntry(_("        Transparency"), config.plugins.MyMetrixLiteColors.optionallayerhorizontaltransparency))
+        list.append(getConfigListEntry(_("    optional vertical Layer"), ))
+        list.append(getConfigListEntry(_("        Color"), config.plugins.MyMetrixLiteColors.optionallayerverticalbackground))
+        list.append(getConfigListEntry(_("        Transparency"), config.plugins.MyMetrixLiteColors.optionallayerverticaltransparency))
 
         ConfigListScreen.__init__(self, list)
 
@@ -168,8 +215,19 @@ class ColorsSettingsView(ConfigListScreen, Screen):
         self.ShowPicture()
 
     def defaults(self):
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.channelselectionservice)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.channelselectionserviceselected)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.channelselectionservicedescription)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.channelselectionservicedescriptionselected)
+
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.windowtitletext)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.windowtitletexttransparency)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.windowtitletextback)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.windowtitletextbacktransparency)
         self.setInputToDefault(config.plugins.MyMetrixLiteColors.backgroundtext)
         self.setInputToDefault(config.plugins.MyMetrixLiteColors.backgroundtexttransparency)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.backgroundtextback)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.backgroundtextbacktransparency)
 
         self.setInputToDefault(config.plugins.MyMetrixLiteColors.layerabackground)
         self.setInputToDefault(config.plugins.MyMetrixLiteColors.layerabackgroundtransparency)
@@ -192,6 +250,25 @@ class ColorsSettingsView(ConfigListScreen, Screen):
         self.setInputToDefault(config.plugins.MyMetrixLiteColors.layerbprogresstransparency)
         self.setInputToDefault(config.plugins.MyMetrixLiteColors.layerbaccent1)
         self.setInputToDefault(config.plugins.MyMetrixLiteColors.layerbaccent2)
+
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.epgeventdescriptionforeground)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.epgeventdescriptionbackground)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.epgeventdescriptionbackgroundtransparency)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.epgeventforeground)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.epgtimelineforeground)
+
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.upperleftcornerbackground)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.upperleftcornertransparency)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.lowerleftcornerbackground)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.lowerleftcornertransparency)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.upperrightcornerbackground)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.upperrightcornertransparency)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.lowerrightcornerbackground)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.lowerrightcornertransparency)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.optionallayerhorizontalbackground)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.optionallayerhorizontaltransparency)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.optionallayerverticalbackground)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.optionallayerverticaltransparency)
 
         self.save()
 

@@ -1,5 +1,6 @@
 <skin>
 	<!-- MetrixHD v2.5 by iMaxxx | optimized for openATV 4.0 -->
+        <!-- Adapted for OpenLD by Javilonas -->
 	<!-- recommended to use with XPicons -->
 	<!-- You can modify and redistribute it as long as you keep this license and the original author for the skin and all of your modifications -->
 	<output id="0">
@@ -142,7 +143,7 @@
 	<include filename="/usr/share/enigma2/MetrixHD/skin_00e_ChannelSelection.xml" />
 	<include filename="/usr/share/enigma2/MetrixHD/skin_00f_MoviePlayer.xml" />
 	<include filename="/usr/share/enigma2/MetrixHD/skin_00g_EMC.xml" />
-	<include filename="/usr/share/enigma2/MetrixHD/skin_01_openatv.xml" />
+	<include filename="/usr/share/enigma2/MetrixHD/skin_01_openld.xml" />
 	<include filename="/usr/share/enigma2/MetrixHD/skin_02_display.xml" />
 	<include filename="/usr/share/enigma2/MetrixHD/skin_03_plugins.xml" />
 	<include filename="/usr/share/enigma2/MetrixHD/skin_04_check.xml" />

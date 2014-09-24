@@ -434,7 +434,7 @@ msgid "Show optional vertical Layer"
 msgstr ""
 
 #: plugin.py:31
-msgid "openATV configuration tool for MetrixHD"
+msgid "OpenLD configuration tool for MetrixHD"
 msgstr ""
 
 #: WeatherSettingsView.py:61

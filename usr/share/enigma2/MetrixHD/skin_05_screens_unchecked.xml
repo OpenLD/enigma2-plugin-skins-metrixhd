@@ -1140,7 +1140,7 @@
 	<screen name="DefaultWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="template1_1layer" />
 		<eLabel text="DefaultWizard" position="70,47" size="525,50" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
-		<widget name="wizard" position="500,120" size="110,174" pixmap="skin_default/wizard.png" zPosition="10" transparent="1" alphatest="blend" />
+		<widget name="wizard" position="500,120" size="110,174" pixmap="MetrixHD/skin_default/wizard.png" zPosition="10" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD/buttons/key_red.png" position="500,305" size="30,40" alphatest="blend" />
 		<widget name="languagetext" position="535,305" size="150,23" font="SetrixHD;21" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="text" position="670,120" size="540,300" font="SetrixHD;22" backgroundColor="layer-a-background" transparent="1" />

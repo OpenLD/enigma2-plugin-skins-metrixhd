@@ -576,6 +576,8 @@ class MainSettingsView(Screen):
             skinSearchAndReplace.append(['<panel name="INFOBAREPGWIDGET_Layer-1" />', newline2 ])
             skinSearchAndReplace.append(['<panel name="QuickMenu_Layer-1" />', newline3 ])
 
+            skinSearchAndReplace.append(['<panel name="INFOBAREXTENDEDINFO-1" />', '<panel name="INFOBAREXTENDEDINFO-' + config.plugins.MyMetrixLiteOther.ExtendedinfoStyle.value + '" />' ])
+
             skin_lines = appendSkinFile(SKIN_SOURCE, skinSearchAndReplace)
 
             xFile = open(SKIN_TARGET_TMP, "w")

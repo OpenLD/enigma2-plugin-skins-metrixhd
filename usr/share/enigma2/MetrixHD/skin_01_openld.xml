@@ -2210,19 +2210,21 @@
 		<widget name="servicebouquet" position="185,358" size="396,53" font="Regular; 28" halign="left" backgroundColor="layer-a-background" transparent="1" />
 		<eLabel position="161,244" size="550,181" backgroundColor="layer-a-background" zPosition="-5" />
 	</screen>
-	<screen name="NumericalTextInputHelpDialog" position="120,490" size="604,125" backgroundColor="layer-a-background" flags="wfNoBorder" zPosition="8">
-		<widget name="key1" position="  1, 1" size="200,30" font="Console;21" halign="center" valign="center" />
-		<widget name="key2" position="202, 1" size="200,30" font="Console;21" halign="center" valign="center" />
-		<widget name="key3" position="403, 1" size="200,30" font="Console;21" halign="center" valign="center" />
-		<widget name="key4" position="  1,32" size="200,30" font="Console;21" halign="center" valign="center" />
-		<widget name="key5" position="202,32" size="200,30" font="Console;21" halign="center" valign="center" />
-		<widget name="key6" position="403,32" size="200,30" font="Console;21" halign="center" valign="center" />
-		<widget name="key7" position="  1,63" size="200,30" font="Console;21" halign="center" valign="center" />
-		<widget name="key8" position="202,63" size="200,30" font="Console;21" halign="center" valign="center" />
-		<widget name="key9" position="403,63" size="200,30" font="Console;21" halign="center" valign="center" />
-		<widget name="help1" position="  1,94" size="200,30" font="Console;22" halign="center" valign="center" />
-		<widget name="key0" position="202,94" size="200,30" font="Console;17" halign="center" valign="center" />
-		<widget name="help2" position="403,94" size="200,30" font="Console;22" halign="center" valign="center" />
+	<screen name="NumericalTextInputHelpDialog" position="338,594" size="604,126" backgroundColor="transparent" flags="wfNoBorder" zPosition="8">
+		<eLabel name="b" position="0,0" size="604,126" backgroundColor="layer-b-background" zPosition="-10" /> 
+		<eLabel name="a" position="1,1" size="602,124" backgroundColor="layer-a-background" zPosition="-9" /> 
+		<widget name="key1" position="1,15" size="200,25" font="Console;18" halign="center" valign="center" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="key2" position="202,15" size="200,25" font="Console;18" halign="center" valign="center" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="key3" position="403,15" size="200,25" font="Console;18" halign="center" valign="center" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="key4" position="1,43" size="200,25" font="Console;18" halign="center" valign="center" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="key5" position="202,43" size="200,25" font="Console;18" halign="center" valign="center" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="key6" position="403,43" size="200,25" font="Console;18" halign="center" valign="center" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="key7" position="1,71" size="200,25" font="Console;18" halign="center" valign="center" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="key8" position="202,71" size="200,25" font="Console;18" halign="center" valign="center" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="key9" position="403,71" size="200,25" font="Console;18" halign="center" valign="center" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="help1" position="1,99" size="200,25" font="Console;22" halign="center" valign="center" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="key0" position="202,99" size="200,25" font="Console;18" halign="center" valign="center" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="help2" position="403,99" size="200,25" font="Console;22" halign="center" valign="center" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
 	<screen name="MessageBox" position="240,178" size="800,10" zPosition="1" title="Message" backgroundColor="layer-a-background">
 		<widget name="text" position="110,8" size="680,0" font="SetrixHD;22" backgroundColor="layer-a-background" />

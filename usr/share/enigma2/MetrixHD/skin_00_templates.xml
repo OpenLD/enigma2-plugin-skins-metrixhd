@@ -907,6 +907,31 @@
 			<eLabel backgroundColor="layer-b-background" name="NextBG" position="630,148" size="585,329" zPosition="-1"/-->
 			<!-- EPGWidget */-->
 		</screen>
+		<screen name="SIGNAL_LD_WIDGET">
+			<!-- SIGNAL_LD WIDGET */ -->
+			<eLabel backgroundColor="metrixBackground2" font="Regular; 19" foregroundColor="metrixForeground" halign="right" position="61,531" size="53,25" text="SNR" transparent="1" valign="top" />
+			<widget backgroundColor="metrixBackground2" font="Regular; 19" foregroundColor="metrixForeground" position="377,531" render="Label" size="70,25" source="session.FrontendStatus" transparent="1" valign="top">
+				<convert type="FrontendInfo">SNR</convert>
+			</widget>
+			<widget pixmap="MetrixHD/colors/00660066.png" position="123,542" render="Progress" size="250,4" source="session.FrontendStatus" transparent="1" zPosition="100">
+				<convert type="FrontendInfo">SNR</convert>
+			</widget>
+			<eLabel backgroundColor="metrixBackground2" font="Regular; 19" foregroundColor="metrixForeground" halign="right" position="447,531" size="60,25" text="AGC" transparent="1" valign="top" />
+			<widget backgroundColor="metrixBackground2" font="Regular; 19" foregroundColor="metrixForeground" position="763,531" render="Label" size="70,25" source="session.FrontendStatus" transparent="1" valign="top">
+				<convert type="FrontendInfo">AGC</convert>
+			</widget>
+			<widget pixmap="MetrixHD/colors/00660066.png" position="510,542" render="Progress" size="250,4" source="session.FrontendStatus" transparent="1" zPosition="1">
+				<convert type="FrontendInfo">AGC</convert>
+			</widget>
+			<eLabel backgroundColor="metrixForeground" position="123,544" size="250,1" />
+			<eLabel backgroundColor="metrixForeground" position="510,544" size="250,1" />
+			<eLabel backgroundColor="metrixBackground" name="HealthWidgetBG" position="61,527" size="1159,30" zPosition="-20" />
+			<eLabel backgroundColor="metrixBackground2" font="Regular; 19" foregroundColor="metrixForeground" halign="left" position="1052,531" size="60,25" text="BER:" transparent="1" valign="top" />
+			<widget source="session.FrontendStatus" render="Label" position="1093,532" size="80,25" font="Regular; 19" backgroundColor="metrixBackground2" transparent="1" halign="left" valign="top">
+				<convert type="FrontendInfo">BER</convert>
+			</widget>
+			<!-- SIGNAL_LD WIDGET */ -->
+			</screen>
 		<screen name="SCREEN_BACKGROUND_2COLUMN_FOCUSRIGHT_screen_pos0_0_size_1280_720">
 			<eLabel position="51,51" zPosition="-10" size="340,525" backgroundColor="layer-b-background" />
 			<eLabel position="416,51" zPosition="-1" size="810,619" backgroundColor="layer-a-background" />

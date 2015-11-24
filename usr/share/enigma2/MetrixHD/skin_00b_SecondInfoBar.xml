@@ -11,6 +11,7 @@
 		<panel name="INFOBARSNR" />
 		<panel name="INFOBARTUNERINFO-2" />
 		<panel name="INFOBAREPGWIDGET" />
+		<panel name="SIGNAL_LD_WIDGET" />
 		<!--panel name="STBINFO" /-->
 	</screen>
 </skin>

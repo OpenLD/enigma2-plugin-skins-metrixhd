@@ -135,13 +135,13 @@
 		<color name="WindowTitleBackground" color="title-background"/>
 	</windowstyle>
 	<include filename="/usr/share/enigma2/MetrixHD/skin_00_templates.xml" />
-	<include filename="/usr/share/enigma2/MetrixHD/skin_00a_InfoBar.MySkin.xml" />
-	<include filename="/usr/share/enigma2/MetrixHD/skin_00b_SecondInfoBar.MySkin.xml" />
+	<include filename="/usr/share/enigma2/MetrixHD/skin_00a_InfoBar.xml" />
+	<include filename="/usr/share/enigma2/MetrixHD/skin_00b_SecondInfoBar.xml" />
 	<include filename="/usr/share/enigma2/MetrixHD/skin_00c_SecondInfoBarECM.xml" />
 	<include filename="/usr/share/enigma2/MetrixHD/skin_00d_InfoBarLite.xml" />
-	<include filename="/usr/share/enigma2/MetrixHD/skin_00e_ChannelSelection.MySkin.xml" />
-	<include filename="/usr/share/enigma2/MetrixHD/skin_00f_MoviePlayer.MySkin.xml" />
-	<include filename="/usr/share/enigma2/MetrixHD/skin_00g_EMC.MySkin.xml" />
+	<include filename="/usr/share/enigma2/MetrixHD/skin_00e_ChannelSelection.xml" />
+	<include filename="/usr/share/enigma2/MetrixHD/skin_00f_MoviePlayer.xml" />
+	<include filename="/usr/share/enigma2/MetrixHD/skin_00g_EMC.xml" />
 	<include filename="/usr/share/enigma2/MetrixHD/skin_01_openld.xml" />
 	<include filename="/usr/share/enigma2/MetrixHD/skin_02_display.xml" />
 	<include filename="/usr/share/enigma2/MetrixHD/skin_03_plugins.xml" />

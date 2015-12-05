@@ -224,6 +224,7 @@ def initWeatherConfig():
 
     ## RENDERER CONFIG:
 
+    config.plugins.MetrixWeather.currentWeatherDataValid = ConfigYesNo(default=False)
     config.plugins.MetrixWeather.currentLocation = ConfigText(default="N/A")
     config.plugins.MetrixWeather.currentWeatherCode = ConfigText(default="(")
     config.plugins.MetrixWeather.currentWeatherText = ConfigText(default="N/A")
@@ -270,7 +271,7 @@ def initOtherConfig():
 	#STB-Info
     config.plugins.MyMetrixLiteOther.STBDistance = ConfigSelectionNumber(1, 50, 1, default = 10)
     config.plugins.MyMetrixLiteOther.showCPULoad = ConfigYesNo(default=True)
-    config.plugins.MyMetrixLiteOther.showRAMfree = ConfigYesNo(default=False)
+    config.plugins.MyMetrixLiteOther.showRAMfree = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.showSYSTemp = ConfigYesNo(default=False)
     config.plugins.MyMetrixLiteOther.showCPUTemp = ConfigYesNo(default=False)
 	#Infobar/Secondinfobar
@@ -284,7 +285,7 @@ def initOtherConfig():
     config.plugins.MyMetrixLiteOther.showRecordstate = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.showOrbitalposition = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.showInfoBarClock = ConfigYesNo(default=True)
-    config.plugins.MyMetrixLiteOther.showSTBinfo = ConfigYesNo(default=False)
+    config.plugins.MyMetrixLiteOther.showSTBinfo = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.showTunerinfo = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.setTunerAuto = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.setTunerManual = ConfigSelectionNumber(1, 6, 1, default = 2)

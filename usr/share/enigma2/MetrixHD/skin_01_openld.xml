@@ -563,6 +563,14 @@
 			<convert type="MenuEntryCompare">dreamplex</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
+ 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_kodi.png" position="305,80" size="256,256" alphatest="blend">
+ 			<convert type="MenuEntryCompare">run_kodi</convert>
+ 			<convert type="ConditionalShowHide" />
+ 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_kodi.png" position="305,80" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">start_kodi</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
 	    <widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/music.png" position="305,80" size="256,256" alphatest="blend">
 			<convert type="MenuEntryCompare">merlin_music_player</convert>
 			<convert type="ConditionalShowHide" />
@@ -917,6 +925,10 @@
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_network_netnfs_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">netnfs_setup</convert>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_network_webif.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">openwebif</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_network_netvpn_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">

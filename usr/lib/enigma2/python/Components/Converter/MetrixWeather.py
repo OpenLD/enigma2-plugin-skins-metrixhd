@@ -23,23 +23,19 @@
 from Components.Converter.Converter import Converter
 from Components.config import config, ConfigText, ConfigNumber, ConfigDateTime
 from Components.Element import cached
-from Poll import Poll
 
-class MetrixWeather(Poll, Converter, object):
+class MetrixWeather(Converter, object):
 	
 	def __init__(self, type):
 		Converter.__init__(self, type)
 		self.type = type
-		Poll.__init__(self)
-		self.poll_interval = 60000
-		self.poll_enabled = True
-
+			
 	@cached
 	def getText(self):
 		try:
 			if self.type == "currentLocation":
 				return config.plugins.MetrixWeather.currentLocation.value
-			elif self.type == "currentWeatherTemp":
+			if self.type == "currentWeatherTemp":
 				return config.plugins.MetrixWeather.currentWeatherTemp.value
 			elif self.type == "currentWeatherText":
 				return config.plugins.MetrixWeather.currentWeatherText.value
@@ -69,12 +65,7 @@ class MetrixWeather(Poll, Converter, object):
 				return ""
 		except:
 			return ""
-
-	@cached
-	def getBoolean(self):
-		if self.type == "currentDataValid":
-			return config.plugins.MetrixWeather.currentWeatherDataValid.value
-		return False
+		
 		
 	def getCF(self):
 		if config.plugins.MetrixWeather.tempUnit.value == "Fahrenheit":

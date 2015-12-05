@@ -224,7 +224,6 @@ def initWeatherConfig():
 
     ## RENDERER CONFIG:
 
-    config.plugins.MetrixWeather.currentWeatherDataValid = ConfigYesNo(default=False)
     config.plugins.MetrixWeather.currentLocation = ConfigText(default="N/A")
     config.plugins.MetrixWeather.currentWeatherCode = ConfigText(default="(")
     config.plugins.MetrixWeather.currentWeatherText = ConfigText(default="N/A")
@@ -370,3 +369,4 @@ def appendSkinFile(appendFileName, skinPartSearchAndReplace):
         rsSkinLines.append(skinLine)
 
     return rsSkinLines
+

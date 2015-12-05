@@ -9,9 +9,9 @@
 		<panel name="INFOBARRESOLUTION" />
 		<panel name="INFOBARORBITALPOSITION" />
 		<panel name="INFOBARSNR" />
-		<panel name="INFOBARTUNERINFO-2" />
+		<panel name="INFOBARTUNERINFO-3" />
 		<panel name="INFOBAREPGWIDGET" />
 		<panel name="SIGNAL_LD_WIDGET" />
-		<!--panel name="STBINFO" /-->
+		<panel name="STBINFO" />
 	</screen>
 </skin>

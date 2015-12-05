@@ -6,10 +6,10 @@
 		<widget source="lab1" render="Label" position="70,130" size="369,35" font="SetrixHD;30" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="0" zPosition="1" />
 		<widget source="lab2" render="Label" position="70,185" size="370,25" font="Regular;19" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="0" zPosition="1" />
 		<widget source="lab3" render="Label" position="70,230" size="369,25" font="Regular;19" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="0" zPosition="1" />
-		<eLabel text="ENIGMA 2" position="825,110" size="380,55" font="SetrixHD;50" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" halign="center" transparent="0" zPosition="1" />
-		<eLabel text="Git: https://github.com/OpenLD" position="825,470" size="380,30" font="SetrixHD;20" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" halign="center" transparent="0" zPosition="1" />
-		<eLabel text="Web: http://www.odisealinux.com" position="825,520" size="380,30" font="SetrixHD;20" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" halign="center" transparent="0" zPosition="1" />
-		<ePixmap position="890,175" size="256,256" zPosition="10" pixmap="MetrixHD/icons/infopanel.png" transparent="1" alphatest="blend" />
+		<eLabel text="ENIGMA 2" position="825,110" size="380,55" font="SetrixHD;52" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" halign="center" transparent="0" zPosition="1" />
+		<eLabel text="Git:  https://github.com/OpenLD" position="825,470" size="380,30" font="SetrixHD;23" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" halign="center" transparent="0" zPosition="1" />
+		<eLabel text="Web:  http://www.odisealinux.com" position="825,520" size="380,30" font="SetrixHD;23" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" halign="center" transparent="0" zPosition="1" />
+		<ePixmap position="890,175" size="296,296" zPosition="10" pixmap="MetrixHD/icons/infopanel.png" transparent="1" alphatest="blend" />
 		<panel name="template1_2layer" />
 		<panel name="_ie-buttons_template1" />
 	</screen>

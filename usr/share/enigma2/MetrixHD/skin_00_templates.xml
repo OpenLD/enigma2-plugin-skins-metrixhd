@@ -375,10 +375,6 @@
 			<widget render="MetrixHDWeatherUpdaterStandalone" source="global.CurrentTime" position="0,0" size="0,0" transparent="1" />
 			<!-- NEEDED WITHOUT OPENSTORE INSTALLED */ -->
 			<eLabel backgroundColor="layer-a-background" position="46,40" size="213,71"/>
-			<widget backgroundColor="red" position="41,41" size="2,69" source="session.CurrentService" render="FixedLabel" zPosition="10">
-				<convert type="MetrixWeather">currentDataValid</convert>
-				<convert type="ConditionalShowHide">Invert</convert>>
-			</widget>
 			<widget backgroundColor="layer-a-background" font="SetrixHD; 60" foregroundColor="layer-a-foreground" halign="right" noWrap="1" position="45,31" render="Label" size="78,70" source="session.CurrentService" transparent="1" valign="center" zPosition="10">
 				<convert type="MetrixWeather">currentWeatherTemp</convert>
 			</widget>

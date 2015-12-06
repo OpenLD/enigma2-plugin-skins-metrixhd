@@ -398,8 +398,11 @@
 			<widget source="session.CurrentService" render="Label" position="525,666" zPosition="1" size="416,30" font="Regular; 24" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="1" halign="left">
 				<convert type="LdExtraInfo">E-C-N</convert>
 			</widget>
-			<widget source="session.CurrentService" render="Label" position="623,625" zPosition="1" size="416,30" font="Regular; 22" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="1" halign="right">
+			<widget source="session.CurrentService" render="Label" position="658,620" zPosition="1" size="416,30" font="Regular; 18" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="1" halign="right">
                 <convert type="VAudioInfo">AudioCodec</convert>
+            </widget>
+			<widget source="session.CurrentService" render="Label" position="558,620" zPosition="1" size="416,30" font="Regular; 18" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="1" halign="right">
+                <convert type="AslanExtraInfo">VideoCodec</convert>
             </widget>
 		</screen>
 		<screen name="CLOCKWIDGET">

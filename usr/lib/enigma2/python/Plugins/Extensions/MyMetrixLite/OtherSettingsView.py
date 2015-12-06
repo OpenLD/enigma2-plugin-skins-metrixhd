@@ -135,14 +135,6 @@ class OtherSettingsView(ConfigListScreen, Screen):
         list = []
 
         list.append(getConfigListEntry(_("STB-Info   ------------------------------------------------------------------------------------------------"), ))
-        list.append(getConfigListEntry(_("Distance between the STB-Infos"), config.plugins.MyMetrixLiteOther.STBDistance))
-        list.append(getConfigListEntry(_("Show CPU-Load"), config.plugins.MyMetrixLiteOther.showCPULoad))
-        list.append(getConfigListEntry(_("Show free RAM"), config.plugins.MyMetrixLiteOther.showRAMfree))
-        if self.getCPUSensor() or config.plugins.MyMetrixLiteOther.showCPUTemp.getValue() is not False:
-            list.append(getConfigListEntry(_("Show CPU-Temp"), config.plugins.MyMetrixLiteOther.showCPUTemp))
-        if self.getSYSSensor() or config.plugins.MyMetrixLiteOther.showSYSTemp.getValue() is not False:
-            list.append(getConfigListEntry(_("Show SYS-Temp"), config.plugins.MyMetrixLiteOther.showSYSTemp))
-        list.append(getConfigListEntry(_("InfoBar/SecondInfobar/MoviePlayer   ------------------------------------------------------------------"), ))
         list.append(getConfigListEntry(_("ChannelName/Number FontSize"), config.plugins.MyMetrixLiteOther.infoBarChannelNameFontSize))
         list.append(getConfigListEntry(_("InfoBar/SecondInfobar   ------------------------------------------------------------------------------"), ))
         list.append(getConfigListEntry(_("Show Clock"), config.plugins.MyMetrixLiteOther.showInfoBarClock))

@@ -362,7 +362,7 @@
 			<widget backgroundColor="layer-a-background" position="535,698" size="400,30" font="Regular;15" halign="right" foregroundColor="layer-a-accent1" transparent="1" zPosition="10" render="Label" source="session.CurrentService">
 				<convert type="MetrixHDSmartInfo">ExpertInfo</convert>
 			</widget>
-			<widget backgroundColor="layer-a-background" position="280,698" size="400,30" font="Regular;15" halign="left" foregroundColor="layer-a-accent1" transparent="1" zPosition="10" render="Label" source="session.CurrentService">
+			<widget backgroundColor="layer-a-background" position="287,698" size="400,30" font="Regular;15" halign="left" foregroundColor="layer-a-accent1" transparent="1" zPosition="10" render="Label" source="session.CurrentService">
 				<convert type="LdExtraInfo">EcmInfo</convert>
 			</widget>
 			<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="406,666" size="416,30" font="Regular; 24" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="1" halign="left">
@@ -1239,4 +1239,3 @@
 	<!-- CHANNELSELECTION 4 FOCUS RIGHT NO PICON 5 NEXT EVENT */ -->
 	<!-- TEMPLATES */-->
 </skin>
-

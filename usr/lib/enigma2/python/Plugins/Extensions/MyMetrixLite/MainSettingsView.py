@@ -420,31 +420,31 @@ class MainSettingsView(Screen):
 
             skinSearchAndReplace.append(['name="layer-a-channelselection-foreground" value="#00FFFFFF"', channelselectionservice ])
             skinSearchAndReplace.append(['name="layer-a-channelselection-foregroundColorSelected" value="#00FFFFFF"', channelselectionserviceselected ])
-            skinSearchAndReplace.append(['name="layer-a-channelselection-foreground-ServiceDescription" value="#00BDBDBD"', channelselectionservicedescription ])
-            skinSearchAndReplace.append(['name="layer-a-channelselection-foreground-ServiceDescriptionSelected" value="#00FFFFFF"', channelselectionservicedescriptionselected ])
+            skinSearchAndReplace.append(['name="layer-a-channelselection-foreground-ServiceDescription" value="#00FAFAFA"', channelselectionservicedescription ])
+            skinSearchAndReplace.append(['name="layer-a-channelselection-foreground-ServiceDescriptionSelected" value="#00BDBDBD"', channelselectionservicedescriptionselected ])
 
             skinSearchAndReplace.append(['name="layer-a-background" value="#1A0F0F0F"', layerabackground ])
             skinSearchAndReplace.append(['name="layer-a-foreground" value="#00FFFFFF"', layeraforeground ])
-            skinSearchAndReplace.append(['name="layer-a-selection-background" value="#1A27408B"', layeraselectionbackground ])
+            skinSearchAndReplace.append(['name="layer-a-selection-background" value="#2770AD11"', layeraselectionbackground ])
             skinSearchAndReplace.append(['name="layer-a-selection-foreground" value="#00FFFFFF"', layeraselectionforeground ])
-            skinSearchAndReplace.append(['name="layer-a-accent1" value="#00BDBDBD"', layeraaccent1 ])
-            skinSearchAndReplace.append(['name="layer-a-accent2" value="#006E6E6E"', layeraaccent2 ])
-            skinSearchAndReplace.append(['name="layer-a-progress" value="#1A27408B"', layeraprogress ])
+            skinSearchAndReplace.append(['name="layer-a-accent1" value="#00E6E6E6"', layeraaccent1 ])
+            skinSearchAndReplace.append(['name="layer-a-accent2" value="#00A4A4A4"', layeraaccent2 ])
+            skinSearchAndReplace.append(['name="layer-a-progress" value="#27A61D4D"', layeraprogress ])
 
-            skinSearchAndReplace.append(['name="layer-b-background" value="#1A27408B"', layerbbackground ])
+            skinSearchAndReplace.append(['name="layer-b-background" value="#2770AD11"', layerbbackground ])
             skinSearchAndReplace.append(['name="layer-b-foreground" value="#00FFFFFF"', layerbforeground ])
-            skinSearchAndReplace.append(['name="layer-b-selection-background" value="#1A0F0F0F"', layerbselectionbackground ])
+            skinSearchAndReplace.append(['name="layer-b-selection-background" value="#270F0F0F"', layerbselectionbackground ])
             skinSearchAndReplace.append(['name="layer-b-selection-foreground" value="#00FFFFFF"', layerbselectionforeground ])
-            skinSearchAndReplace.append(['name="layer-b-accent1" value="#00BDBDBD"', layerbaccent1 ])
-            skinSearchAndReplace.append(['name="layer-b-accent2" value="#006E6E6E"', layerbaccent2 ])
-            skinSearchAndReplace.append(['name="layer-b-progress" value="#1AFFFFFF"', layerbprogress ])
+            skinSearchAndReplace.append(['name="layer-b-accent1" value="#00E6E6E6"', layerbaccent1 ])
+            skinSearchAndReplace.append(['name="layer-b-accent2" value="#00A4A4A4"', layerbaccent2 ])
+            skinSearchAndReplace.append(['name="layer-b-progress" value="#27A61D4D"', layerbprogress ])
 
             skinSearchAndReplace.append(['name="title-foreground" value="#00FFFFFF"', windowtitletext ])
             skinSearchAndReplace.append(['name="title-background" value="#000F0F0F"', windowtitletextback ])
             skinSearchAndReplace.append(['name="background-text" value="#34FFFFFF"', backgroundtext ])
             skinSearchAndReplace.append(['name="text-background" value="#67FFFFFF"', backgroundtextback ])
 
-            skinSearchAndReplace.append(['name="epg-eventdescription-background" value="#1A27408B"', epgeventdescriptionbackground ])
+            skinSearchAndReplace.append(['name="epg-eventdescription-background" value="#2770AD11"', epgeventdescriptionbackground ])
             skinSearchAndReplace.append(['name="epg-eventdescription-foreground" value="#00FFFFFF"', epgeventdescriptionforeground ])
             skinSearchAndReplace.append(['name="epg-event-foreground" value="#00FFFFFF"', epgeventforeground ])
             skinSearchAndReplace.append(['name="epg-timeline-foreground" value="#00F0A30A"', epgtimelineforeground ])
@@ -467,12 +467,12 @@ class MainSettingsView(Screen):
                 newlines = (('<eLabel name="upperleftcorner-s" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
                 newlinem = (('<eLabel name="upperleftcorner-m" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
                 if confvalue == "both": 
-                    skinSearchAndReplace.append(['<!--eLabel name="upperleftcorner-s" position="0,0" zPosition="-105" size="40,25" backgroundColor="#1A27408B" /-->', newlines ])
-                    skinSearchAndReplace.append(['<!--eLabel name="upperleftcorner-m" position="0,0" zPosition="-105" size="40,25" backgroundColor="#1A27408B" /-->', newlinem ])
+                    skinSearchAndReplace.append(['<!--eLabel name="upperleftcorner-s" position="0,0" zPosition="-105" size="40,25" backgroundColor="#2770AD11" /-->', newlines ])
+                    skinSearchAndReplace.append(['<!--eLabel name="upperleftcorner-m" position="0,0" zPosition="-105" size="40,25" backgroundColor="#2770AD11" /-->', newlinem ])
                 elif confvalue == "screens":
-                    skinSearchAndReplace.append(['<!--eLabel name="upperleftcorner-s" position="0,0" zPosition="-105" size="40,25" backgroundColor="#1A27408B" /-->', newlines ])
+                    skinSearchAndReplace.append(['<!--eLabel name="upperleftcorner-s" position="0,0" zPosition="-105" size="40,25" backgroundColor="#2770AD11" /-->', newlines ])
                 elif confvalue == "menus":
-                    skinSearchAndReplace.append(['<!--eLabel name="upperleftcorner-m" position="0,0" zPosition="-105" size="40,25" backgroundColor="#1A27408B" /-->', newlinem ])
+                    skinSearchAndReplace.append(['<!--eLabel name="upperleftcorner-m" position="0,0" zPosition="-105" size="40,25" backgroundColor="#2770AD11" /-->', newlinem ])
 
             confvalue = config.plugins.MyMetrixLiteOther.SkinDesignLLC.getValue()
             if  confvalue != "no": 
@@ -485,12 +485,12 @@ class MainSettingsView(Screen):
                 newlines = (('<eLabel name="lowerleftcorner-s" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
                 newlinem = (('<eLabel name="lowerleftcorner-m" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
                 if confvalue == "both": 
-                    skinSearchAndReplace.append(['<!--eLabel name="lowerleftcorner-s" position="0,675" zPosition="-105" size="40,45" backgroundColor="#1A27408B" /-->', newlines ])
-                    skinSearchAndReplace.append(['<!--eLabel name="lowerleftcorner-m" position="0,675" zPosition="-105" size="40,45" backgroundColor="#1A27408B" /-->', newlinem ])
+                    skinSearchAndReplace.append(['<!--eLabel name="lowerleftcorner-s" position="0,675" zPosition="-105" size="40,45" backgroundColor="#2770AD11" /-->', newlines ])
+                    skinSearchAndReplace.append(['<!--eLabel name="lowerleftcorner-m" position="0,675" zPosition="-105" size="40,45" backgroundColor="#2770AD11" /-->', newlinem ])
                 elif confvalue == "screens":
-                    skinSearchAndReplace.append(['<!--eLabel name="lowerleftcorner-s" position="0,675" zPosition="-105" size="40,45" backgroundColor="#1A27408B" /-->', newlines ])
+                    skinSearchAndReplace.append(['<!--eLabel name="lowerleftcorner-s" position="0,675" zPosition="-105" size="40,45" backgroundColor="#2770AD11" /-->', newlines ])
                 elif confvalue == "menus":
-                    skinSearchAndReplace.append(['<!--eLabel name="lowerleftcorner-m" position="0,675" zPosition="-105" size="40,45" backgroundColor="#1A27408B" /-->', newlinem ])
+                    skinSearchAndReplace.append(['<!--eLabel name="lowerleftcorner-m" position="0,675" zPosition="-105" size="40,45" backgroundColor="#2770AD11" /-->', newlinem ])
 
             confvalue = config.plugins.MyMetrixLiteOther.SkinDesignRUC.getValue()
             if  confvalue != "no": 
@@ -539,12 +539,12 @@ class MainSettingsView(Screen):
                 newlines = (('<eLabel name="optionallayerhorizontal-s" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
                 newlinem = (('<eLabel name="optionallayerhorizontal-m" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
                 if confvalue == "both": 
-                    skinSearchAndReplace.append(['<!--eLabel name="optionallayerhorizontal-s" position="0,655" zPosition="-105" size="1127,30" backgroundColor="#1A27408B" /-->', newlines ])
-                    skinSearchAndReplace.append(['<!--eLabel name="optionallayerhorizontal-m" position="0,655" zPosition="-105" size="1127,30" backgroundColor="#1A27408B" /-->', newlinem ])
+                    skinSearchAndReplace.append(['<!--eLabel name="optionallayerhorizontal-s" position="0,655" zPosition="-105" size="1127,30" backgroundColor="#2770AD11" /-->', newlines ])
+                    skinSearchAndReplace.append(['<!--eLabel name="optionallayerhorizontal-m" position="0,655" zPosition="-105" size="1127,30" backgroundColor="#2770AD11" /-->', newlinem ])
                 elif confvalue == "screens":
-                    skinSearchAndReplace.append(['<!--eLabel name="optionallayerhorizontal-s" position="0,655" zPosition="-105" size="1127,30" backgroundColor="#1A27408B" /-->', newlines ])
+                    skinSearchAndReplace.append(['<!--eLabel name="optionallayerhorizontal-s" position="0,655" zPosition="-105" size="1127,30" backgroundColor="#2770AD11" /-->', newlines ])
                 elif confvalue == "menus":
-                    skinSearchAndReplace.append(['<!--eLabel name="optionallayerhorizontal-m" position="0,655" zPosition="-105" size="1127,30" backgroundColor="#1A27408B" /-->', newlinem ])
+                    skinSearchAndReplace.append(['<!--eLabel name="optionallayerhorizontal-m" position="0,655" zPosition="-105" size="1127,30" backgroundColor="#2770AD11" /-->', newlinem ])
 
             confvalue = config.plugins.MyMetrixLiteOther.SkinDesignOLV.getValue()
             if  confvalue != "no": 
@@ -557,12 +557,12 @@ class MainSettingsView(Screen):
                 newlines = (('<eLabel name="optionallayervertical-s" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
                 newlinem = (('<eLabel name="optionallayervertical-m" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
                 if confvalue == "both": 
-                    skinSearchAndReplace.append(['<!--eLabel name="optionallayervertical-s" position="102,51" zPosition="-105" size="60,669" backgroundColor="#1A27408B" /-->', newlines ])
-                    skinSearchAndReplace.append(['<!--eLabel name="optionallayervertical-m" position="102,51" zPosition="-105" size="60,669" backgroundColor="#1A27408B" /-->', newlinem ])
+                    skinSearchAndReplace.append(['<!--eLabel name="optionallayervertical-s" position="102,51" zPosition="-105" size="60,669" backgroundColor="#2770AD11" /-->', newlines ])
+                    skinSearchAndReplace.append(['<!--eLabel name="optionallayervertical-m" position="102,51" zPosition="-105" size="60,669" backgroundColor="#2770AD11" /-->', newlinem ])
                 elif confvalue == "screens":
-                    skinSearchAndReplace.append(['<!--eLabel name="optionallayervertical-s" position="102,51" zPosition="-105" size="60,669" backgroundColor="#1A27408B" /-->', newlines ])
+                    skinSearchAndReplace.append(['<!--eLabel name="optionallayervertical-s" position="102,51" zPosition="-105" size="60,669" backgroundColor="#2770AD11" /-->', newlines ])
                 elif confvalue == "menus":
-                    skinSearchAndReplace.append(['<!--eLabel name="optionallayervertical-m" position="102,51" zPosition="-105" size="60,669" backgroundColor="#1A27408B" /-->', newlinem ])
+                    skinSearchAndReplace.append(['<!--eLabel name="optionallayervertical-m" position="102,51" zPosition="-105" size="60,669" backgroundColor="#2770AD11" /-->', newlinem ])
 
             if config.plugins.MyMetrixLiteOther.SkinDesignSpace.getValue() is True:
                 newline1 = ('<panel name="template1_2layer-' + config.plugins.MyMetrixLiteOther.SkinDesign.value + 's" />')

@@ -192,18 +192,18 @@ def initColorsConfig():
     config.plugins.MyMetrixLiteColors.epgeventforeground = ConfigSelection(default="FFFFFF", choices = ColorList)
     config.plugins.MyMetrixLiteColors.epgtimelineforeground = ConfigSelection(default="F0A30A", choices = ColorList)
 
-    config.plugins.MyMetrixLiteColors.upperleftcornerbackground = ConfigSelection(default="27408B", choices = ColorList)
-    config.plugins.MyMetrixLiteColors.upperleftcornertransparency = ConfigSelection(default="1A", choices = TransparencyList)
-    config.plugins.MyMetrixLiteColors.lowerleftcornerbackground = ConfigSelection(default="27408B", choices = ColorList)
-    config.plugins.MyMetrixLiteColors.lowerleftcornertransparency = ConfigSelection(default="1A", choices = TransparencyList)
+    config.plugins.MyMetrixLiteColors.upperleftcornerbackground = ConfigSelection(default="70AD11", choices = ColorList)
+    config.plugins.MyMetrixLiteColors.upperleftcornertransparency = ConfigSelection(default="27", choices = TransparencyList)
+    config.plugins.MyMetrixLiteColors.lowerleftcornerbackground = ConfigSelection(default="70AD11", choices = ColorList)
+    config.plugins.MyMetrixLiteColors.lowerleftcornertransparency = ConfigSelection(default="27", choices = TransparencyList)
     config.plugins.MyMetrixLiteColors.upperrightcornerbackground = ConfigSelection(default="0F0F0F", choices = ColorList)
     config.plugins.MyMetrixLiteColors.upperrightcornertransparency = ConfigSelection(default="1A", choices = TransparencyList)
     config.plugins.MyMetrixLiteColors.lowerrightcornerbackground = ConfigSelection(default="0F0F0F", choices = ColorList)
     config.plugins.MyMetrixLiteColors.lowerrightcornertransparency = ConfigSelection(default="1A", choices = TransparencyList)
-    config.plugins.MyMetrixLiteColors.optionallayerhorizontalbackground = ConfigSelection(default="27408B", choices = ColorList)
-    config.plugins.MyMetrixLiteColors.optionallayerhorizontaltransparency = ConfigSelection(default="1A", choices = TransparencyList)
-    config.plugins.MyMetrixLiteColors.optionallayerverticalbackground = ConfigSelection(default="27408B", choices = ColorList)
-    config.plugins.MyMetrixLiteColors.optionallayerverticaltransparency = ConfigSelection(default="1A", choices = TransparencyList)
+    config.plugins.MyMetrixLiteColors.optionallayerhorizontalbackground = ConfigSelection(default="70AD11", choices = ColorList)
+    config.plugins.MyMetrixLiteColors.optionallayerhorizontaltransparency = ConfigSelection(default="27", choices = TransparencyList)
+    config.plugins.MyMetrixLiteColors.optionallayerverticalbackground = ConfigSelection(default="70AD11", choices = ColorList)
+    config.plugins.MyMetrixLiteColors.optionallayerverticaltransparency = ConfigSelection(default="27", choices = TransparencyList)
 
 #############################################################
 

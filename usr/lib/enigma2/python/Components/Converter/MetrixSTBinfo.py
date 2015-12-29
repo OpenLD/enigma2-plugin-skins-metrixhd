@@ -4,7 +4,7 @@ from Components.Element import cached
 from os import path, popen
 from Plugins.Extensions.MyMetrixLite.__init__ import initOtherConfig
 import Screens.Standby
-#from time import time
+from time import time
 
 initOtherConfig()
 
@@ -35,7 +35,7 @@ class MetrixSTBinfo(Converter, object):
 		return ""
 
 	def getMyMetrixConfig(self):
-		#stime = time()
+		stime = time()
 		info = ""
 		try:
 			space = " " * int(config.plugins.MyMetrixLiteOther.STBDistance.value)
@@ -49,8 +49,8 @@ class MetrixSTBinfo(Converter, object):
 				info += space + self.getSYStemp()
 		except:
 			pass
-		#etime = time()
-		#info += space + "Time: " + str(int(float(etime - stime)*1000)) + " ms"
+		etime = time()
+		info += space + "Time: " + str(int(float(etime - stime)*1000)) + " ms"
 		return info
 
 	def getCPUload(self):

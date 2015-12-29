@@ -353,10 +353,10 @@
 			<!-- <widget backgroundColor="layer-a-background" position="297,698" size="940,20" font="Regular;15" halign="right" foregroundColor="layer-a-accent1" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
 				<convert type="MetrixSTBinfo">MyMetrixConfig</convert>
 			</widget> -->
-			<widget backgroundColor="layer-a-background" position="695,698" size="400,30" font="Regular;15" halign="right" foregroundColor="layer-a-accent1" transparent="1" zPosition="10" render="Label" source="session.CurrentService">
+			<widget backgroundColor="layer-a-background" position="695,698" size="400,30" font="Regular;15" halign="right" foregroundColor="layer-a-accent1" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
 				<convert type="MetrixSTBinfo">CPUload</convert>
 			</widget>
-			<widget backgroundColor="layer-a-background" position="837,698" size="400,30" font="Regular;15" halign="right" foregroundColor="layer-a-accent1" transparent="1" zPosition="10" render="Label" source="session.CurrentService">
+			<widget backgroundColor="layer-a-background" position="837,698" size="400,30" font="Regular;15" halign="right" foregroundColor="layer-a-accent1" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
 				<convert type="MetrixSTBinfo">RAMfree</convert>
 			</widget>
 			<widget backgroundColor="layer-a-background" position="535,698" size="400,30" font="Regular;15" halign="right" foregroundColor="layer-a-accent1" transparent="1" zPosition="10" render="Label" source="session.CurrentService">
@@ -1242,3 +1242,4 @@
 	<!-- CHANNELSELECTION 4 FOCUS RIGHT NO PICON 5 NEXT EVENT */ -->
 	<!-- TEMPLATES */-->
 </skin>
+

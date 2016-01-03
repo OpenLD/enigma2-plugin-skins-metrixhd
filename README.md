@@ -1,7 +1,7 @@
-MetrixHD
+MetrixHD for OpenLD
 ========
 
-OpenLD 2.x default skin, based on MterixHD skin of OpenATV
-
-Original MetrixHD is created by iMaxxx http://open-store.net
+OpenLD default skin, 
+based on MetrixHD v2.5 created by iMaxxx http://open-store.net
+Mod and optimized and Adapted for OpenLD by Javilonas.
 ------------------------------------------------------------

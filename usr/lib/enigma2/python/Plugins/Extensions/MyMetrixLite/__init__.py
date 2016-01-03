@@ -253,7 +253,9 @@ def initOtherConfig():
         ("CHANNELSELECTION-1", _("Focus left, no picon, 5 next Events")),
         ("CHANNELSELECTION-2", _("Focus left, big picon, 1 next Events")),
         ("CHANNELSELECTION-3", _("Focus right, big picon, 1 next Events")),
-        ("CHANNELSELECTION-4", _("Focus right, no picon, 5 next Events"))
+        ("CHANNELSELECTION-4", _("Focus right, no picon, 5 next Events")),
+        ("CHANNELSELECTION-5", _("Focus left, no picon, 1 next Events, MiniTV")),
+        ("CHANNELSELECTION-6", _("Focus left, no picon, 1 next Events, MiniTV, Primetime"))
         ]
 
     infoBarChannelNameFontSizeList = [

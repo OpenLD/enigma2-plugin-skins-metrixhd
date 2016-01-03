@@ -297,5 +297,5 @@ msgstr "Biały "
 msgid "Celsius"
 msgstr "Celsjusz"
 
-msgid "openATV configuration tool for MetrixHD"
-msgstr "MetrixHD konfiguracja dla openATV"
+msgid "OpenLD configuration tool for MetrixHD"
+msgstr "MetrixHD konfiguracja dla openLD"

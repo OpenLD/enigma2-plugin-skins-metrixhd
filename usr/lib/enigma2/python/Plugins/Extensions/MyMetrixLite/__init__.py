@@ -174,6 +174,8 @@ def initColorsConfig():
     config.plugins.MyMetrixLiteColors.layeraaccent2 = ConfigSelection(default="A4A4A4", choices = ColorList)
     config.plugins.MyMetrixLiteColors.layeraprogress = ConfigSelection(default="A61D4D", choices = ColorList)
     config.plugins.MyMetrixLiteColors.layeraprogresstransparency = ConfigSelection(default="27", choices = TransparencyList)
+    config.plugins.MyMetrixLiteColors.layeraextendedinfo1 = ConfigSelection(default="BDBDBD", choices = ColorList)
+    config.plugins.MyMetrixLiteColors.layeraextendedinfo2 = ConfigSelection(default="6E6E6E", choices = ColorList)
 
     config.plugins.MyMetrixLiteColors.layerbbackground = ConfigSelection(default="70AD11", choices = ColorList)
     config.plugins.MyMetrixLiteColors.layerbbackgroundtransparency = ConfigSelection(default="27", choices = TransparencyList)

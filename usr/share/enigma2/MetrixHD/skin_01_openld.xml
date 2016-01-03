@@ -2664,7 +2664,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="MetrixRefString">CurrentRef</convert>
 		</widget>
 		<widget name="epg_description" position="70,90" size="700,520" font="SetrixHD; 24" backgroundColor="layer-a-background" transparent="1" />
-		<widget name="channel" position="852,247" size="320,50" font="SetrixHD; 26" halign="center" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1" />
+		<widget name="channel" position="832,212" size="370,70" font="SetrixHD; 26" halign="center" valign="bottom" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1" />
 		<eLabel position="859,310" size="315,1" backgroundColor="layer-b-progress" />
 		<widget source="session.Event_Now" render="Progress" position="859,308" size="315,5" borderWidth="0" backgroundColor="layer-b-background" foregroundColor="layer-b-progress" transparent="1" zPosition="1">
 			<convert type="EventTime">Progress</convert>
@@ -2718,7 +2718,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<!-- EventViewSimple , optimized for MovieInfo (EMC)-->
 	<screen name="EventViewSimple" position="0,0" size="1280,720" title="EventviewSimple" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="epg_description" position="70,90" size="700,520" font="SetrixHD; 24" backgroundColor="layer-a-background" transparent="1" />
-		<widget name="channel" position="852,247" size="320,50" font="SetrixHD; 26" halign="center" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1" />
+		<widget name="channel" position="832,212" size="370,70" font="SetrixHD; 26" halign="center" valign="bottom" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1" />
 		<widget source="Service" render="MetrixHDXPicon" position="907,80" size="220,132" zPosition="5" transparent="1" alphatest="blend">
 			<convert type="MovieInfo">RecordServiceRef</convert>
 		</widget>

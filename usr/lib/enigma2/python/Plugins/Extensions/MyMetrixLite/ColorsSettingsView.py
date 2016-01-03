@@ -120,6 +120,7 @@ class ColorsSettingsView(ConfigListScreen, Screen):
         list.append(getConfigListEntry(_("    Extended Info colors"), ))
         list.append(getConfigListEntry(_("        Color 1"), config.plugins.MyMetrixLiteColors.layeraextendedinfo1))
         list.append(getConfigListEntry(_("        Color 2"), config.plugins.MyMetrixLiteColors.layeraextendedinfo2))
+        list.append(getConfigListEntry(_("        Color 3"), config.plugins.MyMetrixLiteColors.layeraextendedinfo3))
         list.append(getConfigListEntry(_("Layer B (secondary layer)  ---------------------------------------------------------------------------"), ))
         list.append(getConfigListEntry(_("    Background"), ))
         list.append(getConfigListEntry(_("        Color"), config.plugins.MyMetrixLiteColors.layerbbackground))
@@ -251,6 +252,7 @@ class ColorsSettingsView(ConfigListScreen, Screen):
         self.setInputToDefault(config.plugins.MyMetrixLiteColors.layeraaccent2)
         self.setInputToDefault(config.plugins.MyMetrixLiteColors.layeraextendedinfo1)
         self.setInputToDefault(config.plugins.MyMetrixLiteColors.layeraextendedinfo2)
+        self.setInputToDefault(config.plugins.MyMetrixLiteColors.layeraextendedinfo3)
 
         self.setInputToDefault(config.plugins.MyMetrixLiteColors.layerbbackground)
         self.setInputToDefault(config.plugins.MyMetrixLiteColors.layerbbackgroundtransparency)

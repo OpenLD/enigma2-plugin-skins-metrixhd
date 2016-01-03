@@ -6,13 +6,13 @@
 		<widget source="lab1" render="Label" position="70,120" size="390,45" font="Regular;19" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="0" zPosition="1" />
 		<widget source="lab2" render="Label" position="70,150" size="390,45" font="Regular;19" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="0" zPosition="1" />
 		<eLabel text="ENIGMA 2" position="825,110" size="380,55" font="SetrixHD;52" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" halign="center" transparent="0" zPosition="1" />
-		<widget source="global.CurrentTime" render="Label" position="880,200" size="130,30" font="SetrixHD;20" halign="left" backgroundColor="layer-b-background" foregroundColor="layer-b-accent1" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="880,200" size="130,30" font="SetrixHD;20" halign="left" backgroundColor="layer-b-background" foregroundColor="layer-a-extendedinfo3" transparent="1" zPosition="1">
 			<convert type="MetrixSTBinfo">CPUload</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1020,200" size="130,30" font="SetrixHD;20" halign="right" backgroundColor="layer-b-background" foregroundColor="layer-b-accent1" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="1020,200" size="130,30" font="SetrixHD;20" halign="right" backgroundColor="layer-b-background" foregroundColor="layer-a-extendedinfo3" transparent="1" zPosition="1">
 			<convert type="MetrixSTBinfo">RAMfree</convert>
 		</widget>
-		<!-- <widget source="global.CurrentTime" render="Label" position="875,410" size="280,30" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1">
+		<!-- <widget source="global.CurrentTime" render="Label" position="875,410" size="280,30" font="SetrixHD;20" foregroundColor="layer-a-extendedinfo3" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1">
 			<convert type="MetrixSTBinfo">FLASHfree</convert>
 		</widget> -->
 		<eLabel text="Git:  https://github.com/OpenLD" position="825,470" size="380,30" font="SetrixHD;23" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" halign="center" transparent="0" zPosition="1" />
@@ -37,10 +37,10 @@
 		<panel name="template1_2layer" />
 		<widget source="Title" render="Label" position="70,47" foregroundColor="layer-a-title-foreground" size="400,54" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="0" />
 		<ePixmap pixmap="MetrixHD/icons/info.png" position="890,175" size="256,256" zPosition="2" transparent="1" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="880,120" size="130,30" font="SetrixHD;20" halign="left" backgroundColor="layer-b-background" foregroundColor="layer-b-accent1" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="880,120" size="130,30" font="SetrixHD;20" halign="left" backgroundColor="layer-b-background" foregroundColor="layer-a-extendedinfo3" transparent="1" zPosition="1">
 			<convert type="MetrixSTBinfo">CPUload</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1020,120" size="130,30" font="SetrixHD;20" halign="right" backgroundColor="layer-b-background" foregroundColor="layer-b-accent1" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="1020,120" size="130,30" font="SetrixHD;20" halign="right" backgroundColor="layer-b-background" foregroundColor="layer-a-extendedinfo3" transparent="1" zPosition="1">
 			<convert type="MetrixSTBinfo">RAMfree</convert>
 		</widget>
 		<widget source="TunerHeader" render="Label" position="70,110" size="458,36" font="Regular;20" transparent="0" zPosition="1" />
@@ -55,13 +55,13 @@
 		<panel name="template1_2layer" />
 		<widget source="Title" render="Label" position="70,47" foregroundColor="layer-a-title-foreground" size="500,54" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="0" />
 		<ePixmap pixmap="MetrixHD/icons/info.png" position="890,175" size="256,256" zPosition="2" transparent="1" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="880,120" size="130,30" font="SetrixHD;20" halign="left" backgroundColor="layer-b-background" foregroundColor="layer-b-accent1" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="880,120" size="130,30" font="SetrixHD;20" halign="left" backgroundColor="layer-b-background" foregroundColor="layer-a-extendedinfo3" transparent="1" zPosition="1">
 			<convert type="MetrixSTBinfo">CPUload</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1020,120" size="130,30" font="SetrixHD;20" halign="right" backgroundColor="layer-b-background" foregroundColor="layer-b-accent1" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="1020,120" size="130,30" font="SetrixHD;20" halign="right" backgroundColor="layer-b-background" foregroundColor="layer-a-extendedinfo3" transparent="1" zPosition="1">
 			<convert type="MetrixSTBinfo">RAMfree</convert>
 		</widget>
-		<!-- <widget source="global.CurrentTime" render="Label" position="875,520" size="280,30" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1">
+		<!-- <widget source="global.CurrentTime" render="Label" position="875,520" size="280,30" font="SetrixHD;20" foregroundColor="layer-a-extendedinfo3" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1">
 			<convert type="MetrixSTBinfo">FLASHfree</convert>
 		</widget> -->
 		<widget source="lab1" render="Label" position="70,133" size="458,35" font="Regular;30" transparent="0" zPosition="2" />
@@ -73,10 +73,10 @@
 		<panel name="template1_2layer" />
 		<widget source="Title" render="Label" position="70,47" foregroundColor="layer-a-title-foreground" size="400,54" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="0" />
 		<ePixmap pixmap="MetrixHD/icons/info.png" position="890,175" size="256,256" zPosition="2" transparent="1" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="880,120" size="130,30" font="SetrixHD;20" halign="left" backgroundColor="layer-b-background" foregroundColor="layer-b-accent1" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="880,120" size="130,30" font="SetrixHD;20" halign="left" backgroundColor="layer-b-background" foregroundColor="layer-a-extendedinfo3" transparent="1" zPosition="1">
 			<convert type="MetrixSTBinfo">CPUload</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1020,120" size="130,30" font="SetrixHD;20" halign="right" backgroundColor="layer-b-background" foregroundColor="layer-b-accent1" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="1020,120" size="130,30" font="SetrixHD;20" halign="right" backgroundColor="layer-b-background" foregroundColor="layer-a-extendedinfo3" transparent="1" zPosition="1">
 			<convert type="MetrixSTBinfo">RAMfree</convert>
 		</widget>
 		<widget name="AboutScrollLabel" position="70,110" size="700,480" font="Regular;20" transparent="0" zPosition="1" />
@@ -103,10 +103,10 @@
 		<eLabel text="Serviceinfo" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="infolist" position="70,120" size="700,480" itemHeight="40" selectionDisabled="1" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/info.png" transparent="1" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="880,120" size="130,30" font="SetrixHD;20" halign="left" backgroundColor="layer-b-background" foregroundColor="layer-b-accent1" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="880,120" size="130,30" font="SetrixHD;20" halign="left" backgroundColor="layer-b-background" foregroundColor="layer-a-extendedinfo3" transparent="1" zPosition="1">
 			<convert type="MetrixSTBinfo">CPUload</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1020,120" size="130,30" font="SetrixHD;20" halign="right" backgroundColor="layer-b-background" foregroundColor="layer-b-accent1" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="1020,120" size="130,30" font="SetrixHD;20" halign="right" backgroundColor="layer-b-background" foregroundColor="layer-a-extendedinfo3" transparent="1" zPosition="1">
 			<convert type="MetrixSTBinfo">RAMfree</convert>
 		</widget>
 		<panel name="rgyb-buttons_template1" />
@@ -3009,7 +3009,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="Title" render="Label" position="70,47" foregroundColor="layer-a-title-foreground" size="700,48" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="list" position="60,115" size="700,530" zPosition="4" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<widget name="text" position="825,420" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
-		<widget source="global.CurrentTime" render="Label" position="825,100" size="380,30" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="825,100" size="380,30" font="SetrixHD;20" foregroundColor="layer-a-extendedinfo3" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1">
 			<convert type="MetrixSTBinfo">FLASHfree</convert>
 		</widget>
 		<panel name="template1_2layer" />

@@ -146,14 +146,27 @@ def initColorsConfig():
         ("FF", _("100%"))
     ]
 
+    SkinColorPresetList = [
+        ("preset_0", _("Standard Colors")),
+        ("preset_1", _("Bright Colors")),
+        ("preset_2", _("Dark Colors")),
+        ("preset_3", _("Red Colors")),
+        ("preset_4", _("Yellow Colors")),
+        ("preset_5", _("Green Colors"))
+    ]
+
     config.plugins.MyMetrixLiteColors = ConfigSubsection()
 
+    #preset
+    config.plugins.MyMetrixLiteColors.SkinColorExamples = ConfigSelection(default = "preset_0", choices = SkinColorPresetList)
     #MetrixColors
-
     config.plugins.MyMetrixLiteColors.channelselectionservice = ConfigSelection(default="FFFFFF", choices = ColorList)
     config.plugins.MyMetrixLiteColors.channelselectionserviceselected = ConfigSelection(default="FFFFFF", choices = ColorList)
     config.plugins.MyMetrixLiteColors.channelselectionservicedescription = ConfigSelection(default="FAFAFA", choices = ColorList)
     config.plugins.MyMetrixLiteColors.channelselectionservicedescriptionselected = ConfigSelection(default="BDBDBD", choices = ColorList)
+    config.plugins.MyMetrixLiteColors.channelselectioncolorServiceRecorded = ConfigSelection(default="E51400", choices = ColorList)
+    config.plugins.MyMetrixLiteColors.channelselectioncolorServicePseudoRecorded = ConfigSelection(default="0000CD", choices = ColorList)
+    config.plugins.MyMetrixLiteColors.channelselectioncolorServiceStreamed = ConfigSelection(default="C3461B", choices = ColorList)
 
     config.plugins.MyMetrixLiteColors.windowtitletext = ConfigSelection(default="FFFFFF", choices = ColorList)
     config.plugins.MyMetrixLiteColors.windowtitletexttransparency = ConfigSelection(default="00", choices = TransparencyList)

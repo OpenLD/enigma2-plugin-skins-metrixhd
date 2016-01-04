@@ -1536,5 +1536,58 @@
 		<panel name="__e-buttons_template1" />
 		<ePixmap position="891,222" size="256,256" zPosition="2" pixmap="MetrixHD/icons/setup.png" transparent="1" alphatest="blend" />
 	</screen>
+ 	<!--Bitrate Viewer -->
+ 	<screen name="BitrateViewer" position="center,center" size="710,360" flags="wfNoBorder" title="Bitrate Viewer" backgroundColor="transparent" >
+ 		<widget source="Title" render="Label" position="5,10" size="690,50" font="SetrixHD; 35" halign="center" valign="bottom" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" /> 
+ 		<eLabel text="video" position="50,90" size="180,30" font="SetrixHD;22" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1" />
+ 		<eLabel name="line" position="50,125" size="610,1" backgroundColor="layer-a-accent2" zPosition="-9" />
+ 		<eLabel text="min" position="50,130" size="100,30" font="SetrixHD;18" foregroundColor="layer-a-accent1" backgroundColor="layer-a-background" transparent="1" />
+ 		<widget name="vmin" position="50,160" size="100,30" font="SetrixHD;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1" />
+ 		<eLabel text="max" position="220,130" size="100,30" font="SetrixHD;18" foregroundColor="layer-a-accent1" backgroundColor="layer-a-background" transparent="1" />
+ 		<widget name="vmax" position="220,160" size="100,30" font="SetrixHD;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1" />
+ 		<eLabel text="average" position="390,130" size="100,30" font="SetrixHD;18" foregroundColor="layer-a-accent1" backgroundColor="layer-a-background" transparent="1" />
+ 		<widget name="vavg" position="390,160" size="100,30" font="SetrixHD;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1" />
+ 		<eLabel text="current" position="560,130" size="100,30" font="SetrixHD;18" foregroundColor="layer-a-accent1" backgroundColor="layer-a-background" transparent="1" />
+ 		<widget name="vcur" position="560,160" size="100,30" font="SetrixHD;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1" />
+ 		<eLabel text="audio" position="50,200" size="180,30" font="SetrixHD;22" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1" />
+ 		<eLabel name="line" position="50,235" size="610,1" backgroundColor="layer-a-accent2" zPosition="-9" />
+ 		<eLabel text="min" position="50,240" size="100,30" font="SetrixHD;18" foregroundColor="layer-a-accent1" backgroundColor="layer-a-background" transparent="1" />
+ 		<widget name="amin" position="50,270" size="100,30" font="SetrixHD;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1" />
+ 		<eLabel text="max" position="220,240" size="100,30" font="SetrixHD;18" foregroundColor="layer-a-accent1" backgroundColor="layer-a-background" transparent="1" />
+ 		<widget name="amax" position="220,270" size="100,30" font="SetrixHD;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1" />
+ 		<eLabel text="average" position="390,240" size="100,30" font="SetrixHD;18" foregroundColor="layer-a-accent1" backgroundColor="layer-a-background" transparent="1" />
+ 		<widget name="aavg" position="390,270" size="100,30" font="SetrixHD;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1" />
+ 		<eLabel text="current" position="560,240" size="100,30" font="SetrixHD;18" foregroundColor="layer-a-accent1" backgroundColor="layer-a-background" transparent="1" />
+ 		<widget name="acur" position="560,270" size="100,30" font="SetrixHD;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1" />
+ 		<panel name="template2_1layer" />
+ 		<panel name="r___-buttons_template2" />
+  		<widget name="cancel" position="35,318" size="155,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 20" halign="left" backgroundColor="layer-a-background" foregroundColor="layer-a-button-foreground" transparent="1" />
+  	</screen>
+  	<!--Bitrate Viewer -->
+	<!--Satip Client -->
+	<screen name="SatIPclientSetup" position="center,center" size="1280,720" backgroundColor="transparent">
+		<widget source="Title" render="Label" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" zPosition="1" halign="left" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="config" zPosition="2" position="70,110" size="700,350" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" itemHeight="30" font="SetrixHD; 20" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="text" position="70,470" size="700,30" font="Regular;22" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" halign="center" valign="center" />
+		<widget name="description" position="825,425" size="380,175" font="SetrixHD; 20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
+		<panel name="template1_2layer" />
+		<panel name="rgy_-buttons_template1" />
+		<panel name="rgy_-keys_template1-source" />
+		<panel name="__e-buttons_template1" />
+		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_scan_satip.png" transparent="1" alphatest="blend" />
+	</screen>
+	<!--Satip Client -->
+	<!-- RCU Select -->
+	<screen name="RCUSelect" position="0,0" size="1280,720" title="RCU Select" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="RCU Select" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="list" position="70,110" size="700,510" itemHeight="30" font="SetrixHD; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
+		<widget name="config" position="810,415" size="415,190" font="SetrixHD; 20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
+		<panel name="template1_2layer" />
+		<panel name="rg__-buttons_template1" />
+		<panel name="rg__-keys_template1-source" />
+		<panel name="__e-buttons_template1" />
+		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/mqb.png" transparent="1" alphatest="blend" />
+	</screen>
+	<!-- RCU Select -->
 <!-- PLUGINS */-->
 </skin>

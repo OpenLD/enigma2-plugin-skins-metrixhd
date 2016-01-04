@@ -36,7 +36,7 @@
 			<convert type="EMCServiceTime">Duration</convert>
 			<convert type="EMCClockToText">InMinutes</convert>
 		</widget>
-		<widget source="Service" render="Label" position="825,228" size="385,325" font="RegularLight; 19" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1" halign="left" valign="top">
+		<widget source="Service" render="Label" position="825,228" size="385,323" font="RegularLight; 19" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1" halign="left" valign="top">
 			<convert type="EMCEventName">FullDescription</convert>
 		</widget>
 	</screen>
@@ -61,7 +61,7 @@
 			<convert type="EMCServiceTime">Duration</convert>
 			<convert type="EMCClockToText">InMinutes</convert>
 		</widget>
-		<widget source="Service" render="Label" position="825,228" size="385,325" font="RegularLight; 19" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1" halign="left" valign="top">
+		<widget source="Service" render="Label" position="825,228" size="385,323" font="RegularLight; 19" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1" halign="left" valign="top">
 			<convert type="EMCEventName">FullDescription</convert>
 		</widget>
 		<eLabel position="1231,83" size="1,140" backgroundColor="layer-b-background" zPosition="3" />
@@ -268,7 +268,7 @@
 		<widget source="Title" render="Label" position="70,47" size="525,50" font="SetrixHD;35" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" halign="left" transparent="1" />
 		<widget name="menulist" position="70,110" size="700,450" scrollbarMode="showNever" transparent="1" enableWrapAround="on"/>
 		<widget name="done_msg" position="70,580" size="700,30" zPosition="0" font="Regular;20" halign="center" valign="center" transparent="1" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background"/>
-		<widget name="m_info" position="825,85" size="380,70" foregroundColor="#00bab329" backgroundColor="layer-b-background" transparent="1" font="SetrixHD;24" valign="center" halign="center" zPosition="0" />
+		<widget name="m_info" position="825,85" size="380,70" foregroundColor="layer-b-accent1" backgroundColor="layer-b-background" transparent="1" font="SetrixHD;24" valign="center" halign="center" zPosition="0" />
 		<eLabel position="1107,175" zPosition="5" size="1,256" backgroundColor="layer-b-background" />
 		<widget name="poster" position="925,175" size="183,256" zPosition="4" alphatest="blend" />
 		<widget name="info" position="825,450" size="380,70"  zPosition="0" font="SetrixHD;22" halign="center" valign="center" transparent="1" foregroundColor="layer-b-foreground" backgroundColor="layer-b-background"/>
@@ -289,6 +289,7 @@
 	<screen name="getCover" position="0,0" size="1280,720" title="EMC Cover Selecter" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="EMC Cover Selecter" position="70,47" size="525,50" font="SetrixHD;35" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" halign="left" transparent="1" />
 		<widget source="Title" render="Label" position="825,85" size="380,70" foregroundColor="#00bab329" backgroundColor="layer-b-background" transparent="1" font="SetrixHD;24" valign="center" halign="center" zPosition="0" />
+		<widget name="m_info" position="825,85" size="380,70" foregroundColor="layer-b-accent1" backgroundColor="layer-b-background" transparent="1" font="SetrixHD;24" valign="center" halign="center" zPosition="0" />
 		<widget name="menulist" position="70,110" size="700,450" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="on" />
 		<widget name="info" position="70,580" size="700,30" zPosition="0" font="Regular;20" halign="center" valign="center" transparent="1" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background"/>
 		<eLabel position="1107,175" zPosition="5" size="1,256" backgroundColor="layer-b-background" />
@@ -300,7 +301,7 @@
 	<!-- EMC MovieInfo -->
 	<screen name="DownloadMovieInfo"  position="0,0" size="1280,720" title="Movie Information Download (TMDb)" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="Title" render="Label" position="70,47" size="525,50" font="SetrixHD;35" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" halign="left" transparent="1" />
-		<widget name="movie_name" position="70,110" size="700,50" zPosition="0" font="Regular;21" valign="center" transparent="1" foregroundColor="#00bab329" backgroundColor="layer-a-background"/>
+		<widget name="movie_name" position="70,110" size="700,50" zPosition="0" font="Regular;21" valign="center" transparent="1" foregroundColor="layer-a-accent1" backgroundColor="layer-a-background"/>
 		<widget name="movielist" position="70,180" size="700,420" scrollbarMode="showOnDemand"/>
 		<widget name="resulttext"  position="825,420" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<eLabel text="MENU = " position="110,637" size="100,30" zPosition="1" font="SetrixHD;20" halign="left" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1" />
@@ -316,7 +317,7 @@
 	<!-- EMC MovieInfo - MovieInfoPreview -->
 	<screen name="MovieInfoPreview"  position="0,0" size="1280,720" title="Movie Information Preview" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="Title" render="Label" position="70,47" size="525,50" font="SetrixHD;35" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" halign="left" transparent="1" />
-		<widget name="movie_name" position="70,110" size="700,50" zPosition="0" font="Regular;21" valign="center" transparent="1" foregroundColor="#00bab329" backgroundColor="layer-a-background"/>
+		<widget name="movie_name" position="70,110" size="700,50" zPosition="0" font="Regular;21" valign="center" transparent="1" foregroundColor="layer-a-accent1" backgroundColor="layer-a-background"/>
 		<widget name="previewtext" position="70,180" size="700,420" font="Regular;20" backgroundColor="layer-a-background" />
 		<panel name="template1_2layer"/>
 		<panel name="__e-buttons_template1" />

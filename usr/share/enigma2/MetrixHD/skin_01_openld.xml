@@ -238,7 +238,7 @@
 		<panel name="template1_2layer" />
 		<panel name="_oe-buttons_template1" />
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/net.png" transparent="1" alphatest="blend" />
-	</screen>	
+	</screen>
 	<screen name="WlanStatus" position="0,0" size="1280,720" title="Wireless Network State" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="W-LAN Status" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget source="IF" render="Label" position=" 70,115" size="495,32" font="SetrixHD;24" backgroundColor="layer-a-background" transparent="1" />
@@ -582,6 +582,10 @@
 			<convert type="MenuEntryCompare">dvd_player</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/dvd.png" position="305,80" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">play_cd</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/sub.png" position="305,80" size="256,256" alphatest="blend">
 			<convert type="MenuEntryCompare">subtitle_selection</convert>
 			<convert type="ConditionalShowHide" />
@@ -594,24 +598,28 @@
 			<convert type="MenuEntryCompare">multi_quick</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-	    <widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/plex.png" position="305,80" size="256,256" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/plex.png" position="305,80" size="256,256" alphatest="blend">
 			<convert type="MenuEntryCompare">dreamplex</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
- 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_kodi.png" position="305,80" size="256,256" alphatest="blend">
- 			<convert type="MenuEntryCompare">run_kodi</convert>
- 			<convert type="ConditionalShowHide" />
- 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_kodi.png" position="305,80" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">run_kodi</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_kodi.png" position="305,80" size="256,256" alphatest="blend">
 			<convert type="MenuEntryCompare">start_kodi</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-	    <widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/music.png" position="305,80" size="256,256" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/music.png" position="305,80" size="256,256" alphatest="blend">
 			<convert type="MenuEntryCompare">merlin_music_player</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/service_info.png" position="305,80" size="256,256" alphatest="blend">
 			<convert type="MenuEntryCompare">moviebrowser</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/youtube.png" position="305,80" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">youtubetv</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
@@ -1074,8 +1082,16 @@
 			<convert type="MenuEntryCompare">streamconvert</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_scan_fast_scan.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">fastscan</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/pluginmanager.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">Sundtek Control Center</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_scan_streamconvert.png" position="305,80" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">ipbox_client_Start</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
@@ -1598,7 +1614,7 @@
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/media1.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="AudioSetup" position="0,0" size="1280,720" title="Audio Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="A/V settings" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="global_title; 35" backgroundColor="layer-a-background" transparent="1" />
+		<eLabel text="A/V settings" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="config" position="70,100" size="700,515" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<widget name="description" position="825,420" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<panel name="template1_2layer" />
@@ -2799,8 +2815,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="ime-buttons_template1" />
 	</screen>
 	<screen name="BouquetSelector" position="0,0" size="1280,720" title="Choose bouquet" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Channel Selection" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
-		<eLabel text="Choose bouquet" position="70,115" size="700,32" font="SetrixHD;24" backgroundColor="layer-a-background" transparent="1" />
+		<eLabel text="Channel selection" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
+		<eLabel text="Choose Bouquet" position="70,115" size="700,32" font="SetrixHD;24" backgroundColor="layer-a-background" transparent="1" />
 		<eLabel position="70,155" size="700,1" backgroundColor="layer-a-accent1" />
 		<widget name="menu" position="70,165" size="700,450" zPosition="3" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
 		<panel name="template1_2layer" />
@@ -2929,10 +2945,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 				 "itemHeight": 130
 				}
 			</convert>
-		</widget>		
+		</widget>
 		<panel name="template1_2layer" />
-	    <panel name="_oe-buttons_template1" />
-		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_scan_tuner_setup.png" transparent="1" alphatest="blend" />	
+		<panel name="ioe-buttons_template1" />
+		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_scan_tuner_setup.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="NimSetup" position="0,0" size="1280,720" title="Reception Settings" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Reception Settings" position="70,47" foregroundColor="layer-a-title-foreground" size="700,50" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
@@ -3536,7 +3552,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/setup.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="ButtonSetup" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="global_title; 35" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="Title" render="Label" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="list" position="70,100" size="700,420" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<widget name="choosen" position="70,575" size="700,100" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<widget name="description" position="825,420" size="380,175" font="SetrixHD; 20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
@@ -3545,7 +3561,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_osd_menu_user_interface.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="ButtonSetupSelect" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="global_title; 35" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="Title" render="Label" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="list" position="70,100" size="700,420" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<widget name="choosen" position="70,575" size="700,100" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<widget name="description" position="825,420" size="380,175" font="SetrixHD; 20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
@@ -3555,4 +3571,57 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="_oe-buttons_template1" />
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_osd_menu_user_interface.png" transparent="1" alphatest="blend" />
 	</screen>
+	<!-- DVDPlayer -->
+	<screen name="FileBrowser" position="0,0" size="1280,720" title="DVD File Browser" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="template1_2layer" />
+		<eLabel text="DVD File Browser" position="58,36" size="550,50" valign="bottom" font="SetrixHD;34" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="filelist" position="70,110" size="700,480" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="1" />
+		<panel name="rg__-buttons_template1" />
+		<panel name="rg__-keys_template1-source" />
+		<panel name="_oe-buttons_template1" />
+		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/dvd.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="DVDPlayer" position="0,0" size="1280,720" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel position="0,640" zPosition="-2" size="1280,80" backgroundColor="infobarbackground" />
+		<eLabel backgroundColor="infobaraccent1" position="110,683" size="796,1" zPosition="3"/>
+		<widget source="global.CurrentTime" render="Label" position="940,605" size="300,30" font="global_clock; 20" halign="right" shadowOffset="-2,-2" shadowColor="black" backgroundColor="infobarbackground" foregroundColor="layer-a-clock-foreground" transparent="1">
+			<convert type="ClockToText">Format:%H:%M , %A , %d.%m.%Y</convert>
+		</widget>
+		<widget source="session.CurrentService" render="PositionGauge" position="110,679" size="796,9" zPosition="6" transparent="1">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Progress" position="110,681" size="796,5" foregroundColor="infobarprogress" borderWidth="0" transparent="1" zPosition="5">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="110,644" size="796,30" font="Regular;24" halign="left" valign="center" backgroundColor="infobarbackground" transparent="1" foregroundColor="infobarfont1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="15,669" size="75,28" font="Regular;20" halign="right" valign="bottom" backgroundColor="infobarbackground" foregroundColor="infobarfont1" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="826,644" size="80,30" font="Regular;24" halign="right" valign="center" backgroundColor="infobarbackground" transparent="1" foregroundColor="infobaraccent2">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="926,669" size="75,28" font="Regular;20" halign="left" valign="bottom" backgroundColor="infobarbackground" foregroundColor="infobarfont1" transparent="1">
+			<convert type="ServicePosition">Remaining,Negate</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" backgroundColor="infobarbackground" foregroundColor="infobaraccent2" font="Regular; 20" halign="right" position="1058,648" size="60,28" transparent="1">
+			<convert type="MetrixHDServiceTime">StartTime</convert>
+		</widget>
+		<eLabel backgroundColor="infobarbackground" foregroundColor="infobaraccent2" font="Regular; 20" halign="center" valign="center" position="1120,648" size="20,28" text="-" transparent="1"/>
+		<widget source="session.CurrentService" render="Label" backgroundColor="infobarbackground" foregroundColor="infobaraccent1" font="Regular; 20" halign="left" position="1140,648" size="60,28" transparent="1">
+			<convert type="MetrixHDServiceTime">EndTime</convert>
+		</widget>
+		<widget name="chapterLabel" position="110,692" size="600,24" font="Regular;18" halign="left" foregroundColor="infobaraccent1" backgroundColor="infobarbackground" transparent="1" />
+		<widget name="subtitleLabel" position="640,692" size="360,24" font="Regular;18" halign="right" foregroundColor="infobaraccent1" backgroundColor="infobarbackground" transparent="1" />
+		<widget name="audioLabel" position="1000,692" size="240,24" font="Regular;18" halign="right" foregroundColor="infobaraccent1" backgroundColor="infobarbackground" transparent="1" />
+		<panel name="COLORGRADIENT_bottom_IB" />
+	</screen>
+	<screen name="ChapterZap" position="center,center" size="260,80" title="Chapter" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel name="a" position="5,5" size="150,70" backgroundColor="layer-a-background" zPosition="-10" />
+		<eLabel name="b" position="155,10" size="100,60" backgroundColor="layer-b-background" zPosition="-10" />
+		<widget name="chapter" position="5,20" size="150,40" font="SetrixHD;30" halign="center" valign="bottom" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" />
+		<widget name="number" position="155,26" size="100,40" halign="center" valign="bottom" font="SetrixHD;40" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" />
+	</screen>
+	<!-- DVDPlayer -->
 </skin>

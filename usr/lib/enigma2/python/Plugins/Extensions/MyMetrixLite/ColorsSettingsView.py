@@ -221,7 +221,7 @@ class ColorsSettingsView(ConfigListScreen, Screen):
             config.plugins.MyMetrixLiteColors.channelselectioncolorServiceRecorded.value = "E51400"
             config.plugins.MyMetrixLiteColors.channelselectioncolorServicePseudoRecorded.value = "0000CD"
             config.plugins.MyMetrixLiteColors.channelselectioncolorServiceStreamed.value = "C3461B"
- 
+
             config.plugins.MyMetrixLiteColors.windowtitletext.value = "FFFFFF"
             config.plugins.MyMetrixLiteColors.windowtitletexttransparency.value = "1A"
             config.plugins.MyMetrixLiteColors.windowtitletextback.value = "FFFFFF"
@@ -247,6 +247,7 @@ class ColorsSettingsView(ConfigListScreen, Screen):
             config.plugins.MyMetrixLiteColors.layeraaccent2.value = "6E6E6E"
             config.plugins.MyMetrixLiteColors.layeraextendedinfo1.value = "BDBDBD"
             config.plugins.MyMetrixLiteColors.layeraextendedinfo2.value = "6E6E6E"
+            config.plugins.MyMetrixLiteColors.layeraextendedinfo3.value = "BDBDBD"
 
             config.plugins.MyMetrixLiteColors.layerbbackground.value = "27408B"
             config.plugins.MyMetrixLiteColors.layerbbackgroundtransparency.value = "1A"
@@ -442,6 +443,7 @@ class ColorsSettingsView(ConfigListScreen, Screen):
             config.plugins.MyMetrixLiteColors.layeraaccent2.value = "6E6E6E"
             config.plugins.MyMetrixLiteColors.layeraextendedinfo1.value = "BDBDBD"
             config.plugins.MyMetrixLiteColors.layeraextendedinfo2.value = "6E6E6E"
+            config.plugins.MyMetrixLiteColors.layeraextendedinfo3.value = "BDBDBD"
 
             config.plugins.MyMetrixLiteColors.layerbbackground.value = "911D10"
             config.plugins.MyMetrixLiteColors.layerbbackgroundtransparency.value = "4D"
@@ -611,7 +613,7 @@ class ColorsSettingsView(ConfigListScreen, Screen):
             config.plugins.MyMetrixLiteColors.channelselectioncolorServiceRecorded.value = "E51400"
             config.plugins.MyMetrixLiteColors.channelselectioncolorServicePseudoRecorded.value = "0000CD"
             config.plugins.MyMetrixLiteColors.channelselectioncolorServiceStreamed.value = "C3461B"
- 
+
             config.plugins.MyMetrixLiteColors.windowtitletext.value = "FFFFFF"
             config.plugins.MyMetrixLiteColors.windowtitletexttransparency.value = "00"
             config.plugins.MyMetrixLiteColors.windowtitletextback.value = "0F0F0F"
@@ -637,6 +639,7 @@ class ColorsSettingsView(ConfigListScreen, Screen):
             config.plugins.MyMetrixLiteColors.layeraaccent2.value = "A4A4A4"
             config.plugins.MyMetrixLiteColors.layeraextendedinfo1.value = "BDBDBD"
             config.plugins.MyMetrixLiteColors.layeraextendedinfo2.value = "6E6E6E"
+            config.plugins.MyMetrixLiteColors.layeraextendedinfo3.value = "BDBDBD"
 
             config.plugins.MyMetrixLiteColors.layerbbackground.value = "70AD11"
             config.plugins.MyMetrixLiteColors.layerbbackgroundtransparency.value = "27"

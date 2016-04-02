@@ -206,22 +206,22 @@ class MainSettingsView(Screen):
                 else:
                     infobarSkinSearchAndReplace.append(['<panel name="INFOBARTUNERINFO-2" />', '<panel name="INFOBARTUNERINFO-%d" />' % self.getTunerCount()])
             else:
-                    infobarSkinSearchAndReplace.append(['<panel name="INFOBARTUNERINFO-2" />', '']) 
+                    infobarSkinSearchAndReplace.append(['<panel name="INFOBARTUNERINFO-2" />', ''])
 
             if config.plugins.MetrixWeather.enabled.getValue() is False:
                 infobarSkinSearchAndReplace.append(['<panel name="INFOBARWEATHERWIDGET" />', ''])
 
-            if config.plugins.MyMetrixLiteOther.showInfoBarServiceIcons.getValue() is False: 
-                infobarSkinSearchAndReplace.append(['<panel name="INFOBARSERVICEINFO" />', '']) 
+            if config.plugins.MyMetrixLiteOther.showInfoBarServiceIcons.getValue() is False:
+                infobarSkinSearchAndReplace.append(['<panel name="INFOBARSERVICEINFO" />', ''])
 
-            if config.plugins.MyMetrixLiteOther.showRecordstate.getValue() is False: 
-                infobarSkinSearchAndReplace.append(['<panel name="INFOBARRECORDSTATE" />', '']) 
+            if config.plugins.MyMetrixLiteOther.showRecordstate.getValue() is False:
+                infobarSkinSearchAndReplace.append(['<panel name="INFOBARRECORDSTATE" />', ''])
 
-            if config.plugins.MyMetrixLiteOther.showSnr.getValue() is False: 
-                infobarSkinSearchAndReplace.append(['<panel name="INFOBARSNR" />', '']) 
+            if config.plugins.MyMetrixLiteOther.showSnr.getValue() is False:
+                infobarSkinSearchAndReplace.append(['<panel name="INFOBARSNR" />', ''])
 
-            if config.plugins.MyMetrixLiteOther.showOrbitalposition.getValue() is False: 
-                infobarSkinSearchAndReplace.append(['<panel name="INFOBARORBITALPOSITION" />', '']) 
+            if config.plugins.MyMetrixLiteOther.showOrbitalposition.getValue() is False:
+                infobarSkinSearchAndReplace.append(['<panel name="INFOBARORBITALPOSITION" />', ''])
 
             if config.plugins.MyMetrixLiteOther.showSTBinfo.getValue() is True:
                 infobarSkinSearchAndReplace.append(['<!--panel name="STBINFO" /-->', '<panel name="STBINFO" />'])
@@ -252,7 +252,7 @@ class MainSettingsView(Screen):
 
             # InfoBar
             if config.plugins.MyMetrixLiteOther.showExtendedinfo.getValue() is True:
-                infobarSkinSearchAndReplace.append(['<!--panel name="INFOBAREXTENDEDINFO" /-->', '<panel name="INFOBAREXTENDEDINFO" />']) 
+                infobarSkinSearchAndReplace.append(['<!--panel name="INFOBAREXTENDEDINFO" /-->', '<panel name="INFOBAREXTENDEDINFO" />'])
 
             skin_lines = appendSkinFile(SKIN_INFOBAR_SOURCE, infobarSkinSearchAndReplace)
 
@@ -479,7 +479,7 @@ class MainSettingsView(Screen):
 
             #SkinDesign
             confvalue = config.plugins.MyMetrixLiteOther.SkinDesignLUC.getValue()
-            if confvalue != "no": 
+            if confvalue != "no":
                 color = (config.plugins.MyMetrixLiteColors.upperleftcornertransparency.value + config.plugins.MyMetrixLiteColors.upperleftcornerbackground.value)
                 width = config.plugins.MyMetrixLiteOther.SkinDesignLUCwidth.value
                 height = config.plugins.MyMetrixLiteOther.SkinDesignLUCheight.value
@@ -488,7 +488,7 @@ class MainSettingsView(Screen):
                 posz = -105 + int(config.plugins.MyMetrixLiteOther.SkinDesignLUCposz.value)
                 newlines = (('<eLabel name="upperleftcorner-s" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
                 newlinem = (('<eLabel name="upperleftcorner-m" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
-                if confvalue == "both": 
+                if confvalue == "both":
                     skinSearchAndReplace.append(['<!--eLabel name="upperleftcorner-s" position="0,0" zPosition="-105" size="40,25" backgroundColor="#2770AD11" /-->', newlines ])
                     skinSearchAndReplace.append(['<!--eLabel name="upperleftcorner-m" position="0,0" zPosition="-105" size="40,25" backgroundColor="#2770AD11" /-->', newlinem ])
                 elif confvalue == "screens":
@@ -497,7 +497,7 @@ class MainSettingsView(Screen):
                     skinSearchAndReplace.append(['<!--eLabel name="upperleftcorner-m" position="0,0" zPosition="-105" size="40,25" backgroundColor="#2770AD11" /-->', newlinem ])
 
             confvalue = config.plugins.MyMetrixLiteOther.SkinDesignLLC.getValue()
-            if  confvalue != "no": 
+            if  confvalue != "no":
                 color = (config.plugins.MyMetrixLiteColors.lowerleftcornertransparency.value + config.plugins.MyMetrixLiteColors.lowerleftcornerbackground.value)
                 width = config.plugins.MyMetrixLiteOther.SkinDesignLLCwidth.value
                 height = int(config.plugins.MyMetrixLiteOther.SkinDesignLLCheight.value)
@@ -506,7 +506,7 @@ class MainSettingsView(Screen):
                 posz = -105 + int(config.plugins.MyMetrixLiteOther.SkinDesignLLCposz.value)
                 newlines = (('<eLabel name="lowerleftcorner-s" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
                 newlinem = (('<eLabel name="lowerleftcorner-m" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
-                if confvalue == "both": 
+                if confvalue == "both":
                     skinSearchAndReplace.append(['<!--eLabel name="lowerleftcorner-s" position="0,675" zPosition="-105" size="40,45" backgroundColor="#2770AD11" /-->', newlines ])
                     skinSearchAndReplace.append(['<!--eLabel name="lowerleftcorner-m" position="0,675" zPosition="-105" size="40,45" backgroundColor="#2770AD11" /-->', newlinem ])
                 elif confvalue == "screens":
@@ -515,7 +515,7 @@ class MainSettingsView(Screen):
                     skinSearchAndReplace.append(['<!--eLabel name="lowerleftcorner-m" position="0,675" zPosition="-105" size="40,45" backgroundColor="#2770AD11" /-->', newlinem ])
 
             confvalue = config.plugins.MyMetrixLiteOther.SkinDesignRUC.getValue()
-            if  confvalue != "no": 
+            if  confvalue != "no":
                 color = (config.plugins.MyMetrixLiteColors.upperrightcornertransparency.value + config.plugins.MyMetrixLiteColors.upperrightcornerbackground.value)
                 width = int(config.plugins.MyMetrixLiteOther.SkinDesignRUCwidth.value)
                 height = config.plugins.MyMetrixLiteOther.SkinDesignRUCheight.value
@@ -524,7 +524,7 @@ class MainSettingsView(Screen):
                 posz = -105 + int(config.plugins.MyMetrixLiteOther.SkinDesignRUCposz.value)
                 newlines = (('<eLabel name="upperrightcorner-s" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
                 newlinem = (('<eLabel name="upperrightcorner-m" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
-                if confvalue == "both": 
+                if confvalue == "both":
                     skinSearchAndReplace.append(['<!--eLabel name="upperrightcorner-s" position="1240,0" zPosition="-105" size="40,60" backgroundColor="#1A0F0F0F" /-->', newlines ])
                     skinSearchAndReplace.append(['<!--eLabel name="upperrightcorner-m" position="1240,0" zPosition="-105" size="40,60" backgroundColor="#1A0F0F0F" /-->', newlinem ])
                 elif confvalue == "screens":
@@ -533,7 +533,7 @@ class MainSettingsView(Screen):
                     skinSearchAndReplace.append(['<!--eLabel name="upperrightcorner-m" position="1240,0" zPosition="-105" size="40,60" backgroundColor="#1A0F0F0F" /-->', newlinem ])
 
             confvalue = config.plugins.MyMetrixLiteOther.SkinDesignRLC.getValue()
-            if  confvalue != "no": 
+            if  confvalue != "no":
                 color = (config.plugins.MyMetrixLiteColors.lowerrightcornertransparency.value + config.plugins.MyMetrixLiteColors.lowerrightcornerbackground.value)
                 width = int(config.plugins.MyMetrixLiteOther.SkinDesignRLCwidth.value)
                 height = int(config.plugins.MyMetrixLiteOther.SkinDesignRLCheight.value)
@@ -542,7 +542,7 @@ class MainSettingsView(Screen):
                 posz = -105 + int(config.plugins.MyMetrixLiteOther.SkinDesignRLCposz.value)
                 newlines = (('<eLabel name="lowerrightcorner-s" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
                 newlinem = (('<eLabel name="lowerrightcorner-m" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
-                if confvalue == "both": 
+                if confvalue == "both":
                     skinSearchAndReplace.append(['<!--eLabel name="lowerrightcorner-s" position="1240,640" zPosition="-105" size="40,80" backgroundColor="#1A0F0F0F" /-->', newlines ])
                     skinSearchAndReplace.append(['<!--eLabel name="lowerrightcorner-m" position="1240,640" zPosition="-105" size="40,80" backgroundColor="#1A0F0F0F" /-->', newlinem ])
                 elif confvalue == "screens":
@@ -551,7 +551,7 @@ class MainSettingsView(Screen):
                     skinSearchAndReplace.append(['<!--eLabel name="lowerrightcorner-m" position="1240,640" zPosition="-105" size="40,80" backgroundColor="#1A0F0F0F" /-->', newlinem ])
 
             confvalue = config.plugins.MyMetrixLiteOther.SkinDesignOLH.getValue()
-            if  confvalue != "no": 
+            if  confvalue != "no":
                 color = (config.plugins.MyMetrixLiteColors.optionallayerhorizontaltransparency.value + config.plugins.MyMetrixLiteColors.optionallayerhorizontalbackground.value)
                 width = config.plugins.MyMetrixLiteOther.SkinDesignOLHwidth.value
                 height = config.plugins.MyMetrixLiteOther.SkinDesignOLHheight.value
@@ -560,7 +560,7 @@ class MainSettingsView(Screen):
                 posz = -105 + int(config.plugins.MyMetrixLiteOther.SkinDesignOLHposz.value)
                 newlines = (('<eLabel name="optionallayerhorizontal-s" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
                 newlinem = (('<eLabel name="optionallayerhorizontal-m" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
-                if confvalue == "both": 
+                if confvalue == "both":
                     skinSearchAndReplace.append(['<!--eLabel name="optionallayerhorizontal-s" position="0,655" zPosition="-105" size="1127,30" backgroundColor="#2770AD11" /-->', newlines ])
                     skinSearchAndReplace.append(['<!--eLabel name="optionallayerhorizontal-m" position="0,655" zPosition="-105" size="1127,30" backgroundColor="#2770AD11" /-->', newlinem ])
                 elif confvalue == "screens":
@@ -569,7 +569,7 @@ class MainSettingsView(Screen):
                     skinSearchAndReplace.append(['<!--eLabel name="optionallayerhorizontal-m" position="0,655" zPosition="-105" size="1127,30" backgroundColor="#2770AD11" /-->', newlinem ])
 
             confvalue = config.plugins.MyMetrixLiteOther.SkinDesignOLV.getValue()
-            if  confvalue != "no": 
+            if  confvalue != "no":
                 color = (config.plugins.MyMetrixLiteColors.optionallayerverticaltransparency.value + config.plugins.MyMetrixLiteColors.optionallayerverticalbackground.value)
                 width = config.plugins.MyMetrixLiteOther.SkinDesignOLVwidth.value
                 height = config.plugins.MyMetrixLiteOther.SkinDesignOLVheight.value
@@ -578,7 +578,7 @@ class MainSettingsView(Screen):
                 posz = -105 + int(config.plugins.MyMetrixLiteOther.SkinDesignOLVposz.value)
                 newlines = (('<eLabel name="optionallayervertical-s" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
                 newlinem = (('<eLabel name="optionallayervertical-m" position="%s,%s" zPosition="%s" size="%s,%s" backgroundColor="#%s" />') % (posx, posy, posz, width, height, color))
-                if confvalue == "both": 
+                if confvalue == "both":
                     skinSearchAndReplace.append(['<!--eLabel name="optionallayervertical-s" position="102,51" zPosition="-105" size="60,669" backgroundColor="#2770AD11" /-->', newlines ])
                     skinSearchAndReplace.append(['<!--eLabel name="optionallayervertical-m" position="102,51" zPosition="-105" size="60,669" backgroundColor="#2770AD11" /-->', newlinem ])
                 elif confvalue == "screens":
@@ -694,4 +694,3 @@ class MainSettingsView(Screen):
 
     def __selectionChanged(self):
         self.ShowPicture()
-

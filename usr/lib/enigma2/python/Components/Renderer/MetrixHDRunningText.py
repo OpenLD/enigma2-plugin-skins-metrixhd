@@ -129,7 +129,7 @@ class MetrixHDRunningText(Renderer):
 							opt, val = (x.strip() for x in o.split('=', 1))
 						else:
 							opt, val = o.strip(), ""
-						
+
 						if opt == "":
 							continue
 						elif opt in ("wrap", "nowrap"):
@@ -162,11 +162,11 @@ class MetrixHDRunningText(Renderer):
 					attribs.append((attrib,value))
 			self.skinAttributes = attribs
 		ret = Renderer.applySkin(self, desktop, screen)
-		
+
 		if self.mOneShot: self.mOneShot = max(self.mStepTimeout, self.mOneShot)
 		if self.mLoopTimeout: self.mLoopTimeout = max(self.mStepTimeout, self.mLoopTimeout)
 		if self.mPageDelay: self.mPageDelay = max(self.mStepTimeout, self.mPageDelay)
-		
+
 		self.test_label.setFont(self.txfont)
 		if not (self.txtflags & RT_WRAP):
 			self.test_label.setNoWrap(1)
@@ -206,7 +206,7 @@ class MetrixHDRunningText(Renderer):
 
 	def drawText(self, X, Y, W, H):
 		self.instance.clear(self.bcolor)
-		
+
 		if not self.scolor is None:
 			self.instance.writeText( eRect(X-self.soffset[0], Y-self.soffset[1], W, H), self.scolor, self.bcolor, self.txfont, self.txtext, self.txtflags )
 			self.instance.writeText( eRect(X, Y, W, H), self.fcolor, self.scolor, self.txfont, self.txtext, self.txtflags )
@@ -218,7 +218,7 @@ class MetrixHDRunningText(Renderer):
 		   self.type == NONE or \
 		   self.test_label is None:
 			return False
-		
+
 		self.test_label.setText(self.txtext)
 		text_size = self.test_label.calculateSize()
 		text_width = text_size.width()
@@ -227,7 +227,7 @@ class MetrixHDRunningText(Renderer):
 		# text height correction if necessary:
 		if self.lineHeight and self.direction in (TOP,BOTTOM):
 			text_height = max(text_height, (text_height + self.lineHeight - 1) / self.lineHeight * self.lineHeight)
-		
+
 #		self.type =		0 - NONE; 1 - RUNNING; 2 - SWIMMING; 3 - AUTO(???)
 #		self.direction =	0 - LEFT; 1 - RIGHT;   2 - TOP;      3 - BOTTOM
 #		self.halign =		0 - LEFT; 1 - RIGHT;   2 - CENTER;   3 - BLOCK
@@ -372,8 +372,6 @@ class MetrixHDRunningText(Renderer):
 					self.P = self.A - abs(self.mStep)
 			else:
 				self.mStep = -self.mStep
-		
+
 		self.P += self.mStep
 		self.mTimer.start(timeout,True)
-
-

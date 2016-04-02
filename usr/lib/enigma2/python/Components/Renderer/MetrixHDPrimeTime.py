@@ -61,4 +61,3 @@ class MetrixHDPrimeTime(Renderer, VariableText):
 					break
 
 		self.text = text
-

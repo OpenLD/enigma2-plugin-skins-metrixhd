@@ -131,7 +131,7 @@ class OtherSettingsView(ConfigListScreen, Screen):
             return False
 
     def getMenuItemList(self):
-        
+
         list = []
 
         list.append(getConfigListEntry(_("InfoBar/SecondInfobar   ------------------------------------------------------------------------------"), ))
@@ -321,7 +321,7 @@ class OtherSettingsView(ConfigListScreen, Screen):
         self.setInputToDefault(config.plugins.MyMetrixLiteOther.SkinDesignRUCposz)
         self.setInputToDefault(config.plugins.MyMetrixLiteOther.SkinDesignRLCwidth)
         self.setInputToDefault(config.plugins.MyMetrixLiteOther.SkinDesignRLCheight)
-        self.setInputToDefault(config.plugins.MyMetrixLiteOther.SkinDesignRLCposz) 
+        self.setInputToDefault(config.plugins.MyMetrixLiteOther.SkinDesignRLCposz)
         self.setInputToDefault(config.plugins.MyMetrixLiteOther.SkinDesignOLHwidth)
         self.setInputToDefault(config.plugins.MyMetrixLiteOther.SkinDesignOLHheight)
         self.setInputToDefault(config.plugins.MyMetrixLiteOther.SkinDesignOLHposx)

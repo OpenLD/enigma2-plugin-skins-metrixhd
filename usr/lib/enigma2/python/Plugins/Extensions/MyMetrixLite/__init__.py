@@ -392,4 +392,3 @@ def appendSkinFile(appendFileName, skinPartSearchAndReplace):
         rsSkinLines.append(skinLine)
 
     return rsSkinLines
-

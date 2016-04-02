@@ -406,7 +406,7 @@ class MainSettingsView(Screen):
             layeraaccent2 = ('name="layer-a-accent2" value="#00' + config.plugins.MyMetrixLiteColors.layeraaccent2.value + '"')
             layeraextendedinfo1 = ('name="layer-a-extendedinfo1" value="#00' + config.plugins.MyMetrixLiteColors.layeraextendedinfo1.value + '"')
             layeraextendedinfo2 = ('name="layer-a-extendedinfo2" value="#00' + config.plugins.MyMetrixLiteColors.layeraextendedinfo2.value + '"')
-            layeraextendedinfo2 = ('name="layer-a-extendedinfo3" value="#00' + config.plugins.MyMetrixLiteColors.layeraextendedinfo3.value + '"')
+            layeraextendedinfo3 = ('name="layer-a-extendedinfo3" value="#00' + config.plugins.MyMetrixLiteColors.layeraextendedinfo3.value + '"')
             layeraprogress = ('name="layer-a-progress" value="#' + config.plugins.MyMetrixLiteColors.layeraprogresstransparency.value + config.plugins.MyMetrixLiteColors.layeraprogress.value + '"')
 
             layerbbackground = ('name="layer-b-background" value="#' + config.plugins.MyMetrixLiteColors.layerbbackgroundtransparency.value + config.plugins.MyMetrixLiteColors.layerbbackground.value + '"')
@@ -445,7 +445,7 @@ class MainSettingsView(Screen):
             skinSearchAndReplace.append(['name="layer-a-accent2" value="#00A4A4A4"', layeraaccent2 ])
             skinSearchAndReplace.append(['name="layer-a-extendedinfo1" value="#00BDBDBD"', layeraextendedinfo1 ])
             skinSearchAndReplace.append(['name="layer-a-extendedinfo2" value="#006E6E6E"', layeraextendedinfo2 ])
-            skinSearchAndReplace.append(['name="layer-a-extendedinfo3" value="#00BDBDBD"', layeraextendedinfo2 ])
+            skinSearchAndReplace.append(['name="layer-a-extendedinfo3" value="#00BDBDBD"', layeraextendedinfo3 ])
             skinSearchAndReplace.append(['name="layer-a-progress" value="#27A61D4D"', layeraprogress ])
 
             skinSearchAndReplace.append(['name="layer-b-background" value="#2770AD11"', layerbbackground ])

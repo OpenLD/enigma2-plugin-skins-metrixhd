@@ -438,13 +438,13 @@
 			<widget backgroundColor="layer-a-background" font="Regular; 16" foregroundColor="layer-a-clock-foreground" halign="right" noWrap="1" position="210,67" render="Label" size="39,26" source="session.CurrentService" transparent="1" valign="center" zPosition="10">
 				<convert type="MetrixWeather">forecastTodayTempMin</convert>
 			</widget>
-			<widget backgroundColor="layer-b-background" font="Meteo; 45" foregroundColor="layer-b-clock-foregroun" halign="left" noWrap="1" position="270,40" render="Label" size="50,50" source="session.CurrentService" transparent="1" valign="center" zPosition="9">
+			<widget backgroundColor="layer-b-background" font="Meteo; 45" foregroundColor="layer-b-clock-foreground" halign="left" noWrap="1" position="270,40" render="Label" size="50,50" source="session.CurrentService" transparent="1" valign="center" zPosition="9">
 				<convert type="MetrixWeather">forecastTomorrowCode</convert>
 			</widget>
-			<widget backgroundColor="layer-b-background" font="Regular; 16" foregroundColor="layer-b-clock-foregroun" halign="right" noWrap="1" position="327,37" render="Label" size="39,26" source="session.CurrentService" transparent="1" valign="center" zPosition="10">
+			<widget backgroundColor="layer-b-background" font="Regular; 16" foregroundColor="layer-b-clock-foreground" halign="right" noWrap="1" position="327,37" render="Label" size="39,26" source="session.CurrentService" transparent="1" valign="center" zPosition="10">
 				<convert type="MetrixWeather">forecastTomorrowTempMax</convert>
 			</widget>
-			<widget backgroundColor="layer-b-background" font="Regular; 16" foregroundColor="layer-b-clock-foregroun" halign="right" noWrap="1" position="327,67" render="Label" size="39,26" source="session.CurrentService" transparent="1" valign="center" zPosition="10">
+			<widget backgroundColor="layer-b-background" font="Regular; 16" foregroundColor="layer-b-clock-foreground" halign="right" noWrap="1" position="327,67" render="Label" size="39,26" source="session.CurrentService" transparent="1" valign="center" zPosition="10">
 				<convert type="MetrixWeather">forecastTomorrowTempMin</convert>
 			</widget>
 			<eLabel backgroundColor="layer-b-background" position="259,33" size="116,65"/>

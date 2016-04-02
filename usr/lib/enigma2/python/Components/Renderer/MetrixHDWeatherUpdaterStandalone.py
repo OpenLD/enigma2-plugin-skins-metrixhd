@@ -96,7 +96,18 @@ class MetrixHDWeatherUpdaterStandalone(Renderer, VariableText):
 
 
         dom = parseString(data)
-        title = self.getText(dom.getElementsByTagName('title')[0].childNodes)
+        try:
+            title = self.getText(dom.getElementsByTagName('title')[0].childNodes)
+        except IndexError as error:
+            print "Cant get weather data: %r" % error
+            g_updateRunning = False
+            self.startTimer(True,30)
+            if self.check:
+                #text = "%s\n%s|" % (str(error),data)
+                text = "%s|" % str(error)
+                self.writeCheckFile(text)
+            return
+
         config.plugins.MetrixWeather.currentLocation.value = str(title).split(',')[0].replace("Conditions for ","")
 
         currentWeather = dom.getElementsByTagName('yweather:condition')[0]

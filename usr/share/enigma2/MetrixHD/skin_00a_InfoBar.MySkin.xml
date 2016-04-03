@@ -4,15 +4,13 @@
 		<panel name="INFOBARSTYLEMODERN" />
 		<panel name="CLOCKWIDGET" />
 		<panel name="INFOBARWEATHERWIDGET" />
-		<panel name="CHANNELNAME" />
 		<panel name="INFOBARSERVICEINFO" />
 		<panel name="INFOBARRECORDSTATE" />
 		<panel name="INFOBARRESOLUTION" />
 		<panel name="INFOBARORBITALPOSITION" />
 		<panel name="INFOBARSNR" />
 		<panel name="INFOBARTUNERINFO-3" />
-		<panel name="STBINFO" />
-		<!--panel name="INFOBAREXTENDEDINFO" /-->
+		<panel name="LDSTBINFO" />
 		<!-- <panel name="GRIDLINES" /> */ -->
 	</screen>
 </skin>

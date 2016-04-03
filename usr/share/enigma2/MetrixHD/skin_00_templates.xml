@@ -291,11 +291,11 @@
 				<convert type="ServiceInfo">VideoHeight</convert>
 			</widget>
 		</screen>
-		<screen name="STBINFOMOVIEPLAYER">
+		<!-- <screen name="STBINFOMOVIEPLAYER">
 			<widget backgroundColor="layer-a-background" position="247,697" size="940,20" font="Regular;16" halign="right" foregroundColor="layer-a-extendedinfo1" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
 				<convert type="MetrixSTBinfo">MyMetrixConfig</convert>
 			</widget>
-		</screen>
+		</screen>*/-->
 		<screen name="MOVIENAME">
 			<!--/* MOVIE NAME -->
 			<widget font="SetrixHD;80"  backgroundColor="text-background" foregroundColor="background-text" noWrap="1" position="35,465" render="Label" size="1252,105" source="session.CurrentService" transparent="1" valign="bottom" zPosition="-30">
@@ -349,7 +349,7 @@
 			</widget>
 			<!-- STYLE MODERN */ -->
 		</screen>
-		<screen name="STBINFO">
+		<screen name="LDSTBINFO">
 			<!-- <widget backgroundColor="layer-a-background" position="297,688" size="940,20" font="Regular; 14" halign="right" foregroundColor="layer-a-extendedinfo1" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
 				<convert type="MetrixSTBinfo">MyMetrixConfig</convert>
 			</widget> -->
@@ -480,7 +480,7 @@
 			</widget>
 			<!-- RECORDSTATE */-->
 		</screen>
-		<screen name="INFOBAREXTENDEDINFO">
+		<screen name="LDINFOBAREXTENDEDINFO">
 			<!-- /* ECM -->
 			<eLabel backgroundColor="layer-a-background" name="new ePixmap" position="380,30" size="520,71" transparent="0" zPosition="-99"/>
 			<!--eLabel backgroundColor="layer-a-background" name="new ePixmap" position="46,30" size="1188,72" transparent="0" zPosition="-99"/-->

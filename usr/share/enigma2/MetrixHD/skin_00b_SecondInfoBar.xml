@@ -12,6 +12,6 @@
 		<panel name="INFOBARTUNERINFO-3" />
 		<panel name="INFOBAREPGWIDGET" />
 		<panel name="SIGNAL_LD_WIDGET" />
-		<panel name="STBINFO" />
+		<panel name="LDSTBINFO" />
 	</screen>
 </skin>

@@ -11,8 +11,7 @@
 		<panel name="INFOBARORBITALPOSITION" />
 		<panel name="INFOBARSNR" />
 		<panel name="INFOBARTUNERINFO-3" />
-		<panel name="STBINFO" />
-		<!--panel name="INFOBAREXTENDEDINFO" /-->
+		<panel name="LDSTBINFO" />
 		<!-- <panel name="GRIDLINES" /> */ -->
 	</screen>
 </skin>

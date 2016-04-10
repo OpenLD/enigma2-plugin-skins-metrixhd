@@ -461,13 +461,6 @@
 			</widget>
 			<!-- CHANNEL NAME */-->
 		</screen>
-		<screen name="CHANNELNAME">
-			<!--/* CHANNEL NAME -->
-			<widget font="global_large;80" backgroundColor="text-background" foregroundColor="background-text" noWrap="1" position="30,455" render="Label" size="1252,105" source="session.CurrentService" transparent="1" valign="bottom" zPosition="-30">
-				<convert type="MetrixHDExtServiceInfo">ServiceNumberAndName</convert>
-			</widget>
-			<!-- CHANNEL NAME */-->
-		</screen>
 		<screen name="INFOBARRESOLUTION">
 			<!-- /* ResolutionInfo -->
 			<widget source="session.CurrentService" render="Label" position="644,656" size="60,26" font="RegularLight; 24" halign="right" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1">

@@ -298,7 +298,7 @@
 		</screen>*/-->
 		<screen name="MOVIENAME">
 			<!--/* MOVIE NAME -->
-			<widget font="SetrixHD;80"  backgroundColor="text-background" foregroundColor="background-text" noWrap="1" position="35,465" render="Label" size="1252,105" source="session.CurrentService" transparent="1" valign="bottom" zPosition="-30">
+			<widget font="SetrixHD;80" backgroundColor="text-background" foregroundColor="background-text" noWrap="1" position="35,465" render="Label" size="1252,105" source="session.CurrentService" transparent="1" valign="bottom" zPosition="-30">
 				<convert type="MetrixHDExtServiceInfo">ServiceNumberAndName</convert>
 			</widget>
 			<!-- MOVIE NAME */-->
@@ -457,6 +457,13 @@
 		<screen name="CHANNELNAME">
 			<!--/* CHANNEL NAME -->
 			<widget font="SetrixHD;80" backgroundColor="text-background" foregroundColor="background-text" noWrap="1" position="35,445" render="Label" size="1252,105" source="session.CurrentService" transparent="1" valign="bottom" zPosition="-30">
+				<convert type="MetrixHDExtServiceInfo">ServiceNumberAndName</convert>
+			</widget>
+			<!-- CHANNEL NAME */-->
+		</screen>
+		<screen name="CHANNELNAME">
+			<!--/* CHANNEL NAME -->
+			<widget font="global_large;80" backgroundColor="text-background" foregroundColor="background-text" noWrap="1" position="30,455" render="Label" size="1252,105" source="session.CurrentService" transparent="1" valign="bottom" zPosition="-30">
 				<convert type="MetrixHDExtServiceInfo">ServiceNumberAndName</convert>
 			</widget>
 			<!-- CHANNEL NAME */-->

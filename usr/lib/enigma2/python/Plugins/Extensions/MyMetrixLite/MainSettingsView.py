@@ -197,16 +197,16 @@ class MainSettingsView(Screen):
                 tunerXml += self.getTunerXMLItem(nimSlot.getSlotID(), tunerData[0], tunerData[1], tunerData[2], tunerData[3], tunerData[4], tunerData[5], nimmanager.somethingConnected(nimSlot.slot))
                 i += 1
 
-            infobarSkinSearchAndReplace.append(['<panel name="INFOBARTUNERINFO-2" />', tunerXml])
+            infobarSkinSearchAndReplace.append(['<panel name="INFOBARTUNERINFO-3" />', tunerXml])
             '''
 
             if config.plugins.MyMetrixLiteOther.showTunerinfo.getValue() is True:
                 if config.plugins.MyMetrixLiteOther.setTunerAuto.getValue() is False:
-                    infobarSkinSearchAndReplace.append(['<panel name="INFOBARTUNERINFO-2" />', '<panel name="INFOBARTUNERINFO-%d" />' % config.plugins.MyMetrixLiteOther.setTunerManual.getValue()])
+                    infobarSkinSearchAndReplace.append(['<panel name="INFOBARTUNERINFO-3" />', '<panel name="INFOBARTUNERINFO-%d" />' % config.plugins.MyMetrixLiteOther.setTunerManual.getValue()])
                 else:
-                    infobarSkinSearchAndReplace.append(['<panel name="INFOBARTUNERINFO-2" />', '<panel name="INFOBARTUNERINFO-%d" />' % self.getTunerCount()])
+                    infobarSkinSearchAndReplace.append(['<panel name="INFOBARTUNERINFO-3" />', '<panel name="INFOBARTUNERINFO-%d" />' % self.getTunerCount()])
             else:
-                    infobarSkinSearchAndReplace.append(['<panel name="INFOBARTUNERINFO-2" />', ''])
+                    infobarSkinSearchAndReplace.append(['<panel name="INFOBARTUNERINFO-3" />', ''])
 
             if config.plugins.MetrixWeather.enabled.getValue() is False:
                 infobarSkinSearchAndReplace.append(['<panel name="INFOBARWEATHERWIDGET" />', ''])
@@ -234,11 +234,11 @@ class MainSettingsView(Screen):
             )
             infobarSkinSearchAndReplace.append(['<panel name="CHANNELNAME" />', channelNameXML])
 
-            if config.plugins.MyMetrixLiteOther.showInfoBarResolution.getValue() is False:
-                infobarSkinSearchAndReplace.append(['<panel name="INFOBARRESOLUTION" />', ''])
-
             if config.plugins.MyMetrixLiteOther.showInfoBarClock.getValue() is False:
                 infobarSkinSearchAndReplace.append(['<panel name="CLOCKWIDGET" />', ''])
+				
+            if config.plugins.MyMetrixLiteOther.showInfoBarResolution.getValue() is False:
+                infobarSkinSearchAndReplace.append(['<panel name="INFOBARRESOLUTION" />', ''])
 
             # SecondInfoBar
             skin_lines = appendSkinFile(SKIN_SECOND_INFOBAR_SOURCE, infobarSkinSearchAndReplace)
@@ -251,17 +251,14 @@ class MainSettingsView(Screen):
             move(SKIN_SECOND_INFOBAR_TARGET_TMP, SKIN_SECOND_INFOBAR_TARGET)
 
             # InfoBar
-            #if config.plugins.MyMetrixLiteOther.showExtendedinfo.getValue() is True:
-                #infobarSkinSearchAndReplace.append(['<!--panel name="INFOBAREXTENDEDINFO" /-->', '<panel name="INFOBAREXTENDEDINFO" />'])
+            skin_lines = appendSkinFile(SKIN_INFOBAR_SOURCE, infobarSkinSearchAndReplace)
 
-            #skin_lines = appendSkinFile(SKIN_INFOBAR_SOURCE, infobarSkinSearchAndReplace)
+            xFile = open(SKIN_INFOBAR_TARGET_TMP, "w")
+            for xx in skin_lines:
+                xFile.writelines(xx)
+            xFile.close()
 
-            #xFile = open(SKIN_INFOBAR_TARGET_TMP, "w")
-            #for xx in skin_lines:
-            #    xFile.writelines(xx)
-            #xFile.close()
-
-            #move(SKIN_INFOBAR_TARGET_TMP, SKIN_INFOBAR_TARGET)
+            move(SKIN_INFOBAR_TARGET_TMP, SKIN_INFOBAR_TARGET)
 
             ################
             # ChannelSelection

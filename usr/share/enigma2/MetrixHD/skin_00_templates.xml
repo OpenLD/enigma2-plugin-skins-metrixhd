@@ -426,14 +426,11 @@
 			<widget render="MetrixHDWeatherUpdaterStandalone" source="global.CurrentTime" position="0,0" size="0,0" transparent="1" />
 			<!-- NEEDED WITHOUT OPENSTORE INSTALLED */ -->
 			<eLabel backgroundColor="layer-a-background" position="46,30" size="213,71"/>
-			<widget backgroundColor="layer-a-background" font="SetrixHD; 46" foregroundColor="layer-a-clock-foreground" halign="right" noWrap="1" position="45,21" render="Label" size="78,70" source="session.CurrentService" transparent="1" valign="center" zPosition="10">
+			<widget backgroundColor="layer-a-background" font="SetrixHD; 60" foregroundColor="layer-a-clock-foreground" halign="right" noWrap="1" position="45,21" render="Label" size="78,70" source="session.CurrentService" transparent="1" valign="center" zPosition="10">
 				<convert type="MetrixWeather">currentWeatherTemp</convert>
 			</widget>
 			<widget backgroundColor="layer-a-background" font="Regular; 18" foregroundColor="layer-a-clock-foreground" halign="left" noWrap="1" position="127,37" render="Label" size="30,26" source="session.CurrentService" transparent="1" valign="center" zPosition="10">
 				<convert type="MetrixWeather">CF</convert>
-			</widget>
-            <widget backgroundColor="layer-a-background" font="SetrixHD; 14" foregroundColor="layer-a-foreground" halign="center" noWrap="1" position="37,83" render="Label" size="150,100" source="session.CurrentService" transparent="1" valign="left" zPosition="10">
-                <convert type="MetrixWeather">currentLocation</convert>
 			</widget>
 			<widget backgroundColor="layer-a-background" font="Regular; 16" foregroundColor="layer-a-clock-foreground" halign="right" noWrap="1" position="210,37" render="Label" size="39,26" source="session.CurrentService" transparent="1" valign="center" zPosition="10">
 				<convert type="MetrixWeather">forecastTodayTempMax</convert>
@@ -451,7 +448,7 @@
 				<convert type="MetrixWeather">forecastTomorrowTempMin</convert>
 			</widget>
 			<eLabel backgroundColor="layer-b-background" position="259,33" size="116,65"/>
-			<widget backgroundColor="layer-a-background" foregroundColor="layer-a-clock-foreground" font="Meteo; 44" halign="left" noWrap="1" position="156,37" render="Label" size="45,45" source="session.CurrentService" transparent="1" valign="center" zPosition="9">
+			<widget backgroundColor="layer-a-background" foregroundColor="layer-a-clock-foreground" font="Meteo; 45" halign="left" noWrap="1" position="156,40" render="Label" size="50,50" source="session.CurrentService" transparent="1" valign="center" zPosition="9">
 				<!--convert type="MetrixWeather">forecastTodayCode</convert-->
 				<convert type="MetrixWeather">currentWeatherCode</convert>
 			</widget>

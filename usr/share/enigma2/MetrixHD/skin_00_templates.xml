@@ -432,6 +432,10 @@
 			<widget backgroundColor="layer-a-background" font="Regular; 18" foregroundColor="layer-a-clock-foreground" halign="left" noWrap="1" position="127,37" render="Label" size="30,26" source="session.CurrentService" transparent="1" valign="center" zPosition="10">
 				<convert type="MetrixWeather">CF</convert>
 			</widget>
+           		<eLabel backgroundColor="layer-b-background" position="46,105" size="330,25"/>
+			<widget backgroundColor="layer-b-background" font="Regular; 19" foregroundColor="layer-b-clock-foreground" halign="center" noWrap="1" position="46,105" render="Label" size="330,25" source="session.CurrentService" transparent="1" valign="center" zPosition="10">
+                		<convert type="MetrixWeather">currentLocation</convert>
+			</widget>
 			<widget backgroundColor="layer-a-background" font="Regular; 16" foregroundColor="layer-a-clock-foreground" halign="right" noWrap="1" position="210,37" render="Label" size="39,26" source="session.CurrentService" transparent="1" valign="center" zPosition="10">
 				<convert type="MetrixWeather">forecastTodayTempMax</convert>
 			</widget>

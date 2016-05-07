@@ -678,7 +678,7 @@
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_epg_epg_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">epg_menu</convert>
 			<convert type="ConditionalShowHide" />
-		</widget>	
+		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_setup_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">system_selection</convert>
 			<convert type="ConditionalShowHide" />
@@ -817,7 +817,7 @@
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_system_fansetup_config.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">tempfancontrol</convert>
 			<convert type="ConditionalShowHide" />
-		</widget>		
+		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_system_AutomaticVolumeAdjustment.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">AutomaticVolumeAdjustment</convert>
 			<convert type="ConditionalShowHide" />
@@ -1995,7 +1995,7 @@
 		<eLabel text="PiPSetup" position="10,5" size="800,50" font="SetrixHD;35" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="0" />
 		<widget name="text" position="10,55" size="800,170" font="SetrixHD;20" halign="left" scrollbarMode="showNever" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="0" />
 	</screen>
-	<screen name="SkinSelector" position="0,0" size="1280,720" title="Skin Selector" flags="wfNoBorder" backgroundColor="transparent">		
+	<screen name="SkinSelector" position="0,0" size="1280,720" title="Skin Selector" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Skin Selector" position="70,47" foregroundColor="layer-a-title-foreground" size="700,50" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="SkinList" position="70,115" size="700,250" itemHeight="35" scrollbarMode="showNever" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" enableWrapAround="1" transparent="1"/>
 		<widget name="Preview" position="293,375" size="280,240" alphatest="blend" />
@@ -2439,8 +2439,8 @@
 		<eLabel position="161,244" size="550,181" backgroundColor="layer-a-background" zPosition="-5" />
 	</screen>
 	<screen name="NumericalTextInputHelpDialog" position="338,594" size="604,126" backgroundColor="transparent" flags="wfNoBorder" zPosition="8">
-		<eLabel name="b" position="0,0" size="604,126" backgroundColor="layer-b-background" zPosition="-10" /> 
-		<eLabel name="a" position="1,1" size="602,124" backgroundColor="layer-a-background" zPosition="-9" /> 
+		<eLabel name="b" position="0,0" size="604,126" backgroundColor="layer-b-background" zPosition="-10" />
+		<eLabel name="a" position="1,1" size="602,124" backgroundColor="layer-a-background" zPosition="-9" />
 		<widget name="key1" position="1,15" size="200,25" font="Console;18" halign="center" valign="center" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1"/>
 		<widget name="key2" position="202,15" size="200,25" font="Console;18" halign="center" valign="center" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1"/>
 		<widget name="key3" position="403,15" size="200,25" font="Console;18" halign="center" valign="center" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1"/>
@@ -2592,25 +2592,29 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 	<!-- EPG Screens -->
 	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Electronic Program Guide" position="60,33" size="499,50" font="SetrixHD;35" backgroundColor="layer-a-background" foregroundColor="layer-a-title-foreground" transparent="1" />
-		<widget source="Event" render="Label" position="60,78" size="700,40" font="SetrixHD; 24" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="1">
+		<!--<eLabel text="Electronic Program Guide" position="470,33" size="499,50" font="SetrixHD;22" halign="center" backgroundColor="epg-background" foregroundColor="layer-a-title-foreground" transparent="1" />/-->
+		<widget source="Title" render="Label" position="60,33" foregroundColor="layer-a-title-foreground" size="400,50" noWrap="1" valign="bottom" font="SetrixHD;41" backgroundColor="epg-background" transparent="1" />
+		<widget source="Event" render="Label" position="120,91" size="700,40" font="SetrixHD; 22" halign="center" backgroundColor="epg-background" foregroundColor="epg-event-foreground" transparent="0">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.VideoPicture" render="Pig" position="900,104" size="326,183" zPosition="3" backgroundColor="unff000000" />
+		<widget source="session.VideoPicture" render="Pig" position="900,104" size="326,183" zPosition="3" backgroundColor="transparent" />
+		<widget source="session.CurrentService" render="Label" position="895,101" size="326,30" zPosition="4" font="SetrixHD; 14"  halign="center" valign="top" noWrap="1" backgroundColor="transparent" foregroundColor="undcdcdc" borderColor="metrixDeepGrey" borderWidth="1" transparent="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
 		<eLabel position="60,160" zPosition="0" size="830,125" backgroundColor="epg-eventdescription-background" transparent="0" />
 		<widget source="Event" render="Label" position="65,160" size="820,125" font="RegularLight; 19" backgroundColor="epg-eventdescription-background" foregroundColor="epg-eventdescription-foreground" transparent="1" valign="top" zPosition="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<widget source="Event" render="Label" position="70,123" size=" 65, 22" font="Regular; 18" halign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="1">
+		<widget source="Event" render="Label" position="70,123" size="65, 22" font="Regular; 18" halign="center" backgroundColor="epg-background" foregroundColor="layer-a-clock-foreground" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M </convert>
 		</widget>
-		<widget source="Event" render="Label" position="797,123" size=" 80, 22" font="Regular; 18" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="1" halign="center">
+		<widget source="Event" render="Label" position="797,123" size="80, 22" font="Regular; 18" backgroundColor="epg-background" foregroundColor="layer-a-clock-foreground" transparent="1" halign="center">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<eLabel position="146,135" size="645,1" backgroundColor="layer-a-accent1" foregroundColor="layer-a-accent1" zPosition="1" />
-		<widget source="Event" render="Progress" position="146,133" size="645,5" borderWidth="0" backgroundColor="layer-a-background" foregroundColor="layer-a-progress" transparent="1" zPosition="2">
+		<widget source="Event" render="Progress" position="146,133" size="645,5" borderWidth="0" backgroundColor="epg-background" foregroundColor="layer-a-progress" transparent="1" zPosition="2">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget name="lab1" position="60,455" size="1165,35" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="layer-a-background" transparent="1" />
@@ -2623,16 +2627,20 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="timeline4" position="0,398" zPosition="1" size="1,230" pixmap="MetrixHD/epg/timeline.png" />
 		<widget name="timeline5" position="0,398" zPosition="1" size="1,230" pixmap="MetrixHD/epg/timeline.png" /-->
 		<widget name="timeline_now" position="60,325" zPosition="2" size="16,307" pixmap="MetrixHD/epg/timeline-now.png" alphatest="blend" />
-		<widget name="bouquetlist" position="0,95" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="2" transparent="0" /> 
+		<widget name="bouquetlist" position="0,95" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="2" transparent="0" />
 		<panel name="template1_1layer" />
 		<panel name="rgyb-buttons_template1" />
-		<panel name="rgyb-keys_template1" />
+		<!--<panel name="rgyb-keys_template1" />/-->
+		<widget name="key_red" position="70,638" size="170,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
+		<widget name="key_green" position="255,638" size="170,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
+		<widget name="key_yellow" position="443,638" size="170,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
+		<widget name="key_blue" position="628,638" size="220,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
 		<ePixmap position="1045,635" size="81,40" zPosition="10" pixmap="MetrixHD/buttons/key_info.png" transparent="1" alphatest="on" />
 		<ePixmap position="1140,635" size="81,40" zPosition="10" pixmap="MetrixHD/buttons/key_menu.png" transparent="1" alphatest="on" />
 	</screen>
 	<screen name="GraphicalEPG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Electronic Program Guide" position="60,33" size="800,50" font="SetrixHD; 35" backgroundColor="layer-a-background" foregroundColor="layer-a-title-foreground" transparent="1" />
-		<widget source="Event" render="Label" position="60,78" size="700,40" font="SetrixHD; 24" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="1">
+		<eLabel text="Electronic Program Guide" position="60,33" size="800,50" font="SetrixHD; 36" backgroundColor="layer-a-background" foregroundColor="layer-a-title-foreground" transparent="1" />
+		<widget source="Event" render="Label" position="235,91" size="700,40" font="SetrixHD; 24" halign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="Event" render="Label" position="70,123" size=" 65, 22" font="Regular; 18" halign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="1">
@@ -2661,10 +2669,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="timeline4" position="0,398" zPosition="1" size="1,230" pixmap="MetrixHD/epg/timeline.png" />
 		<widget name="timeline5" position="0,398" zPosition="1" size="1,230" pixmap="MetrixHD/epg/timeline.png" /-->
 		<widget name="timeline_now" position="60,325" zPosition="2" size="16,307" pixmap="MetrixHD/epg/timeline-now.png" alphatest="blend" />
-		<widget name="bouquetlist" position="0,95" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="2" transparent="0" /> 
+		<widget name="bouquetlist" position="0,95" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="2" transparent="0" />
 		<panel name="template1_1layer" />
 		<panel name="rgyb-buttons_template1" />
-		<panel name="rgyb-keys_template1" />
+		<!--<panel name="rgyb-keys_template1" />/-->
+		<widget name="key_red" position="70,638" size="170,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
+		<widget name="key_green" position="255,638" size="170,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
+		<widget name="key_yellow" position="443,638" size="170,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
+		<widget name="key_blue" position="628,638" size="220,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
 		<ePixmap position="1045,635" size="81,40" zPosition="10" pixmap="MetrixHD/buttons/key_info.png" transparent="1" alphatest="on" />
 		<ePixmap position="1140,635" size="81,40" zPosition="10" pixmap="MetrixHD/buttons/key_menu.png" transparent="1" alphatest="on" />
 	</screen>
@@ -2681,6 +2693,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="30,12" size="850,45" font="SetrixHD; 35" valign="top" noWrap="1" backgroundColor="layer-a-background" transparent="1">
 			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="Event" render="Label" position="910,193" size="120,32" font="SetrixHD;20" backgroundColor="epg-background" foregroundColor="epg-timeline-foreground" transparent="1" halign="right" valign="center">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
 		<widget name="lab1" position="0,105" size="1280,35" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="timeline_text" position="0,65" size="1280,30" foregroundColor="epg-timeline-foreground" selectionDisabled="1" transparent="1" />
@@ -2754,7 +2770,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<panel name="rgyb-buttons_template1" />
-		<panel name="rgyb-keys_template1" />
+		<widget name="key_red" position="75,638" size="170,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
+		<widget name="key_green" position="257,638" size="170,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
+		<widget name="key_yellow" position="445,638" size="170,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
+		<widget name="key_blue" position="630,638" size="220,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
 		<panel name="template1_2layer" />
 		<panel name="ime-buttons_template1" />
 	</screen>
@@ -2812,7 +2831,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		</widget>
 		<panel name="template1_2layer" />
 		<panel name="rgyb-buttons_template1" />
-		<panel name="rgyb-keys_template1" />
+		<widget name="key_red" position="75,638" size="170,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
+		<widget name="key_green" position="257,638" size="170,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
+		<widget name="key_yellow" position="445,638" size="170,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
+		<widget name="key_blue" position="630,638" size="220,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
 		<panel name="ime-buttons_template1" />
 	</screen>
 	<screen name="BouquetSelector" position="0,0" size="1280,720" title="Choose bouquet" flags="wfNoBorder" backgroundColor="transparent">
@@ -2893,7 +2915,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		</widget>
 		<panel name="template1_2layer" />
 		<panel name="rgyb-buttons_template1" />
-		<panel name="rgyb-keys_template1" />
+		<widget name="key_red" position="75,638" size="170,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
+		<widget name="key_green" position="257,638" size="170,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
+		<widget name="key_yellow" position="445,638" size="170,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
+		<widget name="key_blue" position="630,638" size="220,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 19" halign="left" backgroundColor="epg-background" foregroundColor="layer-a-button-foreground" transparent="1" />
 		<panel name="ime-buttons_template1" />
 	</screen>
 	<!-- EventViewSimple , optimized for MovieInfo (EMC)-->
@@ -3025,14 +3050,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		</widget>
 		<widget source="Frontend" render="Label" position="640,150" size=" 80,25" font="SetrixHD;21" backgroundColor="layer-a-background" transparent="1">
 			<convert type="FrontendInfo">SNR</convert>
-		</widget>		
+		</widget>
 		<eLabel name="agc" text="AGC:" position="120,185" size=" 80,25" font="SetrixHD;21" halign="right" backgroundColor="layer-a-background" transparent="1" />
 		<widget pixmap="MetrixHD/colors/00149baf.png" source="Frontend" render="Progress" position="210,190" size="420,20" borderWidth="1" borderColor="layer-a-accent1" transparent="1">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<widget source="Frontend" render="Label" position="640,185" size=" 80,25" font="SetrixHD;21" backgroundColor="layer-a-background" transparent="1">
 			<convert type="FrontendInfo">AGC</convert>
-		</widget>		
+		</widget>
 		<eLabel name="ber" text="BER:" position="120,220" size=" 80,25" font="SetrixHD;21" halign="right" backgroundColor="layer-a-background" transparent="1" />
 		<widget source="Frontend" render="Progress" position="210,225" size="420,20" borderWidth="1" borderColor="layer-a-accent1" transparent="1">
 			<convert type="FrontendInfo">BER</convert>
@@ -3533,7 +3558,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template1_2layer" />
 		<panel name="moe-buttons_template1" />
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/imdb.png" transparent="1" alphatest="blend" />
-	</screen>	
+	</screen>
 	<!-- E2 Bookmarks -->
 	<screen name="LocationBox" position="0,0" size="1280,720" title="Location Box" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="Title" render="Label" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
@@ -3585,7 +3610,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<screen name="DVDPlayer" position="0,0" size="1280,720" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel position="0,640" zPosition="-2" size="1280,80" backgroundColor="infobarbackground" />
 		<eLabel backgroundColor="infobaraccent1" position="110,683" size="796,1" zPosition="3"/>
-		<widget source="global.CurrentTime" render="Label" position="940,605" size="300,30" font="global_clock; 20" halign="right" shadowOffset="-2,-2" shadowColor="black" backgroundColor="infobarbackground" foregroundColor="layer-a-clock-foreground" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="940,605" size="300,30" font="SetrixHD; 20" halign="right" shadowOffset="-2,-2" shadowColor="black" backgroundColor="infobarbackground" foregroundColor="layer-a-clock-foreground" transparent="1">
 			<convert type="ClockToText">Format:%H:%M , %A , %d.%m.%Y</convert>
 		</widget>
 		<widget source="session.CurrentService" render="PositionGauge" position="110,679" size="796,9" zPosition="6" transparent="1">

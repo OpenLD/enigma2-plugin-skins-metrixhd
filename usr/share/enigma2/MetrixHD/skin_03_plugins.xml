@@ -8,7 +8,7 @@
 	    <widget name="CoolText2" position="825,465" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 	   	<panel name="template1_2layer"/>
 	    <panel name="rgyb-keys_template1-source"/>
-		<panel name="rgyb-buttons_template1"/>		
+		<panel name="rgyb-buttons_template1"/>
 		<ePixmap pixmap="MetrixHD/icons/setup.png" position="890,175" size="256,256" zPosition="2" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="CoolSingleGuide" position="0,0" size="1280,720" title="Cool Single Guide" flags="wfNoBorder" backgroundColor="transparent">
@@ -33,14 +33,14 @@
 		<eLabel position="914,187" size="206,1" backgroundColor="layer-b-progress" />
 		<widget source="Event" render="Progress" position="914,185" size="206,5" borderWidth="0" backgroundColor="layer-b-background" foregroundColor="layer-b-progress" transparent="1" zPosition="1">
 			<convert type="EventTime">Progress</convert>
-		</widget>						
+		</widget>
 		<widget source="Event" render="Label" position="825,210" size="385,380" font="RegularLight; 19" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="0" halign="left" valign="top">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<panel name="template1_2layer"/>
 	    <panel name="_me-buttons_template1"/>
 		<panel name="rgyb-buttons_template1"/>
-		<panel name="rgyb-keys_template1-source"/>		
+		<panel name="rgyb-keys_template1-source"/>
 	</screen>
 	<screen name="CoolMultiGuide" position="40,25" size="1200,660" zPosition="1" title="Cool TV Guide" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel position="0,0" zPosition="-10" size="1360,660" backgroundColor="layer-a-background" />
@@ -845,9 +845,9 @@
 		<panel name="template1_2layer" />
 	    <panel name="rg__-keys_template1-source" />
 		<panel name="rg__-buttons_template1" />
-		<panel name="_oe-buttons_template1" />		
+		<panel name="_oe-buttons_template1" />
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/music.png" transparent="1" alphatest="blend" />
-	</screen>		
+	</screen>
 	<screen name="MerlinMusicPlayerSetup" position="0,0" size="1280,720" title="Merlin Music Player Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="MetrixHD/mmp/wallpaper.png" position="0,0" size="1280,720" zPosition="-11" transparent="1" alphatest="blend" />
 		<widget source="Title" render="Label" position="70,47" size="800,50" font="SetrixHD;35" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" />
@@ -856,9 +856,9 @@
 	    <panel name="rg__-keys_template1-source" />
 		<panel name="rg__-buttons_template1" />
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/setup.png" transparent="1" alphatest="blend" />
-	</screen>	
+	</screen>
 	<screen name="MerlinMusicPlayerFileList" position="0,0" size="1280,720" title="Merlin Music Player" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="MetrixHD/mmp/wallpaper.png" position="0,0" size="1280,720" zPosition="-11" transparent="1" alphatest="blend"/>		
+		<ePixmap pixmap="MetrixHD/mmp/wallpaper.png" position="0,0" size="1280,720" zPosition="-11" transparent="1" alphatest="blend"/>
 		<widget source="Title" render="Label" position="70,47" size="800,50" font="SetrixHD;35" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="headertext" position="70,115" size="700,32" font="SetrixHD;24" backgroundColor="layer-a-background" transparent="1" />
 		<eLabel position="70,150" size="700,2" backgroundColor="layer-a-accent1" />
@@ -899,7 +899,7 @@
 		<eLabel text="/" position="1064,593" size="70,120" font="Regular;80" foregroundColor="#6a6965" backgroundColor="black" transparent="1" />
 		<widget source="session.CurrentService" render="Label" position="935,593" size="320,120" font="Regular;80" foregroundColor="#6a6965" backgroundColor="black" halign="right" transparent="1">
 			<convert type="ServicePosition">Length</convert>
-		</widget>		
+		</widget>
 		<eLabel text="Next:" position="390,695" size="60,25" font="Regular;18" backgroundColor="black" transparent="1" />
 		<widget name="nextTitle" position="440,695" size="600,26" font="Regular;18" foregroundColor="#6a6965" backgroundColor="black" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="1145,0" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="black" foregroundColor="layer-a-clock-foreground" transparent="1">
@@ -911,7 +911,7 @@
 		<widget source="global.CurrentTime" render="Label" position="968,36" size="161,29" font="SetrixHD; 16" backgroundColor="black" halign="right" foregroundColor="layer-a-clock-foreground" transparent="1">
 			<convert type="ClockToText">Format:%e. %b</convert>
 		</widget>
-	</screen>	
+	</screen>
 	<screen name="MerlinMusicPlayerLyrics" position="0,0" size="1280,720" title="Merlin Music Player" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="MetrixHD/mmp/wallpaper.png" position="0,0" size="1280,720" zPosition="-11" transparent="1" alphatest="blend"/>
 		<widget source="Title" render="Label" position="70,47" size="800,50" font="SetrixHD;35" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" />
@@ -926,7 +926,7 @@
 	<screen name="MerlinMusicPlayerScreenSaver" position="0,0" size="1280,720" title="Merlin Music Player ScreenSaver" flags="wfNoBorder" backgroundColor="layer-a-background">
 		<widget name="coverArt" pixmap="/usr/share/enigma2/MetrixHD/mmp/no_coverArt.png" position="200,77" size="267,267" transparent="1" alphatest="blend" />
 		<widget name="display" position="200,315" size="1280,24" zPosition="1" transparent="1" font="SetrixHD;20" foregroundColor="unfcc000" />
-	</screen>	
+	</screen>
 	<screen name="MerlinMusicPlayerLCDScreenText" position="0,0" size="132,64">
 		<widget source="session.CurrentService" render="Label" position="4,4" size="132,12" valign="top" font="SetrixHD;12" halign="center">
 			<convert type="ServicePosition">Position,ShowHours</convert>
@@ -934,22 +934,22 @@
 		<widget name="text1" position="4,17" size="132,30" halign="center" valign="top" font="SetrixHD;13" />
 		<widget name="text4" position="4,47" size="132,15" halign="center" valign="top" font="SetrixHD;10" />
 	</screen>
-	<!-- MerlinMusicPlayer, iDream *--> 
+	<!-- MerlinMusicPlayer, iDream *-->
     <!--* VPS -->
-	<screen name="VPS_Setup" title="VPS-Plugin" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="VPS_Setup" title="VPS-Plugin" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="Title" render="Label" position="70,47" size="800,50" font="SetrixHD;35" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="config" position="70,115" size="700,510" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" />
     	<widget source="help" render="Label" position="825,425" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
         <panel name="template1_2layer"/>
 	    <panel name="rgyb-keys_template1-source"/>
-		<panel name="rgyb-buttons_template1"/>		
+		<panel name="rgyb-buttons_template1"/>
 		<ePixmap pixmap="MetrixHD/icons/setup.png" position="890,175" size="256,256" zPosition="2" transparent="1" alphatest="blend" />
-    </screen>   
+    </screen>
     <screen name="VPS_Screen_Info" position="0,0" size="1280,720" title="VPS-Plugin Information" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="Title" render="Label" position="70,47" size="800,50" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="text" position="70,115" size="700,510" font="SetrixHD;23" backgroundColor="layer-a-background" scrollbarMode="showOnDemand" transparent="1" />
 	    <panel name="template1_2layer"/>
-	    <panel name="__e-buttons_template1"/>	
+	    <panel name="__e-buttons_template1"/>
 		<ePixmap pixmap="MetrixHD/icons/info.png" position="890,175" size="256,256" zPosition="2" transparent="1" alphatest="blend" />
 	</screen>
     <!-- VPS *-->
@@ -964,9 +964,9 @@
 		<widget name="bouquet" position="20,112" size="122,36" halign="left" font="Regular; 27" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="chBouq" position="166,112" size="308,36" halign="left" font="Regular; 27" backgroundColor="layer-a-background" noWrap="1" transparent="1" />
 		<eLabel name="layer1" position="0,0" size="460,165" zPosition="-10" backgroundColor="layer-a-background" />
-		<eLabel name="layer2" position="460,7" size="230,150" zPosition="-10" backgroundColor="layer-b-background" />		
+		<eLabel name="layer2" position="460,7" size="230,150" zPosition="-10" backgroundColor="layer-b-background" />
 	</screen>
-	<!-- NumberZapExt *-->  
+	<!-- NumberZapExt *-->
     <!--* VirtualZap -->
 	<screen name="VirtualZapConfig" position="0,0" size="1280,720" backgroundColor="transparent" >
 		<eLabel text="Virtual Zap Config" position="70,47" size="800,50" font="SetrixHD;35" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" />
@@ -975,7 +975,7 @@
 		<panel name="rg__-keys_template1-source"/>
 		<panel name="rg__-buttons_template1"/>
 	    <ePixmap pixmap="MetrixHD/icons/setup.png" position="890,175" size="256,256" zPosition="2" transparent="1" alphatest="blend" />
-	</screen>	
+	</screen>
 	<screen name="DirectoryBrowserVZ" position="0,0" size="1280,720" title=" " backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel text="Directory Browser" position="70,47" size="800,50" font="SetrixHD;35" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" />
 		<widget source="curdir" render="Label" position="70,115" size="700,28" font="SetrixHD;23" backgroundColor="layer-a-background" transparent="1" />
@@ -983,9 +983,9 @@
 		<widget name="filelist" position="70,165" size="700,450" zPosition="3" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1" />
 		<panel name="template1_2layer"/>
 		<panel name="rg__-keys_template1-source"/>
-		<panel name="rg__-buttons_template1"/>		
+		<panel name="rg__-buttons_template1"/>
 	    <ePixmap pixmap="MetrixHD/icons/search.png" position="890,175" size="256,256" zPosition="2" transparent="1" alphatest="blend" />
-	</screen>	
+	</screen>
 	<screen name="VirtualZapPiconNoPiP" position="0,0" size="1280,720" title="Virtual Zap" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel name="InfoBar" backgroundColor="layer-a-background" position="-1,560" size="1283,160" zPosition="-10"/>
 		<eLabel position="288,615" size="980,1" backgroundColor="layer-a-accent1" zPosition="2" />
@@ -998,7 +998,7 @@
 		<widget name="NextEPG" font="Regular;26" position="286,624" size="805,40" foregroundColor="layer-a-accent1" backgroundColor="layer-a-background" halign="left" valign="top" transparent="1" zPosition="3"/>
 		<widget name="NowTime" font="Regular;24" position="1145,586" size="124,28" backgroundColor="layer-a-background" halign="right" transparent="1" zPosition="3"/>
 		<widget name="NextTime" font="Regular;24" position="1145,621" size="124,28" backgroundColor="layer-a-background" halign="right" transparent="1" zPosition="3"/>
-	</screen>	
+	</screen>
 	<screen name="VirtualZapPicon" position="0,0" size="1280,720" title="Virtual Zap" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel name="InfoBar" backgroundColor="layer-a-background" position="-1,560" size="1283,160" zPosition="-10"/>
 		<eLabel position="288,615" size="980,1" backgroundColor="layer-a-accent1" zPosition="2" />
@@ -1390,7 +1390,7 @@
 	</screen>
 	<!-- FullBackup -->
 	<!-- Serienrecorder -->
-	<screen name="SerienRecorder3.0" position="0,0" size="1280,720" title="Serien Recorder" backgroundColor="transparent"> 
+	<screen name="SerienRecorder3.0" position="0,0" size="1280,720" title="Serien Recorder" backgroundColor="transparent">
 		<panel name="template1_1layer" />
 		<widget name="version" position="900,637" size="326,30" zPosition="1" font="Regular; 16" halign="center" valign="top" foregroundColor="layer-a-accent1" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="headline" position="60,33" size="830,50" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" font="SetrixHD;35" valign="center" halign="left" />
@@ -1594,7 +1594,7 @@
 	<!-- Videoclippingsetup -->
 	<!--Bitrate Viewer -->
 	<screen name="BitrateViewer" position="center,center" size="710,360" flags="wfNoBorder" title="Bitrate Viewer" backgroundColor="transparent" >
-		<widget source="Title" render="Label" position="5,10" size="690,50" font="SetrixHD; 35" halign="center" valign="bottom" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" /> 
+		<widget source="Title" render="Label" position="5,10" size="690,50" font="SetrixHD; 35" halign="center" valign="bottom" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" />
 		<eLabel text="video" position="50,90" size="180,30" font="SetrixHD;22" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1" />
 		<eLabel name="line" position="50,125" size="610,1" backgroundColor="layer-a-accent2" zPosition="-9" />
 		<eLabel text="min" position="50,130" size="100,30" font="SetrixHD;18" foregroundColor="layer-a-accent1" backgroundColor="layer-a-background" transparent="1" />
@@ -1733,34 +1733,34 @@
 	</screen>
 	<!-- GigaBlue IPBox Client -->
 	<!--programmlisten-updater /-->
-	<screen name="Programmlisten_Updater" position="0,0" size="1308,720" flags="wfNoBorder" backgroundColor="transparent"> 
+	<screen name="Programmlisten_Updater" position="0,0" size="1308,720" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="Title" render="Label" position="58,36" foregroundColor="layer-a-title-foreground" size="550,50" noWrap="1" valign="bottom" font="SetrixHD;30" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="MenuListSetting" position="70,110" size="560,510" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
-		<widget name="description" position="810,415" size="415,190" font="SetrixHD; 20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/> 
+		<widget name="description" position="810,415" size="415,190" font="SetrixHD; 20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<widget name="update" position="619,638" size="170,30" noWrap="1" zPosition="1" valign="center" font="SetrixHD; 20" halign="left" backgroundColor="layer-a-background" foregroundColor="layer-a-button-foreground" transparent="1" />
 		<panel name="template1_2layer" />
 		<panel name="rgy_-buttons_template1" />
 		<panel name="rgy_-keys_template1-source" />
 		<panel name="ime-buttons_template1" />
-		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_scan_autobouquetsmakermaker.png" transparent="1" alphatest="blend" /> 
+		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_scan_autobouquetsmakermaker.png" transparent="1" alphatest="blend" />
 	</screen>
-	<screen name="PU_Restore" position="0,0" size="1308,720" flags="wfNoBorder" backgroundColor="transparent"> 
+	<screen name="PU_Restore" position="0,0" size="1308,720" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="Title" render="Label" position="58,36" foregroundColor="layer-a-title-foreground" size="550,50" noWrap="1" valign="bottom" font="SetrixHD;30" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="ListSetting" position="70,110" size="560,510" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<panel name="template1_2layer" />
 		<panel name="rgy_-buttons_template1" />
 		<panel name="rgy_-keys_template1-source" />
 		<panel name="_oe-buttons_template1" />
-		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_scan_autobouquetsmakermaker.png" transparent="1" alphatest="blend" /> 
+		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_scan_autobouquetsmakermaker.png" transparent="1" alphatest="blend" />
 	</screen>
-	<screen name="PU_History" position="0,0" size="1308,720" flags="wfNoBorder" backgroundColor="transparent"> 
+	<screen name="PU_History" position="0,0" size="1308,720" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="Title" render="Label" position="58,36" foregroundColor="layer-a-title-foreground" size="550,50" noWrap="1" valign="bottom" font="SetrixHD;30" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="History" position="70,110" size="720,510" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<panel name="template1_2layer" />
 		<panel name="r___-buttons_template1" />
 		<panel name="r___-keys_template1-source" />
 		<panel name="__e-buttons_template1" />
-		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_scan_autobouquetsmakermaker.png" transparent="1" alphatest="blend" /> 
+		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_scan_autobouquetsmakermaker.png" transparent="1" alphatest="blend" />
 	</screen>
 	<!--programmlisten-updater /-->
 	<!-- Fast Scan -->
@@ -1797,8 +1797,9 @@
 	</screen>
 	<screen name="SatBlindscanState" position="0,0" size="1280,720" title="Satellite Blindscan" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="Title" render="Label" position="58,36" foregroundColor="layer-a-title-foreground" size="550,50" noWrap="1" valign="bottom" font="SetrixHD;34" backgroundColor="layer-a-background" transparent="1" />
-		<widget name="progress" position="75,66" foregroundColor="layer-a-title-foreground" size="700,50" noWrap="1" valign="bottom" font="SetrixHD;20" backgroundColor="layer-a-background" transparent="1" />
-		<widget source="list" render="Listbox" position="70,120" size="700,500" itemHeight="30" font="SetrixHD; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" >
+		<widget name="text" position="70,66" foregroundColor="layer-a-title-foreground" size="700,50" noWrap="1" valign="bottom" font="global_title;20" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="progress" position="70,96" foregroundColor="layer-a-title-foreground" size="700,50" noWrap="1" valign="bottom" font="SetrixHD;20" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="list" render="Listbox" position="70,150" size="700,510" itemHeight="30" font="SetrixHD; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (5, 2), size = (514, 22), flags = RT_HALIGN_LEFT, text = 0) ],
 				 "fonts": [gFont("Regular", 19)],
@@ -1812,7 +1813,7 @@
 		<panel name="template1_2layer" />
 		<panel name="rg__-buttons_template1" />
 		<panel name="_oe-buttons_template1" />
-		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/setup.png" transparent="1" alphatest="blend" />
+		<widget source="constellation" render="Canvas" position="890,175" size="256,256" zPosition="2" correct_aspect="width" transparent="1" alphatest="blend" />
 	</screen>
 	<!-- Blindscan -->
 	<!-- SpinnerSelector -->

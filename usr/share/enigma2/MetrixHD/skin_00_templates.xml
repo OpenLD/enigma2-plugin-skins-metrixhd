@@ -395,15 +395,19 @@
 				<convert type="ValueRange">3,3</convert>
 				<convert type="ConditionalShowHide" />
 			</widget>
+			<widget source="session.CurrentService" render="FixedLabel" text="IPTV" position="406,656" size="416,30" font="Regular; 24" backgroundColor="layer-a-background" foregroundColor="layer-a-extendedinfo1" transparent="1" halign="left">
+				<convert type="ServiceInfo">IsStream</convert>
+				<convert type="ConditionalShowHide" />
+			</widget>
 			<widget source="session.CurrentService" render="Label" position="525,656" zPosition="1" size="416,30" font="Regular; 24" backgroundColor="layer-a-background" foregroundColor="layer-a-extendedinfo1" transparent="1" halign="left">
 				<convert type="LdExtraInfo">E-C-N</convert>
 			</widget>
 			<widget source="session.CurrentService" render="Label" position="658,620" zPosition="1" size="416,30" font="Regular; 17" backgroundColor="layer-a-background" foregroundColor="layer-a-extendedinfo1" transparent="1" halign="right">
-                <convert type="VAudioInfo">AudioCodec</convert>
-            </widget>
+				<convert type="VAudioInfo">AudioCodec</convert>
+			</widget>
 			<widget source="session.CurrentService" render="Label" position="558,620" zPosition="1" size="416,30" font="Regular; 17" backgroundColor="layer-a-background" foregroundColor="layer-a-extendedinfo1" transparent="1" halign="right">
-                <convert type="AslanExtraInfo">VideoCodec</convert>
-            </widget>
+				<convert type="AslanExtraInfo">VideoCodec</convert>
+			</widget>
 		</screen>
 		<screen name="CLOCKWIDGET">
 			<!--/* ClockWidget -->
@@ -432,9 +436,9 @@
 			<widget backgroundColor="layer-a-background" font="Regular; 18" foregroundColor="layer-a-clock-foreground" halign="left" noWrap="1" position="127,37" render="Label" size="30,26" source="session.CurrentService" transparent="1" valign="center" zPosition="10">
 				<convert type="MetrixWeather">CF</convert>
 			</widget>
-           		<eLabel backgroundColor="layer-b-background" position="46,105" size="330,25"/>
+			<eLabel backgroundColor="layer-b-background" position="46,105" size="330,25"/>
 			<widget backgroundColor="layer-b-background" font="Regular; 19" foregroundColor="layer-b-clock-foreground" halign="center" noWrap="1" position="46,105" render="Label" size="330,25" source="session.CurrentService" transparent="1" valign="center" zPosition="10">
-                		<convert type="MetrixWeather">currentLocation</convert>
+				<convert type="MetrixWeather">currentLocation</convert>
 			</widget>
 			<widget backgroundColor="layer-a-background" font="Regular; 16" foregroundColor="layer-a-clock-foreground" halign="right" noWrap="1" position="210,37" render="Label" size="39,26" source="session.CurrentService" transparent="1" valign="center" zPosition="10">
 				<convert type="MetrixWeather">forecastTodayTempMax</convert>

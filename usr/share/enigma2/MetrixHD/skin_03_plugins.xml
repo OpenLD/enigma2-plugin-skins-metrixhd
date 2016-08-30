@@ -1844,7 +1844,7 @@
 	<screen name="BrowserBookmarkWindow" position="center,center" size="1280,720" title="Bookmark" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="Title" render="Label" position="58,36" size="550,50" noWrap="1" valign="bottom" font="SetrixHD;34" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="bookmarklist" position="70,130" size="700,445" itemHeight="26" font="SetrixHD;20" zPosition="10" scrollbarMode="showOnDemand" />
-		<ePixmap pixmap="MetrixHD/buttons/key_0.png" position="725,602" size="30,29" alphatest="on" />
+		<ePixmap pixmap="MetrixHD/buttons/key_0.png" position="725,602" size="30,29" alphatest="blend" />
 		<widget source="key_0" render="Label" position="410,600" zPosition="1" size="300,30" font="Regular;20" halign="right" valign="center"/>
 		<panel name="template1_2layer" />
 		<panel name="rgyb-buttons_template1" />
@@ -1855,7 +1855,7 @@
 	<screen name="BookmarkEditWindow" position="center,center" size="1280,720" title="Bookmark Edit" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="Title" render="Label" position="58,36" size="550,50" noWrap="1" valign="bottom" font="SetrixHD;34" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="config" position="70,130" size="700,455" itemHeight="26" font="SetrixHD;20" scrollbarMode="showOnDemand" />
-		<widget name="VKeyIcon" pixmap="MetrixHD/buttons/text.png" position="725,602" zPosition="10" size="30,29" transparent="1" alphatest="on" />
+		<widget name="VKeyIcon" pixmap="MetrixHD/buttons/text.png" position="725,602" zPosition="10" size="30,29" transparent="1" alphatest="blend" />
 		<panel name="template1_2layer" />
 		<panel name="rg__-buttons_template1" />
 		<panel name="rg__-keys_template1-source" />

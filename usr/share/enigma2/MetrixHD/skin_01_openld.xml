@@ -3301,8 +3301,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="__e-buttons_template1" />
 	</screen>
 	<screen name="BackupSelection" position="0,0" size="1280,720" title="Select files/folders to backup..." flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Select files/folders to backup..." position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
-		<widget name="checkList" position="70,110" size="700,485" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" />
+		<widget source="title_text" render="Label" position="58,36" foregroundColor="layer-a-title-foreground" size="525,50" zPosition="1" halign="left" valign="bottom" font="SetrixHD;34" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="checkList" position="70,110" size="700,480" itemHeight="30" font="SetrixHD; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<panel name="template1_2layer" />
 		<panel name="rgy_-buttons_template1" />
 		<panel name="rgy_-keys_template1-source" />

@@ -3273,8 +3273,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="info-usb" position="70,301" zPosition="1" size="550,250" font="SetrixHD; 22" halign="left" valign="top" transparent="1" backgroundColor="layer-a-background" />
 		<ePixmap position="890,175" size="256,256" pixmap="MetrixHD/icons/swm.png" transparent="1" alphatest="blend" />
 		<panel name="template1_2layer" />
-		<panel name="rg_b-buttons_template1" />
-		<panel name="rg_b-keys_template1" />
+		<panel name="rgyb-buttons_template1" />
+		<panel name="rgyb-keys_template1-source" />
 		<panel name="__e-buttons_template1" />
 	</screen>
 	<screen name="BackupSelection" position="0,0" size="1280,720" title="Select files/folders to backup..." flags="wfNoBorder" backgroundColor="transparent">

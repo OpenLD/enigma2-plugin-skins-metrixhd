@@ -663,16 +663,8 @@
 	</screen>
 	<screen name="menu_setup" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MENU_template" />
-		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/media1.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
-			<convert type="MenuEntryCompare">video_menu</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_setup_audio.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
-			<convert type="MenuEntryCompare">audio_menu</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_extended_recording_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
-			<convert type="MenuEntryCompare">rec_setup</convert>
+			<convert type="MenuEntryCompare">rec_menu</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_epg_epg_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
@@ -716,33 +708,68 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
-	<screen name="menu_video_menu" position="0,0" size="1280,720" title="Video menu" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="menu_av_menu" position="0,0" size="1280,720" title="A/V settings" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MENU_template" />
-		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/media1.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_system_av_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">av_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/service_info.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">video_setup</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_system_videofinetune_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
-			<convert type="MenuEntryCompare">video_finetune</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-	</screen>
-	<screen name="menu_audio_menu" position="0,0" size="1280,720" title="Audio menu" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MENU_template" />
-		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_setup_audio.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
-			<convert type="MenuEntryCompare">Volume_Adjust</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_setup_audio.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">audio_setup</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_system_autolanguage_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
-			<convert type="MenuEntryCompare">autolanguage_setup</convert>
+	</screen>
+	<screen name="menu_video_menu" position="0,0" size="1280,720" title="Video menu" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MENU_template" />
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/media1.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">video_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_system_videoenhancement_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">videoenhancement_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_system_videofinetune_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">video_finetune</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/service_info.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">video_clipping</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_extended_hdmicec.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">hdmicec</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_extended_osd_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">osd_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	<screen name="menu_audio_menu" position="0,0" size="1280,720" title="Audio menu" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MENU_template" />
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_setup_audio.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">audio_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_setup_audio.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">Volume_Adjust</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_extended_subtitle_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">subtitle_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_system_autolanguage_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">autolanguage_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_system_AutomaticVolumeAdjustment.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">AutomaticVolumeAdjustment</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
@@ -778,10 +805,6 @@
 			<convert type="MenuEntryCompare">language_setup</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_system_remote_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
-			<convert type="MenuEntryCompare">remote_setup</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_system_usage_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">usage_setup</convert>
 			<convert type="ConditionalShowHide" />
@@ -810,10 +833,6 @@
 			<convert type="MenuEntryCompare">VFD_INI</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_system_videoenhancement_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
-			<convert type="MenuEntryCompare">videoenhancement_setup</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_system_autores_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">autores_setup</convert>
 			<convert type="ConditionalShowHide" />
@@ -824,10 +843,6 @@
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_system_fansetup_config.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">tempfancontrol</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_system_AutomaticVolumeAdjustment.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
-			<convert type="MenuEntryCompare">AutomaticVolumeAdjustment</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_mainmenu_pluginhider.png" position="305,80" size="256,256" alphatest="blend">
@@ -857,6 +872,10 @@
 			<convert type="MenuEntryCompare">display_selection</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_system_remote_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">remote_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_extended_specialfeatures_menu.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">specialfeatures_menu</convert>
 			<convert type="ConditionalShowHide" />
@@ -877,16 +896,16 @@
 			<convert type="MenuEntryCompare">logs_setup</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_extended_osd_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
-			<convert type="MenuEntryCompare">osd_setup</convert>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_extended_recording_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">rec_menu</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_epg_epg_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">epg_menu</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_extended_hardisk_selection.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">hardisk_selection</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_extended_hdmicec.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
-			<convert type="MenuEntryCompare">hdmicec</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_extended_rfmod_setup.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
@@ -1104,6 +1123,14 @@
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/pluginmanager.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">Sundtek Control Center</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/search.png" position="305,80" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">cablescan</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/scan-c.png" position="405,290" size="64,64" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">cablescan</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/menu_scan_streamconvert.png" position="305,80" size="256,256" alphatest="blend">
@@ -1604,6 +1631,7 @@
 		<widget name="config" position="70,100" size="700,515" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<widget name="footnote" position="70,550" size="700,50" font="SetrixHD; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<widget name="description" position="825,420" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
+		<widget name="HelpWindow" position="338,594" size="604,126" zPosition="1" transparent="1" alphatest="blend" />
 		<panel name="template1_2layer" />
 		<panel name="rg__-buttons_template1" />
 		<panel name="rg__-keys_template1-source" />
@@ -1641,9 +1669,11 @@
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/audio.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="setup_epgsettings" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Setup EPG" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
+		<eLabel text="EPG settings" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="config" position="70,100" size="700,515" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
-		<widget name="description" position="825,420" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
+		<widget name="footnote" position="70,550" size="700,50" font="Regular; 20" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="1" />
+		<widget name="description" position="810,415" size="415,190" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
+		<widget name="HelpWindow" position="338,594" size="604,126" zPosition="1" transparent="1" alphatest="blend" />
 		<panel name="template1_2layer" />
 		<panel name="rg__-buttons_template1" />
 		<panel name="rg__-keys_template1-source" />
@@ -1651,9 +1681,10 @@
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_epg_epg_setup.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="setup_epgmulti" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Setup MultiEPG" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
+		<eLabel text="MultiEPG settings" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="config" position="70,100" size="700,515" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
-		<widget name="description" position="825,420" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
+		<widget name="HelpWindow" position="338,594" size="604,126" zPosition="1" transparent="1" alphatest="blend" />
+		<widget name="description" position="810,415" size="415,190" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<panel name="template1_2layer" />
 		<panel name="rg__-buttons_template1" />
 		<panel name="rg__-keys_template1-source" />
@@ -1661,9 +1692,10 @@
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_epg_setup_epgmulti.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="setup_epgenhanced" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Setup SingleEPG" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
+		<eLabel text="SingleEPG settings" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="config" position="70,100" size="700,515" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
-		<widget name="description" position="825,420" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
+		<widget name="HelpWindow" position="338,594" size="604,126" zPosition="1" transparent="1" alphatest="blend" />
+		<widget name="description" position="810,415" size="415,190" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<panel name="template1_2layer" />
 		<panel name="rg__-buttons_template1" />
 		<panel name="rg__-keys_template1-source" />
@@ -1671,9 +1703,10 @@
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_epg_setup_epgenhanced.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="setup_epginfobar" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Setup InfobarEPG" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
+		<eLabel text="InfobarEPG settings" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="config" position="70,100" size="700,515" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
-		<widget name="description" position="825,420" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
+		<widget name="HelpWindow" position="338,594" size="604,126" zPosition="1" transparent="1" alphatest="blend" />
+		<widget name="description" position="810,415" size="415,190" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<panel name="template1_2layer" />
 		<panel name="rg__-buttons_template1" />
 		<panel name="rg__-keys_template1-source" />
@@ -1681,8 +1714,9 @@
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_epg_setup_epginfobar.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="setup_epginfobargraphical" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Setup Graphical InfobarEPG" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
+		<eLabel text="Graphical InfobarEPG settings" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="config" position="70,100" size="700,515" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
+		<widget name="HelpWindow" position="338,594" size="604,126" zPosition="1" transparent="1" alphatest="blend" />
 		<widget name="description" position="825,420" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<panel name="template1_2layer" />
 		<panel name="rg__-buttons_template1" />
@@ -1691,9 +1725,10 @@
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_epg_setup_epginfobargraphical.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="setup_epggraphical" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Setup GraphicalEPG" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
+		<eLabel text="GraphicalEPG settings" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="config" position="70,100" size="700,515" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
-		<widget name="description" position="825,420" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
+		<widget name="HelpWindow" position="338,594" size="604,126" zPosition="1" transparent="1" alphatest="blend" />
+		<widget name="description" position="810,415" size="415,190" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<panel name="template1_2layer" />
 		<panel name="rg__-buttons_template1" />
 		<panel name="rg__-keys_template1-source" />
@@ -1703,7 +1738,7 @@
 	<screen name="setup_subtitlesetup" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Subtitle settings" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="config" position="70,100" size="700,515" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
-		<widget name="description" position="825,420" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
+		<widget name="description" position="810,415" size="415,190" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<panel name="template1_2layer" />
 		<panel name="rg__-buttons_template1" />
 		<panel name="rg__-keys_template1-source" />
@@ -1751,7 +1786,7 @@
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_extended_keyboard.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="setup_userinterface" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Setup Userinterface" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
+		<eLabel text="Settings..." position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="config" position="70,100" size="700,515" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<widget name="description" position="825,420" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<panel name="template1_2layer" />
@@ -1781,7 +1816,7 @@
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_extended_timshift_setup.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="setup_specialfeatures" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Setup Special Features" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
+		<eLabel text="Special Features" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="config" position="70,100" size="700,515" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<widget name="description" position="825,420" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<panel name="template1_2layer" />
@@ -1791,7 +1826,7 @@
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_extended_specialfeatures_menu.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="setup_display" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Setup Display" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
+		<eLabel text="Display settings" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="config" position="70,100" size="700,515" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<widget name="description" position="825,420" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<panel name="template1_2layer" />
@@ -1801,7 +1836,7 @@
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_display_display_setup.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="setup_channelselection" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Setup ChannelSelection" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
+		<eLabel text="Channel selection settings" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="config" position="70,100" size="700,515" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<widget name="description" position="825,420" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<panel name="template1_2layer" />
@@ -1811,9 +1846,10 @@
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_system_channelselection_setup.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="setup_usage" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Setup Usage" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
+		<eLabel text="Settings..." position="58,36" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="config" position="70,100" size="700,515" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<widget name="description" position="825,420" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
+		<widget name="HelpWindow" position="338,594" size="604,126" zPosition="1" transparent="1" alphatest="blend" />
 		<panel name="template1_2layer" />
 		<panel name="rg__-buttons_template1" />
 		<panel name="rg__-keys_template1-source" />
@@ -1821,9 +1857,9 @@
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_system_usage_setup.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="setup_remotesetup" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Setup Remote" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
-		<widget name="config" position="70,100" size="700,515" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
-		<widget name="description" position="825,420" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
+		<eLabel text="Button Setup" position="58,36" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="1" valign="bottom" font="SetrixHD;34" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="config" position="70,110" size="700,510" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
+		<widget name="description" position="810,415" size="415,190" font="SetrixHD; 20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<panel name="template1_2layer" />
 		<panel name="rg__-buttons_template1" />
 		<panel name="rg__-keys_template1-source" />
@@ -3009,27 +3045,33 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_scan_tuner_setup.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="ScanSetup" position="0,0" size="1280,720" title="Service scan" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Service scan" position="70,47" foregroundColor="layer-a-title-foreground" size="700,50" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
-		<widget name="config" position="70,115" size="700,510" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1" />
-		<widget source="introduction" render="Label" position="825,425" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
+		<eLabel text="Service scan" position="58,36" foregroundColor="layer-a-title-foreground" size="525,50" valign="bottom" font="SetrixHD;34" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="header" position="70,110" size="700,32" font="SetrixHD;24" backgroundColor="layer-a-background" transparent="1" />
+		<eLabel position="70,150" size="700,2" backgroundColor="layer-a-accent1" />
+		<widget name="config" position="70,160" size="700,480" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
+		<widget source="introduction" render="Label" position="825,425" size="380,175" font="SetrixHD; 20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<panel name="template1_2layer" />
+		<panel name="rg__-buttons_template1" />
+		<panel name="rg__-keys_template1-source" />
 		<panel name="_oe-buttons_template1" />
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_scan_manual_scan.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="ScanSimple" position="0,0" size="1280,720" title="Service scan" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Service scan" position="70,47" foregroundColor="layer-a-title-foreground" size="700,50" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
-		<widget name="header" position="70,115" size="700,32" font="SetrixHD;24" backgroundColor="layer-a-background" transparent="1" />
+		<eLabel text="Service scan" position="58,36" foregroundColor="layer-a-title-foreground" size="525,50" valign="bottom" font="SetrixHD;34" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="header" position="70,110" size="700,32" font="SetrixHD;24" backgroundColor="layer-a-background" transparent="1" />
 		<eLabel position="70,150" size="700,2" backgroundColor="layer-a-accent1" />
-		<widget name="config" position="70,160" size="700,480" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1" />
-		<widget name="footer" position="825,425" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
+		<widget name="config" position="70,160" size="700,480" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
+		<widget name="footer" position="825,425" size="380,175" font="SetrixHD; 20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<panel name="template1_2layer" />
+		<panel name="rg__-buttons_template1" />
+		<panel name="rg__-keys_template1-source" />
 		<panel name="_oe-buttons_template1" />
 		<ePixmap position="890,175" size="256,256" zPosition="2" pixmap="MetrixHD/icons/menu_scan_auto_scan.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="SelectSatsEntryScreen" position="0,0" size="1280,720" title="Select Sats Entry" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Select Sats Entry" position="70,47" foregroundColor="layer-a-title-foreground" size="700,50" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
-		<widget name="list" position="70,115" size="700,510" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1" />
-		<widget source="hint" render="Label" position="825,425" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
+		<eLabel text="Select Sats Entry" position="58,36" foregroundColor="layer-a-title-foreground" size="525,50" valign="bottom" font="SetrixHD;34" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="list" position="70,110" size="700,510" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
+		<widget source="hint" render="Label" position="825,425" size="380,175" font="SetrixHD; 20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<panel name="template1_2layer" />
 		<panel name="rgyb-buttons_template1" />
 		<panel name="rgyb-keys_template1" />

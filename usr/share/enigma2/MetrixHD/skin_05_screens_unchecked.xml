@@ -955,7 +955,7 @@
 		<panel name="template1_1layer" />
 		<widget name="headertext" position="70,47" size="525,50" font="SetrixHD;35" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="statustext" position=" 70,120" size="1140,378" zPosition="1" font="SetrixHD;22" halign="center" valign="center" backgroundColor="layer-a-background" transparent="0" />
-		<widget name="list" position=" 70,120" size="1140,378" zPosition="2" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="0" />
+		<widget name="list" position=" 70,120" size="1140,378" font="Regular; 20" zPosition="2" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="0" />
 		<eLabel position=" 70,510" size="1140,2" backgroundColor="layer-a-accent1" />
 		<widget name="cover" position=" 70,515" size="110,110" backgroundColor="layer-a-background" alphatest="blend" />
 		<widget name="titel" position="210,520" size="880,25" font="SetrixHD;20" backgroundColor="layer-a-background" transparent="1" />
@@ -1709,7 +1709,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel name="new eLabel" position="1254,6" size="20,20" backgroundColor="red" />
 		<eLabel name="new eLabel" position="1254,694" size="20,20" backgroundColor="red" />
 		<eLabel name="new eLabel" position="6,695" size="20,20" backgroundColor="red" />
-		<eLabel name="new eLabel" position="240,185" size="800,40" text="Die roten Quadrate müssen sichtbar in den Ecken plaziert werden." font="Regular; 22" halign="center" backgroundColor="rds_text_bg" />
+		<eLabel name="new eLabel" position="240,185" size="800,40" text="Die roten Quadrate mÃ¼ssen sichtbar in den Ecken plaziert werden." font="Regular; 22" halign="center" backgroundColor="rds_text_bg" />
 	</screen>
 	<screen name="RemoteControlCode" position="0,0" size="1280,720" title="Position Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="template1_1layer" />

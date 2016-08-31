@@ -66,7 +66,7 @@
 			<widget source="key_red" render="Label" position="70,637" size="160,30" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="layer-a-background" foregroundColor="layer-a-button-foreground" transparent="1" />
 		</screen>
 		<screen name="r___-keys_template1">
-			<widget name="key_red" render="Label" position="70,637" size="160,30" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="layer-a-background" foregroundColor="layer-a-button-foreground" transparent="1" />
+			<widget name="key_red" position="70,637" size="160,30" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="layer-a-background" foregroundColor="layer-a-button-foreground" transparent="1" />
 		</screen>
 		<screen name="_g__-buttons_template1">
 			<ePixmap pixmap="MetrixHD/buttons/key_green.png" position="222,635" size="30,40" alphatest="blend" />

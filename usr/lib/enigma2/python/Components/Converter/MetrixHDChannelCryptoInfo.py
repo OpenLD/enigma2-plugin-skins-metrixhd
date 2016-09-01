@@ -16,14 +16,18 @@ class MetrixHDChannelCryptoInfo(Poll, Converter, object):
     BETACRYPT = 5
     CRWCRYPT = 6
     NDSCRYPT = 7
-    IRDECM = 8
-    SECAECM = 9
-    NAGRAECM = 10
-    VIAECM = 11
-    CONAXECM = 12
-    BETAECM = 13
-    CRWECM = 14
-    NDSECM = 15
+    POWERVUCRYPT = 8
+    TANDBERGCRYPT = 9
+    IRDECM = 10
+    SECAECM = 11
+    NAGRAECM = 12
+    VIAECM = 13
+    CONAXECM = 14
+    BETAECM = 15
+    CRWECM = 16
+    NDSECM = 17
+    POWERVUECM = 18
+    TANDBERGECM = 19
 
     def __init__(self, type):
         Converter.__init__(self, type)
@@ -34,6 +38,10 @@ class MetrixHDChannelCryptoInfo(Poll, Converter, object):
             self.type = self.IRDCRYPT
         elif type == 'SecaCrypt':
             self.type = self.SECACRYPT
+        elif type == 'PowerVUCrypt':
+            self.type = self.POWERVUCRYPT
+        elif type == 'TandbergCrypt':
+            self.type = self.TANDBERGCRYPT
         elif type == 'NagraCrypt':
             self.type = self.NAGRACRYPT
         elif type == 'ViaCrypt':
@@ -48,6 +56,10 @@ class MetrixHDChannelCryptoInfo(Poll, Converter, object):
             self.type = self.NDSCRYPT
         elif type == 'IrdEcm':
             self.type = self.IRDECM
+        elif type == 'PowerVUEcm':
+            self.type = self.POWERVUECM
+        elif type == 'TandbergEcm':
+            self.type = self.TANDBERGECM
         elif type == 'SecaEcm':
             self.type = self.SECAECM
         elif type == 'NagraEcm':
@@ -75,6 +87,12 @@ class MetrixHDChannelCryptoInfo(Poll, Converter, object):
             if self.type == self.IRDCRYPT:
                 caemm = self.getCrypt('06', searchcaids)
                 return caemm
+            if self.type == self.POWERVUCRYPT:
+                caemm = self.getCrypt('0E', searchcaids)
+                return caemm
+            if self.type == self.TANDBERGCRYPT:
+                caemm = self.getCrypt('10', searchcaids)
+                return caemm
             if self.type == self.SECACRYPT:
                 caemm = self.getCrypt('01', searchcaids)
                 return caemm
@@ -98,6 +116,9 @@ class MetrixHDChannelCryptoInfo(Poll, Converter, object):
                 return caemm
             if self.type == self.IRDECM:
                 if currentcaid == '06':
+                    return True
+            elif self.type == self.POWERVUECM:
+                if currentcaid == '0E':
                     return True
             elif self.type == self.SECAECM:
                 if currentcaid == '01':
@@ -179,3 +200,4 @@ class MetrixHDChannelCryptoInfo(Poll, Converter, object):
 
     def changed(self, what):
         Converter.changed(self, what)
+

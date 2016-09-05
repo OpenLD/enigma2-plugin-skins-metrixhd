@@ -19,8 +19,8 @@ class VAudioInfo(Poll, Converter, object):
 		self.poll_interval = 1000
 		self.poll_enabled = True
 		self.codecs = {
-				   "01_dolbydigitalplus": ("digital+", "digitalplus", "ac3+", "e-ac-3", ),
-				   "02_dolbydigital": ("ac3", "ac-3", "dolbydigital", ),
+				   "01_dolbydigitalplus": ("digital+", "digitalplus", "ac3+", "e-ac-3"),
+				   "02_dolbydigital": ("ac3", "ac-3", "dolbydigital"),
 				   "03_mp3": ("mp3", ),
 				   "04_wma": ("wma", ),
 				   "05_flac": ("flac", ),

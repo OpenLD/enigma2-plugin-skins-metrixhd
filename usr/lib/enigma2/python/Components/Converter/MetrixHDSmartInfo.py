@@ -2,14 +2,11 @@
 #  Coded by Vali
 #
 
-
-
 from enigma import iServiceInformation
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Components.config import config
 from Poll import Poll
-
 
 
 class MetrixHDSmartInfo(Poll, Converter, object):
@@ -26,9 +23,7 @@ class MetrixHDSmartInfo(Poll, Converter, object):
 		self.ar_pol = ["H", "V", "CL", "CR", "na", "na", "na", "na", "na", "na", "na", "na"]
 
 
-
 	@cached
-
 	def getText(self):
 		service = self.source.service
 		info = service and service.info()
@@ -285,7 +280,6 @@ class MetrixHDSmartInfo(Poll, Converter, object):
 			Ret_Text = Ret_Text
 			return Ret_Text
 		return ""
-
 
 	text = property(getText)
 

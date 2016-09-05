@@ -236,7 +236,7 @@ class MainSettingsView(Screen):
 
             if config.plugins.MyMetrixLiteOther.showInfoBarClock.getValue() is False:
                 infobarSkinSearchAndReplace.append(['<panel name="CLOCKWIDGET" />', ''])
-				
+
             if config.plugins.MyMetrixLiteOther.showInfoBarResolution.getValue() is False:
                 infobarSkinSearchAndReplace.append(['<panel name="INFOBARRESOLUTION" />', ''])
 
@@ -635,16 +635,16 @@ class MainSettingsView(Screen):
 
     @staticmethod
     def getChannelNameXML(widgetPosition, fontSizeType, showChannelNumber, showChannelName):
-        fontSize = "80"
+        fontSize = "70"
 
         if fontSizeType == "INFOBARCHANNELNAME-2":
-            fontSize = "70"
-        elif fontSizeType == "INFOBARCHANNELNAME-3":
             fontSize = "60"
-        elif fontSizeType == "INFOBARCHANNELNAME-4":
+        elif fontSizeType == "INFOBARCHANNELNAME-3":
             fontSize = "50"
-        elif fontSizeType == "INFOBARCHANNELNAME-5":
+        elif fontSizeType == "INFOBARCHANNELNAME-4":
             fontSize = "40"
+        elif fontSizeType == "INFOBARCHANNELNAME-5":
+            fontSize = "30"
 
         if showChannelNumber and showChannelName:
             channelRenderer = "ServiceNumberAndName"

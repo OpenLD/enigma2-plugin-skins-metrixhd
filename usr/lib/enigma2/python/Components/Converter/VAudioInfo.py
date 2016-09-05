@@ -3,6 +3,11 @@ from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Poll import Poll
 
+def addspace(text):
+	if text:
+		text += "  "
+	return text
+
 class VAudioInfo(Poll, Converter, object):
 	GET_AUDIO_ICON = 0
 	GET_AUDIO_CODEC = 1
@@ -13,9 +18,9 @@ class VAudioInfo(Poll, Converter, object):
 		self.type = type
 		self.poll_interval = 1000
 		self.poll_enabled = True
-		self.lang_strings = ("ger", "german", "deu")
-		self.codecs = {    "01_dolbydigitalplus" : ("digital+", "digitalplus", "ac3+", "e-ac-3"),
-				   "02_dolbydigital": ("ac3", "ac-3", "dolbydigital"),
+		self.codecs = {
+				   "01_dolbydigitalplus": ("digital+", "digitalplus", "ac3+", "e-ac-3", ),
+				   "02_dolbydigital": ("ac3", "ac-3", "dolbydigital", ),
 				   "03_mp3": ("mp3", ),
 				   "04_wma": ("wma", ),
 				   "05_flac": ("flac", ),
@@ -24,11 +29,16 @@ class VAudioInfo(Poll, Converter, object):
 				   "08_dts-hd": ("dts-hd", ),
 				   "09_dts": ("dts", ),
 				   "10_pcm": ("pcm", ),
+				   "11_aac": ("aac", ),
+				   "12_mp1": ("mp1", ),
+				   "13_mp2": ("mp2", ),
+				   "13_mp4": ("mp4", ),
 				}
-		self.codec_info = { "dolbydigitalplus" : ("51", "20", "71"),
-				    "dolbydigital" : ("51", "20", "71"),
-				    "wma" : ("8", "9"),
-				  }
+		self.codec_info = {
+				    "dolbydigitalplus": ("51", "20", "71"),
+				    "dolbydigital": ("51", "20", "71"),
+				    "wma": ("8", "9"),
+				}
 		self.type, self.interesting_events = {
 				"AudioIcon": (self.GET_AUDIO_ICON, (iPlayableService.evUpdatedInfo,)),
 				"AudioCodec": (self.GET_AUDIO_CODEC, (iPlayableService.evUpdatedInfo,)),
@@ -47,10 +57,6 @@ class VAudioInfo(Poll, Converter, object):
 
 	def getLanguage(self):
 		languages = self.audio_info.getLanguage()
-		for lang in self.lang_strings:
-			if lang in languages:
-				languages = "Deutsch"
-				break
 		languages = languages.replace("und ", "")
 		return languages
 
@@ -87,13 +93,15 @@ class VAudioInfo(Poll, Converter, object):
 	@cached
 	def getText(self):
 		service = self.source.service
-		if service:
-			info = service and service.info()
-			if info:
-				if self.type == self.GET_AUDIO_CODEC:
-					return self.getAudioCodec(info)
-				if self.type == self.GET_AUDIO_ICON:
-					return self.getAudioIcon(info)
+		if service is None:
+			return ""
+		info = service and service.info()
+		if not info:
+			return ""
+		if self.type == self.GET_AUDIO_CODEC:
+			return self.getAudioCodec(info)
+		if self.type == self.GET_AUDIO_ICON:
+			return self.getAudioIcon(info)
 		return _("invalid type")
 
 	text = property(getText)

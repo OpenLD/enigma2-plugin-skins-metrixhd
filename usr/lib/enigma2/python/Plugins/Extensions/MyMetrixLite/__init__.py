@@ -300,7 +300,7 @@ def initOtherConfig():
     config.plugins.MyMetrixLiteOther.showInfoBarServiceIcons = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.showChannelNumber = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.showChannelName = ConfigYesNo(default=True)
-    config.plugins.MyMetrixLiteOther.infoBarChannelNameFontSize = ConfigSelection(default="INFOBARCHANNELNAME-1", choices = infoBarChannelNameFontSizeList)
+    config.plugins.MyMetrixLiteOther.infoBarChannelNameFontSize = ConfigSelection(default="INFOBARCHANNELNAME-2", choices = infoBarChannelNameFontSizeList)
     config.plugins.MyMetrixLiteOther.showInfoBarResolution = ConfigYesNo(default=True)
     #config.plugins.MyMetrixLiteOther.showExtendedinfo = ConfigYesNo(default=False)
     config.plugins.MyMetrixLiteOther.showSnr = ConfigYesNo(default=True)
@@ -311,7 +311,7 @@ def initOtherConfig():
     config.plugins.MyMetrixLiteOther.showTunerinfo = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.setTunerAuto = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.setTunerManual = ConfigSelectionNumber(1, 6, 1, default = 3)
-    config.plugins.MyMetrixLiteOther.channelSelectionStyle = ConfigSelection(default="CHANNELSELECTION-1", choices = channelSelectionStyleList)
+    config.plugins.MyMetrixLiteOther.channelSelectionStyle = ConfigSelection(default="CHANNELSELECTION-6", choices = channelSelectionStyleList)
 	#EMC/MoviePlayer
     config.plugins.MyMetrixLiteOther.InfoBarMoviePlayerDesign = ConfigSelection(default = "1", choices = [("1", _("Standard")), ("2", _("Infobar")), ("3", _("Small"))])
     config.plugins.MyMetrixLiteOther.showMovieName = ConfigYesNo(default=True)

@@ -417,15 +417,15 @@
 		</screen>
 		<screen name="CLOCKWIDGET">
 			<!--/* ClockWidget -->
-			<eLabel backgroundColor="layer-a-background" position="1076,30" size="158,71" transparent="0" zPosition="-1" />
-			<widget backgroundColor="layer-a-clock-foreground" foregroundColor="layer-a-foreground" font="SetrixHD; 60" halign="left" noWrap="1" position="1086,21" render="Label" size="169,70" source="global.CurrentTime" transparent="1" valign="center" zPosition="10">
+			<eLabel backgroundColor="layer-a-background" position="1076,30" size="164,71" transparent="0" zPosition="-1" />
+			<widget backgroundColor="layer-a-clock-foreground" foregroundColor="layer-a-foreground" font="SetrixHD; 60" noWrap="1" halign="center" position="1075,21" render="Label" size="164,70" source="global.CurrentTime" transparent="1" valign="center" zPosition="10">
 				<convert type="ClockToText">Default</convert>
 			</widget>
 			<eLabel backgroundColor="layer-b-background" position="960,33" size="116,65" transparent="0" zPosition="-2"/>
-			<widget backgroundColor="layer-b-background" font="Regular; 16" foregroundColor="layer-b-clock-foreground" valign="center" halign="right" position="963,67" render="Label" size="104,26" source="global.CurrentTime" transparent="1">
+			<widget backgroundColor="layer-b-background" font="Regular; 16" foregroundColor="layer-b-clock-foreground" noWrap="1" valign="bottom" halign="right" position="963,67" render="Label" size="104,26" source="global.CurrentTime" transparent="1">
 				<convert type="ClockToText">Format:%e. %B</convert>
 			</widget>
-			<widget backgroundColor="layer-b-background" font="Regular; 16" foregroundColor="layer-b-clock-foreground" valign="center" halign="right" noWrap="1" position="963,37" render="Label" size="104,26" source="global.CurrentTime" transparent="1">
+			<widget backgroundColor="layer-b-background" font="Regular; 16" foregroundColor="layer-b-clock-foreground" valign="bottom" halign="right" noWrap="1" position="963,37" render="Label" size="104,26" source="global.CurrentTime" transparent="1">
 				<convert type="ClockToText">Format:%A</convert>
 			</widget>
 			<!-- ClockWidget */-->

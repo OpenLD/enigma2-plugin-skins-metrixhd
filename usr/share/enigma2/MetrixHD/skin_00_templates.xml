@@ -507,10 +507,10 @@
 				<convert type="LdExtraInfo">CamName</convert>
 			</widget>
 			<!-- CAMNAME */-->
-			<widget backgroundColor="layer-a-background" position="386,55" size="240,30" font="Regular; 12" halign="left" foregroundColor="layer-a-extendedinfo1" transparent="1" zPosition="10" render="Label" source="session.CurrentService">
+			<widget backgroundColor="layer-a-background" position="386,50" size="245,30" font="Regular; 11" halign="left" valign="center" foregroundColor="layer-a-extendedinfo1" transparent="1" noWrap="1" zPosition="10" render="Label" source="session.CurrentService">
 				<convert type="LdExtraInfo">ServiceRef</convert>
 			</widget>
-			<widget backgroundColor="layer-a-background" position="610,55" size="240,30" font="Regular; 12" halign="left" foregroundColor="layer-a-extendedinfo1" transparent="1" zPosition="10" render="Label" source="session.CurrentService">
+			<widget backgroundColor="layer-a-background" position="636,50" size="245,30" font="Regular; 11" halign="left" valign="center" foregroundColor="layer-a-extendedinfo1" transparent="1" noWrap="1" zPosition="10" render="Label" source="session.CurrentService">
 				<convert type="LdExtraInfo">PIDInfo</convert>
 			</widget>
 			<!-- /* AGC -->

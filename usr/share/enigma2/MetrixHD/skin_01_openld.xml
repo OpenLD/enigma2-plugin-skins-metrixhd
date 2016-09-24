@@ -26,7 +26,6 @@
 		<widget name="text" position="70,115" size="700,500" font="SetrixHD; 18" zPosition="3" itemHeight="25" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="0" />
 		<eLabel text="OPEN SOURCE" position="825,110" size="380,55" font="SetrixHD;50" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" halign="center" transparent="0" zPosition="1" />
 		<eLabel text="https://github.com/OpenLD" position="825,470" size="380,30" font="SetrixHD;20" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" halign="center" transparent="0" zPosition="1" />
-		<eLabel text="https://github.com/oe-alliance" position="825,520" size="380,30" font="SetrixHD;20" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" halign="center" transparent="0" zPosition="1" />
 		<ePixmap position="890,175" size="256,256" zPosition="10" pixmap="MetrixHD/icons/infopanel.png" transparent="1" alphatest="blend" />
 		<panel name="template1_2layer" />
 		<panel name="rgy_-keys_template1" />
@@ -3587,7 +3586,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="imageList" position="70,110" zPosition="1" size="700,505" font="Regular;20" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" scrollbarMode="showOnDemand" transparent="1" />
 		<eLabel text="OPEN SOURCE" position="825,110" size="380,55" font="SetrixHD;50" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" halign="center" transparent="0" zPosition="1" />
 		<eLabel text="https://github.com/OpenLD" position="825,470" size="380,30" font="SetrixHD;20" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" halign="center" transparent="0" zPosition="1" />
-		<eLabel text="https://github.com/oe-alliance" position="825,520" size="380,30" font="SetrixHD;20" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" halign="center" transparent="0" zPosition="1" />
 		<panel name="template1_2layer" />
 		<panel name="rgyb-buttons_template1" />
 		<panel name="rgyb-keys_template1" />
@@ -3600,7 +3598,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="filelist" position="70,110" size="700,505" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<eLabel text="OPEN SOURCE" position="825,110" size="380,55" font="SetrixHD;50" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" halign="center" transparent="0" zPosition="1" />
 		<eLabel text="https://github.com/OpenLD" position="825,470" size="380,30" font="SetrixHD;20" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" halign="center" transparent="0" zPosition="1" />
-		<eLabel text="https://github.com/oe-alliance" position="825,520" size="380,30" font="SetrixHD;20" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" halign="center" transparent="0" zPosition="1" />
 		<panel name="template1_2layer" />
 		<panel name="rg__-buttons_template1" />
 		<panel name="rg__-keys_template1-source" />

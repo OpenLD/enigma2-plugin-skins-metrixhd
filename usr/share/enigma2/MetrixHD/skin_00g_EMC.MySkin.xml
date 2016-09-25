@@ -347,10 +347,11 @@
 		<panel name="EMCMediaCenterCover_no" />
 		<panel name="CLOCKWIDGET" />
 		<panel name="INFOBARWEATHERWIDGET" />
-		<widget font="SetrixHD;80" backgroundColor="text-background" foregroundColor="background-text" noWrap="1" position="35,465" render="Label" size="1252,105" source="session.CurrentService" transparent="1" valign="bottom" zPosition="-30">
-                <convert type="MetrixHDExtServiceInfo">ServiceName</convert>
-            </widget>
+		<widget font="SetrixHD;60" backgroundColor="text-background" foregroundColor="background-text" noWrap="1" position="35,465" render="Label" size="1252,105" source="session.CurrentService" transparent="1" valign="bottom" zPosition="-30">
+			<convert type="MetrixHDExtServiceInfo">ServiceName</convert>
+		</widget>
 		<!--panel name="STBINFOMOVIEPLAYER" /-->
 		<!--panel name="STBINFO" /-->
 	</screen>
 </skin>
+

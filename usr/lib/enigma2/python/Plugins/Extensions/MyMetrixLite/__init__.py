@@ -236,7 +236,7 @@ def initWeatherConfig():
     config.plugins.MetrixWeather.enabled = ConfigYesNo(default=True)
     config.plugins.MetrixWeather.MoviePlayer = ConfigYesNo(default=True)
     config.plugins.MetrixWeather.refreshInterval = ConfigNumber(default=60)
-    config.plugins.MetrixWeather.woeid = ConfigNumber(default=758816) #Location (visit http://metrixweather.open-store.net/)
+    config.plugins.MetrixWeather.woeid = ConfigNumber(default=55950602) #Location (visit http://metrixweather.open-store.net/)
     config.plugins.MetrixWeather.tempUnit = ConfigSelection(default="Celsius", choices = [
         ("Celsius", _("Celsius")),
         ("Fahrenheit", _("Fahrenheit"))
@@ -311,7 +311,7 @@ def initOtherConfig():
     config.plugins.MyMetrixLiteOther.showTunerinfo = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.setTunerAuto = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.setTunerManual = ConfigSelectionNumber(1, 6, 1, default = 3)
-    config.plugins.MyMetrixLiteOther.channelSelectionStyle = ConfigSelection(default="CHANNELSELECTION-6", choices = channelSelectionStyleList)
+    config.plugins.MyMetrixLiteOther.channelSelectionStyle = ConfigSelection(default="CHANNELSELECTION-1", choices = channelSelectionStyleList)
 	#EMC/MoviePlayer
     config.plugins.MyMetrixLiteOther.InfoBarMoviePlayerDesign = ConfigSelection(default = "1", choices = [("1", _("Standard")), ("2", _("Infobar")), ("3", _("Small"))])
     config.plugins.MyMetrixLiteOther.showMovieName = ConfigYesNo(default=True)

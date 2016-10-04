@@ -58,7 +58,7 @@ class WeatherSettingsView(ConfigListScreen, Screen):
         self["titleText"].setText(_("Weather settings"))
 
         self["info"] = StaticText("")
-        self["info"].setText(_("Get your local MetrixWeather ID from www.mymetrix.de"))
+        self["info"].setText(_("Get your local MetrixWeather ID from http://metrixweather.open-store.net/"))
 
         self["cancelBtn"] = StaticText("")
         self["cancelBtn"].setText(_("Cancel"))

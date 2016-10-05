@@ -23,12 +23,14 @@
 from Components.Converter.Converter import Converter
 from Components.config import config, ConfigText, ConfigNumber, ConfigDateTime
 from Components.Element import cached
+from Poll import Poll
 
-class MetrixWeather(Converter, object):
+class MetrixWeather(Poll, Converter, object):
 
 	def __init__(self, type):
 		Converter.__init__(self, type)
 		self.type = type
+		Poll.__init__(self)
 
 	@cached
 	def getText(self):
@@ -66,12 +68,10 @@ class MetrixWeather(Converter, object):
 		except:
 			return ""
 
-
 	def getCF(self):
 		if config.plugins.MetrixWeather.tempUnit.value == "Fahrenheit":
 			return "°F"
 		else:
 			return "°C"
-
 
 	text = property(getText)

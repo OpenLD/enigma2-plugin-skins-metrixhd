@@ -686,6 +686,7 @@
 		<widget name="lab3" position="70,180" size="150,30" font="Regular;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" valign="center" transparent="1"/>
 		<widget name="labsize" position="220,180" size="550,30" font="Regular;20" valign="center" backgroundColor="layer-b-background"/>
 		<widget name="lab4" position="70,230" size="150,30" font="Regular;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" valign="center" transparent="1" />
+		<widget name="lab5" position="70,350" size="400,150" font="Regular;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" valign="center" transparent="1"/>
 		<widget name="inactive" position="220,230" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
 		<widget name="active" position="220,230" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
 		<widget name="autostart_off" position="70,300" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />

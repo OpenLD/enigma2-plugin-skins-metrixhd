@@ -2525,48 +2525,62 @@
 		<widget name="key0" position="202,99" size="200,25" font="Console;18" halign="center" valign="center" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1"/>
 		<widget name="help2" position="403,99" size="200,25" font="Console;22" halign="center" valign="center" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
-	<screen name="MessageBox" position="240,178" size="800,10" zPosition="1" title="Message" backgroundColor="layer-a-background">
+	<!-- Messagebox -->
+	<screen name="MessageBox" position="center,178" size="800,10" zPosition="1" title="Message" backgroundColor="layer-a-background">
 		<widget name="text" position="110,8" size="680,0" font="SetrixHD;22" backgroundColor="layer-a-background" />
 		<widget name="ErrorPixmap" pixmap="MetrixHD/icons/message/attention-53.png" position="30,10" size="53,53" alphatest="blend" />
 		<widget name="QuestionPixmap" pixmap="MetrixHD/icons/message/question-53.png" position="30,10" size="53,53" alphatest="blend" />
 		<widget name="InfoPixmap" pixmap="MetrixHD/icons/message/info-53.png" position="30,10" size="53,53" alphatest="blend" />
-		<!--
-	<widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="30,10" size="53,53" alphatest="blend" />
-	<widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="30,10" size="53,53" alphatest="blend" />
-	<widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="30,10" size="53,53" alphatest="blend" />-->
 		<widget name="list" position="20,95" size="760,320" itemHeight="32" scrollbarMode="showOnDemand" transparent="1" />
 		<applet type="onLayoutFinish">
 # this should be factored out into some helper code,but currently demonstrates applets.
 from enigma import eSize,ePoint
-orgwidth = self.instance.size().width()
-orgpos = self.instance.position()
-textsize = self["text"].getSize()
 
-textsize = (textsize[0] + 60,textsize[1] + 60)
-offset = 30
+orgwidth = self.instance.size().width()
+orgheight = self.instance.size().height()
+orgpos = self.instance.position()
+textsize = self[&quot;text&quot;].getSize()
+lenlist = len(self.list)*25
+if (lenlist &gt; 125):
+	lenlist = 125
+
+# y size still must be fixed in font stuff...
+textsize = (textsize[0] + 50, textsize[1] + 50)
+offset = 0
 if self.type == self.TYPE_YESNO:
-	offset = 80
-wsizex = textsize[0] + 80
+	offset = lenlist+10
+wsizex = textsize[0] + 60
 wsizey = textsize[1] + offset
 if (280 &gt; wsizex):
 	wsizex = 280
-wsize = (wsizex,wsizey)
+wsize = (wsizex, wsizey)
 
 # resize
 self.instance.resize(eSize(*wsize))
 
 # resize label
-self["text"].instance.resize(eSize(*textsize))
+self[&quot;text&quot;].instance.resize(eSize(*textsize))
 
 # move list
-listsize = (wsizex - 20,64)
-self["list"].instance.move(ePoint(10,textsize[1]))
-self["list"].instance.resize(eSize(*listsize))
+listsize = (wsizex, lenlist)
+self[&quot;list&quot;].instance.move(ePoint(0, textsize[1]))
+self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 # center window
 newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - wsizey)/2))
 		</applet>
+	</screen>
+	<screen name="MessageBox" position="center,center" size="600,10" title="Message">
+		<panel name= "MessageBoxTemplate"/>
+	</screen>
+	<screen name="MessageBoxSimple" position="center,center" size="600,10" title="Message">
+		<panel name= "MessageBoxTemplate"/>
+	</screen>
+	<!-- TextBox -->
+	<screen name="TextBox" position="center,center" size="550,400" title="Message...">
+		<widget name="text" position="0,0" size="540,390" font="Regular;18" />
+		<!--widget source="text" render="Label" position="0,0" size="540,390" font="Regular;18" /-->
 	</screen>
 	<screen name="TimeshiftState" position="190,238" zPosition="2" size="900,230" backgroundColor="transparent" flags="wfNoBorder">
 		<widget name="state" position="0,40" size="900,95" backgroundColor="text-background" foregroundColor="background-text" font="Arial; 100" halign="center" transparent="1" valign="top" />
@@ -3338,6 +3352,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="package" render="Label" position="70,190" size="700,30" font="SetrixHD;20" backgroundColor="layer-a-background" transparent="1" />
 		<widget source="status" render="Label" position="70,230" size="700,30" font="SetrixHD;20" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="slider" position="70,400" size="700,20" borderWidth="1" transparent="1" />
+		<ePixmap pixmap="MetrixHD/background.png" position="center,center" zPosition="-10" size="795,323" />
 		<ePixmap position="890,175" size="256,256" pixmap="MetrixHD/icons/swupdate.png" transparent="1" alphatest="blend" />
 		<panel name="template1_2layer" />
 		<panel name="_oe-buttons_template1" />
@@ -3534,10 +3549,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 				}
 			</convert>
 		</widget>
-		<widget source="menu" render="Listbox" position="825,400" size="380,175" scrollbarMode="showNever" selectionDisabled="1" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" backgroundColorSelected="layer-b-selection-background" foregroundColorSelected="layer-b-selection-foreground" transparent="1">
+		<widget source="menu" render="Listbox" position="825,400" size="390,175" scrollbarMode="showNever" selectionDisabled="1" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" backgroundColorSelected="layer-b-selection-background" foregroundColorSelected="layer-b-selection-foreground" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (0, 0), size = (380, 175), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER|RT_WRAP, text = 2), # index 2 is the Description,
+						MultiContentEntryText(pos = (0, 0), size = (390, 175), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER|RT_WRAP, text = 2), # index 2 is the Description,
 					],
 				"fonts": [gFont("SetrixHD", 20)],
 				"itemHeight": 175

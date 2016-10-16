@@ -2602,7 +2602,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<screen name="Volume" position="46,40" size="318,71" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
 		<widget name="Volume" position="72,33" size="170,5" zPosition="3" foregroundColor="layer-a-progress" transparent="1" />
 		<ePixmap position="5,4" size="64,64" zPosition="1" pixmap="MetrixHD/icons/volume.png" transparent="0" alphatest="blend" />
-		<widget font="SetrixHD;40" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" halign="left" valign="center" render="VVolumeText" source="global.CurrentTime" position="250,3" size="85,60" zPosition="20" transparent="1" />
+		<widget font="SetrixHD;40" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" halign="left" valign="center" render="VolumeText" source="global.CurrentTime" position="250,3" size="85,60" zPosition="20" transparent="1" />
 		<eLabel position="72,35" size="170,1" backgroundColor="layer-a-accent1" foregroundColor="layer-a-accent1" />
 		<eLabel position="1,1" size="316,69" backgroundColor="layer-a-background" zPosition="-1" transparent="0" />
 		<eLabel position="0,0" size="318,71" backgroundColor="layer-b-background" zPosition="-2" transparent="0" />

@@ -406,7 +406,7 @@
 				<convert type="LdExtraInfo">E-C-N</convert>
 			</widget>
 			<widget source="session.CurrentService" render="Label" position="678,637" zPosition="1" size="416,15" font="Regular; 12" backgroundColor="layer-a-background" foregroundColor="layer-a-extendedinfo1" transparent="1" halign="right">
-				<convert type="VAudioInfo">AudioIcon</convert>
+				<convert type="AudioInfo">AudioIcon</convert>
 			</widget>
 			<widget source="session.CurrentService" render="Label" position="568,637" zPosition="1" size="416,15" font="Regular; 12" backgroundColor="layer-a-background" foregroundColor="layer-a-extendedinfo1" transparent="1" halign="right">
 				<convert type="LdExtraInfo">VideoCodec</convert>

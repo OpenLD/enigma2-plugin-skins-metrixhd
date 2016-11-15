@@ -112,18 +112,36 @@
 	<!-- Default Movie Center -->
 	<screen name="MovieSelection" position="0,0" size="1280,720" title="Select a movie" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Movie Center" position="70,47" size="525,50" font="SetrixHD;35" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" />
-		<widget name="list" position="70,130" size="700,482" scrollbarMode="showOnDemand" font="Regular;21"  itemHeight="40" transparent="1" />
-	<widget name="waitingtext" position="70,300" size="700,30" zPosition="1" font="Regular;24" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" halign="center" valign="center" transparent="1"/>
+		<widget name="waitingtext" position="70,300" size="700,30" zPosition="1" font="Regular;24" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" halign="center" valign="center" transparent="1"/>
 		<widget name="freeDiskSpace" position="70,95" size="700,26" font="RegularLight; 22" valign="center" halign="left" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="1" />
-		<widget source="Service" render="Label" position="825,90" noWrap="1" size="385,30" font="RegularLight; 22" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1">
+		<widget name="list" position="70,130" size="700,482" itemHeight="32" CoolFont="Regular;21" CoolSelectFont="Regular;21" CoolDateFont="Regular;21" CoolMoviePos="35" CoolMovieSize="545" CoolFolderSize="550" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="110" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1000" CoolBarPos="640" CoolBarHPos="10" CoolBarSize="55,10" CoolBarSizeSa="110,16" BackColorSel="layer-a-selection-background" DefaultColor="#FFFFFF" UnwatchedColor="#FFFFFF" WatchingColor="#D8C100" FinishedColor="#5FA816" RecordingColor="#E51400" backgroundColor="layer-a-background" foregroundColorSelected="#ffffff" scrollbarMode="showNever" transparent="1" />
+		<widget source="Service" render="Label" position="825,70" noWrap="1" size="305,30" font="RegularLight; 18" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1">
 			<convert type="MovieInfo">ShortDescription</convert>
 		</widget>
-		<widget source="Service" render="Label" position="825,128" size="385,24" font="RegularLight; 19" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1">
+		<widget source="Service" render="Label" position="825,95" size="300,55" font="RegularLight; 23" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1">
+			<convert type="ServiceName2">Name</convert>
+		</widget>
+		<widget source="Service" render="Label" position="825,158" size="300,25" font="RegularLight; 20" halign="left" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1">
 			<convert type="MovieInfo">RecordServiceName</convert>
 		</widget>
-		<widget source="Service" render="Label" position="825,165" size="385,375" font="RegularLight; 19" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1" valign="top">
-			<convert type="EventName">ExtendedDescription</convert>
+		<widget source="Service" render="Label" position="825,185" size="55,25" font="RegularLight; 20" halign="left" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1">
+			<convert type="ServiceTime">StartTime</convert>
+			<convert type="ClockToText">Format:%H:%M </convert>
 		</widget>
+		<widget source="Service" render="Label" position="885,185" size="75,25" font="RegularLight; 20" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1">
+			<convert type="ServiceTime">EndTime</convert>
+			<convert type="ClockToText">Format:-  %H:%M </convert>
+		</widget>
+		<widget source="Service" render="Label" position="1025,185" size="100,25" font="RegularLight; 20" halign="right" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1">
+			<convert type="ServiceTime">Duration</convert>
+			<convert type="ClockToText">InMinutes</convert>
+		</widget>
+		<widget source="Service" render="Label" position="825,228" size="385,323" font="RegularLight; 19" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1" halign="left" valign="top">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<eLabel position="1231,83" size="1,140" backgroundColor="layer-b-background" zPosition="3" />
+		<widget source="Service" render="Cover" position="1132,83" size="100,140" zPosition="4" alphatest="blend" transparent="1" />
+		<ePixmap position="1132,88" zPosition="1" size="100,100" alphatest="blend" pixmap="MetrixHD/icons/movie_small.png"/>
 		<widget source="Service" render="Label" position="825,557" size="80,24" font="RegularLight;20" halign="left" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="1">
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>

@@ -1588,7 +1588,7 @@
 	</screen>
 	<screen name="Volume_Config" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<!--widget source="Title" render="Label" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" /-->
-		<eLabel text="Volume Config" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" ransparent="1" />
+		<eLabel text="Volume Config" position="70,47" foregroundColor="layer-a-title-foreground" size="525,50" noWrap="0" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="config" position="70,130" size="700,515" font="Regular;20" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1" />
 		<widget source="infotext"  render="Label"  position="825,425" size="380,175" font="SetrixHD;20" foregroundColor="layer-b-foreground" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1"/>
 		<panel name="template1_2layer" />
@@ -2505,9 +2505,17 @@
 	</screen>
 	<screen name="NumberZapWithName" position="200,21" size="1050,830" title="QuickZap" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="servicenumber" position="323,283" size="387,172" font="SetrixHD; 150" noWrap="0" halign="right" backgroundColor="layer-a-background" transparent="1" valign="center" foregroundColor="layer-a-accent2" zPosition="-1" />
-		<widget name="servicename" position="186,267" size="500,80" font="SetrixHD; 50" halign="left" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="servicename" position="186,267" size="500,80" font="SetrixHD;50" halign="left" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="servicebouquet" position="185,358" size="396,53" font="Regular; 28" halign="left" backgroundColor="layer-a-background" transparent="1" />
 		<eLabel position="161,244" size="550,181" backgroundColor="layer-a-background" zPosition="-5" />
+	</screen>
+	<screen name="NumberZapPicon" position="0,630" size="1280,90" title="QuickZap" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel name="a" position="0,0" size="1280,90" backgroundColor="layer-a-background" zPosition="-10" />
+		<widget name="number" position="200,0" size="200,90" halign="center" valign="center" font="SetrixHD;60" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" />
+		<widget alphatest="blend" position="34,5" render="MetrixHDXPicon" size="132,79" source="Service" transparent="1" zPosition="1">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget name="servicename" position="400,0" size="880,90" halign="center" valign="center" font="SetrixHD;60" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" />
 	</screen>
 	<screen name="NumericalTextInputHelpDialog" position="338,594" size="604,126" backgroundColor="transparent" flags="wfNoBorder" zPosition="8">
 		<eLabel name="b" position="0,0" size="604,126" backgroundColor="layer-b-background" zPosition="-10" />

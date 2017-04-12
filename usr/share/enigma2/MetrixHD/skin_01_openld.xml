@@ -63,9 +63,9 @@
 		<!-- <widget source="global.CurrentTime" render="Label" position="875,520" size="280,30" font="SetrixHD;20" foregroundColor="layer-a-extendedinfo3" halign="center" backgroundColor="layer-b-background" valign="center" transparent="1">
 			<convert type="MetrixSTBinfo">FLASHfree</convert>
 		</widget> -->
-		<widget source="lab1" render="Label" position="70,133" size="458,35" font="Regular;30" transparent="0" zPosition="2" />
-		<widget source="lab2" render="Label" position="70,178" size="458,25" font="Regular;19" transparent="0" zPosition="2" />
-		<widget name="AboutScrollLabel" position="70,214" size="458,454" font="Regular;20" transparent="0" zPosition="1" scrollbarMode="showOnDemand" />
+		<widget source="lab1" render="Label" position="70,123" size="458,35" font="Regular;29" transparent="0" zPosition="2" />
+		<widget source="lab2" render="Label" position="70,172" size="458,25" font="Regular;19" transparent="0" zPosition="2" />
+		<widget name="AboutScrollLabel" position="70,195" size="458,454" font="Regular;19" transparent="0" zPosition="1" scrollbarMode="showOnDemand" />
 		<panel name="_oe-buttons_template1" />
 	</screen>
 	<screen name="SystemNetworkInfo" position="center,center" size="1280,721" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">

@@ -1,10 +1,14 @@
+from Components.About import about
 from Components.Converter.Converter import Converter
 from Components.config import config
 from Components.Element import cached
-from os import path, popen
+from time import *
+from types import *
+from sys import modules
+import sys, os, time, socket, fcntl, struct, subprocess, threading, traceback, commands, datetime
+from os import path, system, remove as os_remove, rename as os_rename, popen, getcwd, chdir
 from Plugins.Extensions.MyMetrixLite.__init__ import initOtherConfig
 import Screens.Standby
-from time import time
 
 initOtherConfig()
 
@@ -50,7 +54,7 @@ class MetrixSTBinfo(Converter, object):
 		except:
 			pass
 		etime = time()
-		info += space + "Time: " + str(int(float(etime - stime)*1000)) + " ms"
+		info += space + "Time: " + str(int(float(etime - stime)*3000)) + " ms"
 		return info
 
 	def getCPUload(self):
@@ -62,6 +66,12 @@ class MetrixSTBinfo(Converter, object):
 			#info = "CPU-Load: " + temp
 			info = temp.replace('\n', '').replace(' ','')
 			info = _("CPU-Load: %s") % info
+		return info
+
+	def getRAMfree(self):
+		info = ""
+		info = str(about.getRAMFreeString())
+		info = _("RAM-Free: %s MB") % info
 		return info
 
 	def getCPUtemp(self):
@@ -96,24 +106,6 @@ class MetrixSTBinfo(Converter, object):
 			#info ="SYS-Temp: " + temp.replace('\n', '') + str('\xc2\xb0') + "C"
 			info = temp.replace('\n', '').replace(' ','') + str('\xc2\xb0') + "C"
 			info = _("SYS-Temp: %s") % info
-		return info
-
-	def getRAMfree(self):
-		info = ""
-		if path.exists('/proc/meminfo'):
-			f = open('/proc/meminfo', 'r')
-			temp = f.readlines()
-			f.close()
-			try:
-				for lines in temp:
-					lisp = lines.split()
-					if lisp[0] == "MemFree:":
-						#info = "RAM-Free: " + str(int(lisp[1]) / 1024) + " MB"
-						info = str(int(lisp[1]) / 1024)
-						info = _("RAM-Free: %s MB") % info
-						break
-			except:
-				pass
 		return info
 
 	def getFLASHfree(self):

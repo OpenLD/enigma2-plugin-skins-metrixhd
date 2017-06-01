@@ -2,22 +2,18 @@
 # -*- coding: iso-8859-1 -*-
 #######################################################################
 #
-#    MetrixWeather for Enigma2
-#    Coded by iMaxxx (c) 2013
-#    Support: www.vuplus-support.com
-#
+#  MetrixWeather for Enigma2
+#  Coded by iMaxxx (c) 2013
+#  Support: www.vuplus-support.com
 #
 #  This plugin is licensed under the Creative Commons
 #  Attribution-NonCommercial-ShareAlike 3.0 Unported License.
 #  To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/
 #  or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
 #
-#
-#
 #  This plugin is NOT free software. It is open source, you are allowed to
 #  modify it (if you keep the license), but it may not be commercially
 #  distributed other than under the conditions noted above.
-#
 #
 #######################################################################
 from Components.Converter.Converter import Converter
@@ -31,13 +27,15 @@ class MetrixWeather(Poll, Converter, object):
 		Converter.__init__(self, type)
 		self.type = type
 		Poll.__init__(self)
+		self.poll_interval = 60000
+		self.poll_enabled = True
 
 	@cached
 	def getText(self):
 		try:
 			if self.type == "currentLocation":
 				return config.plugins.MetrixWeather.currentLocation.value
-			if self.type == "currentWeatherTemp":
+			elif self.type == "currentWeatherTemp":
 				return config.plugins.MetrixWeather.currentWeatherTemp.value
 			elif self.type == "currentWeatherText":
 				return config.plugins.MetrixWeather.currentWeatherText.value
@@ -68,10 +66,17 @@ class MetrixWeather(Poll, Converter, object):
 		except:
 			return ""
 
+	@cached
+	def getBoolean(self):
+		if self.type == "currentDataValid":
+			return config.plugins.MetrixWeather.currentWeatherDataValid.value
+		return False
+
 	def getCF(self):
 		if config.plugins.MetrixWeather.tempUnit.value == "Fahrenheit":
-			return "°F"
+			return "Â°F"
 		else:
-			return "°C"
+			return "Â°C"
 
+	boolean = property(getBoolean)
 	text = property(getText)

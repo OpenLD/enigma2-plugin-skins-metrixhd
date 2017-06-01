@@ -2,9 +2,9 @@
 # -*- coding: iso-8859-1 -*-
 #######################################################################
 #
-#    MetrixMODWeather for VU+
-#    Coded by iMaxxx (c) 2013
-#    Support: www.vuplus-support.com
+#   MetrixMODWeather for VU+
+#   Coded by iMaxxx (c) 2013
+#   Support: www.vuplus-support.com
 #
 #
 #  This plugin is licensed under the Creative Commons
@@ -14,7 +14,6 @@
 #
 #  Alternatively, this plugin may be distributed and executed on hardware which
 #  is licensed by Dream Multimedia GmbH.
-#
 #
 #  This plugin is NOT free software. It is open source, you are allowed to
 #  modify it (if you keep the license), but it may not be commercially
@@ -27,13 +26,15 @@ from Renderer import Renderer
 from Components.VariableText import VariableText
 #import library to do http requests:
 import urllib2
-from enigma import eLabel
+from enigma import eLabel, ePixmap
 #import easy to use xml parser called minidom:
 from xml.dom.minidom import parseString
-from Components.config import config, configfile
+from Components.config import config, configfile, ConfigSubsection, ConfigSelection, ConfigNumber, ConfigSelectionNumber, ConfigYesNo, ConfigText
 from Plugins.Extensions.MyMetrixLite.__init__ import initWeatherConfig
-from threading import Timer
+from threading import Timer, Thread
+from time import time, strftime, localtime
 
+g_updateRunning = False
 
 initWeatherConfig()
 
@@ -42,32 +43,43 @@ class MetrixHDWeatherUpdaterStandalone(Renderer, VariableText):
     def __init__(self):
         Renderer.__init__(self)
         VariableText.__init__(self)
-        self.test = "3"
-        config.plugins.MetrixWeather.save()
-        configfile.save()
+        #self.test = "3"
+        #config.plugins.MetrixWeather.save()
+        #configfile.save()
         self.woeid = config.plugins.MetrixWeather.woeid.value
-        self.timer = None
-        self.startTimer()
+        self.Timer = None
+        self.refreshcnt = 0
+        #self.startTimer()
         self.getWeather()
 
     GUI_WIDGET = eLabel
 
     def __del__(self):
-        if self.timer is not None:
-            self.timer.cancel()
+        try:
+            if self.Timer is not None:
+                self.Timer.cancel()
+        except AttributeError:
+            pass
 
-    def startTimer(self):
+    def startTimer(self, refresh=False):
         seconds = int(config.plugins.MetrixWeather.refreshInterval.value) * 60
 
         if seconds < 60:
             seconds = 300
 
-        if self.timer:
-            self.timer.cancel()
-            self.timer = None
+        if refresh:
+            if self.refreshcnt >= 6:
+                self.refreshcnt = 0
+                seconds = 300
+            else:
+                seconds = 10
 
-        self.timer = Timer(seconds, self.getWeather)
-        self.timer.start()
+        if self.Timer:
+            self.Timer.cancel()
+            self.Timer = None
+
+        self.Timer = Timer(seconds, self.getWeather)
+        self.Timer.start()
 
     def onShow(self):
         self.text = config.plugins.MetrixWeather.currentWeatherCode.value
@@ -77,8 +89,18 @@ class MetrixHDWeatherUpdaterStandalone(Renderer, VariableText):
 
         # skip if weather-widget is disabled
         if config.plugins.MetrixWeather.enabled.getValue() is False:
+            config.plugins.MetrixWeather.currentWeatherDataValid.value = False
             return
 
+        global g_updateRunning
+        if g_updateRunning:
+            print "MetrixHDWeatherStandalone lookup for ID " + str(self.woeid) + " skipped, allready running..."
+            return
+        g_updateRunning = True
+        Thread(target = self.getWeatherThread).start()
+
+    def getWeatherThread(self):
+        global g_updateRunning
         print "MetrixHDWeatherStandalone lookup for ID " + str(self.woeid)
         url = "http://query.yahooapis.com/v1/public/yql?q=select%20item%20from%20weather.forecast%20where%20woeid%3D%22"+str(self.woeid)+"%22&format=xml"
         #url = "http://query.yahooapis.com/v1/public/yql?q=select%20item%20from%20weather.forecast%20where%20woeid%3D%22"+str(self.woeid)+"%22%20u%3Dc&format=xml"
@@ -92,6 +114,8 @@ class MetrixHDWeatherUpdaterStandalone(Renderer, VariableText):
             print "Cant get weather data: %r" % error
 
             # cancel weather function
+            config.plugins.MetrixWeather.currentWeatherDataValid.value = False
+            g_updateRunning = False
             return
 
 
@@ -111,6 +135,20 @@ class MetrixHDWeatherUpdaterStandalone(Renderer, VariableText):
         config.plugins.MetrixWeather.currentLocation.value = str(title).split(',')[0].replace("Conditions for ","")
 
         currentWeather = dom.getElementsByTagName('yweather:condition')[0]
+        #check returned date from weather values
+        t=time()
+        lastday = strftime("%d %b %Y", localtime(t-3600*24)).strip("0")
+        currday = strftime("%d %b %Y", localtime(t)).strip("0")
+        currentWeatherDate = currentWeather.getAttributeNode('date').nodeValue
+        #if not (currday in currentWeatherDate or lastday in currentWeatherDate):
+            # print "MetrixHDWeatherStandalone - get weather data failed. (current date = %s, returned date = %s)" %(currday, currentWeatherDate)
+        #    config.plugins.MetrixWeather.currentWeatherDataValid.value = False
+        #    g_updateRunning = False
+        #    self.refreshcnt += 1
+        #    self.startTimer(True)
+        #    return
+        # print "MetrixHDWeatherStandalone - get weather data successful. (current date = %s, returned date = %s)" %(currday, currentWeatherDate)
+        config.plugins.MetrixWeather.currentWeatherDataValid.value = True
         currentWeatherCode = currentWeather.getAttributeNode('code')
         config.plugins.MetrixWeather.currentWeatherCode.value = self.ConvertCondition(currentWeatherCode.nodeValue)
         currentWeatherTemp = currentWeather.getAttributeNode('temp')
@@ -118,7 +156,11 @@ class MetrixHDWeatherUpdaterStandalone(Renderer, VariableText):
         currentWeatherText = currentWeather.getAttributeNode('text')
         config.plugins.MetrixWeather.currentWeatherText.value = currentWeatherText.nodeValue
 
-        currentWeather = dom.getElementsByTagName('yweather:forecast')[0]
+        n = 0
+        currentWeather = dom.getElementsByTagName('yweather:forecast')[n]
+        if lastday in currentWeather.getAttributeNode('date').nodeValue and currday in currentWeatherDate:
+            n = 1
+            currentWeather = dom.getElementsByTagName('yweather:forecast')[n]
         currentWeatherCode = currentWeather.getAttributeNode('code')
         config.plugins.MetrixWeather.forecastTodayCode.value = self.ConvertCondition(currentWeatherCode.nodeValue)
         currentWeatherTemp = currentWeather.getAttributeNode('high')
@@ -128,7 +170,7 @@ class MetrixHDWeatherUpdaterStandalone(Renderer, VariableText):
         currentWeatherText = currentWeather.getAttributeNode('text')
         config.plugins.MetrixWeather.forecastTodayText.value = currentWeatherText.nodeValue
 
-        currentWeather = dom.getElementsByTagName('yweather:forecast')[1]
+        currentWeather = dom.getElementsByTagName('yweather:forecast')[n + 1]
         currentWeatherCode = currentWeather.getAttributeNode('code')
         config.plugins.MetrixWeather.forecastTomorrowCode.value = self.ConvertCondition(currentWeatherCode.nodeValue)
         currentWeatherTemp = currentWeather.getAttributeNode('high')
@@ -137,6 +179,10 @@ class MetrixHDWeatherUpdaterStandalone(Renderer, VariableText):
         config.plugins.MetrixWeather.forecastTomorrowTempMin.value = self.getTemp(currentWeatherTemp.nodeValue)
         currentWeatherText = currentWeather.getAttributeNode('text')
         config.plugins.MetrixWeather.forecastTomorrowText.value = currentWeatherText.nodeValue
+
+        config.plugins.MetrixWeather.save()
+        g_updateRunning = False
+        self.refreshcnt = 0
 
     def getText(self,nodelist):
         rc = []

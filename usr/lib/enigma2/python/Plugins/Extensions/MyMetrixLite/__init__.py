@@ -1,11 +1,10 @@
 # -*- coding: UTF-8 -*-
 #######################################################################
 #
-#    MyMetrixLite by arn354 & svox
-#    based on
-#    MyMetrix
-#    Coded by iMaxxx (c) 2013
-#
+#  MyMetrixLite by arn354 & svox
+#  based on
+#  MyMetrix
+#  Coded by iMaxxx (c) 2013
 #
 #  This plugin is licensed under the Creative Commons
 #  Attribution-NonCommercial-ShareAlike 3.0 Unported License.
@@ -15,7 +14,6 @@
 #  This plugin is NOT free software. It is open source, you are allowed to
 #  modify it (if you keep the license), but it may not be commercially
 #  distributed other than under the conditions noted above.
-#
 #
 #######################################################################
 
@@ -245,6 +243,7 @@ def initWeatherConfig():
 
     ## RENDERER CONFIG:
 
+    config.plugins.MetrixWeather.currentWeatherDataValid = ConfigYesNo(default=False)
     config.plugins.MetrixWeather.currentLocation = ConfigText(default="N/A")
     config.plugins.MetrixWeather.currentWeatherCode = ConfigText(default="(")
     config.plugins.MetrixWeather.currentWeatherText = ConfigText(default="N/A")
@@ -290,13 +289,13 @@ def initOtherConfig():
     config.plugins.MyMetrixLiteOther = ConfigSubsection()
 
     #OtherSettings
-	#STB-Info
+    #STB-Info
     config.plugins.MyMetrixLiteOther.STBDistance = ConfigSelectionNumber(1, 50, 1, default = 10)
     config.plugins.MyMetrixLiteOther.showCPULoad = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.showRAMfree = ConfigYesNo(default=True)
     #config.plugins.MyMetrixLiteOther.showSYSTemp = ConfigYesNo(default=False)
     #config.plugins.MyMetrixLiteOther.showCPUTemp = ConfigYesNo(default=False)
-	#Infobar/Secondinfobar
+    #Infobar/Secondinfobar
     config.plugins.MyMetrixLiteOther.showInfoBarServiceIcons = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.showChannelNumber = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.showChannelName = ConfigYesNo(default=True)
@@ -312,17 +311,17 @@ def initOtherConfig():
     config.plugins.MyMetrixLiteOther.setTunerAuto = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.setTunerManual = ConfigSelectionNumber(1, 6, 1, default = 3)
     config.plugins.MyMetrixLiteOther.channelSelectionStyle = ConfigSelection(default="CHANNELSELECTION-1", choices = channelSelectionStyleList)
-	#EMC/MoviePlayer
+    #EMC/MoviePlayer
     config.plugins.MyMetrixLiteOther.InfoBarMoviePlayerDesign = ConfigSelection(default = "1", choices = [("1", _("Standard")), ("2", _("Infobar")), ("3", _("Small"))])
     config.plugins.MyMetrixLiteOther.showMovieName = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.showInfoBarClockMoviePlayer = ConfigYesNo(default=True)
     #config.plugins.MyMetrixLiteOther.showSTBinfoMoviePlayer = ConfigYesNo(default=False)
-	#EMC
+    #EMC
     config.plugins.MyMetrixLiteOther.showEMCMediaCenterCover = ConfigSelection(default = "no", choices = [("no", _("No")), ("small", _("Small")), ("large", _("Large"))])
     config.plugins.MyMetrixLiteOther.showEMCMediaCenterCoverInfobar = ConfigYesNo(default=True)
     config.plugins.MyMetrixLiteOther.showEMCSelectionCover = ConfigSelection(default = "no", choices = [("no", _("No")), ("small", _("Small")), ("large", _("Large"))])
     config.plugins.MyMetrixLiteOther.showEMCSelectionCoverLargeDescription = ConfigYesNo(default=True)
-	#SkinDesign
+    #SkinDesign
     config.plugins.MyMetrixLiteOther.SkinDesign = ConfigSelection(default = "1", choices = [("1", _("Standard")), ("2", _("Layer A and B same height, Clock in Layer A")), ("3", _("Layer A and B same height, Clock in Layer B"))])
     config.plugins.MyMetrixLiteOther.SkinDesignSpace = ConfigYesNo(default=False)
     config.plugins.MyMetrixLiteOther.SkinDesignLUC = ConfigSelection(default = "no", choices = skinDesignShowLayerList)

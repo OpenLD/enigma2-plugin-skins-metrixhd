@@ -71,6 +71,18 @@ class MetrixSTBinfo(Converter, object):
 			f = open('/proc/stb/fp/temp_sensor_avs', 'r')
 			temp = f.readline()
 			f.close()
+		elif path.exists('/proc/stb/power/avs'):
+			f = open('/proc/stb/power/avs', 'r')
+			temp = f.readline()
+			f.close()
+		elif path.exists('/sys/devices/virtual/thermal/thermal_zone0/temp'):
+			try:
+				f = open('/sys/devices/virtual/thermal/thermal_zone0/temp', 'r')
+				temp = f.read()
+				temp = temp[:-4]
+				f.close()
+			except:
+				temp = ""
 		if temp and int(temp.replace('\n', '')) > 0:
 			#info ="CPU-Temp: " + temp.replace('\n', '')  + str('\xc2\xb0') + "C"
 			info = temp.replace('\n', '').replace(' ','') + str('\xc2\xb0') + "C"
